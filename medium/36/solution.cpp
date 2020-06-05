@@ -5,16 +5,16 @@ using namespace std;
 
 class Solution {
 public:
-  bool isValidSudoku(vector<vector<char>>& board) {
+  bool isValidSudoku(vector<vector<char> >& board) {
     bool found[3][9];
     for (int i = 0; i < 9; ++i) {
-      for (int j = 0; j < 10; ++j) {
+      for (int j = 0; j < 9; ++j) {
         found[0][j] = false;
         found[1][j] = false;
         found[2][j] = false;
       }
       for (int j = 0; j < 9; ++j) {
-        int x = ((i / 3) * 3) + (j % 3);
+        int x = ((i / 3) * 3) + j / 3;
         int y = ((i % 3) * 3) + (j % 3);
         if (board[x][y] != '.') {
           int index = (board[x][y] - '0') - 1;
