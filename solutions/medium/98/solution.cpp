@@ -19,6 +19,39 @@ struct TreeNode {
 class Solution {
 public:
   bool isValidBST(TreeNode *root) {
+    return recursive_inorder(root);
+    //return loop_inorder(root);
+  }
+private:
+  bool loop_inorder(TreeNode *root) {
+    vector<TreeNode*> stack;
+    TreeNode *last = nullptr;
+
+    do {
+      while (root != nullptr) {
+        stack.push_back(root);
+        root = root->left;
+      }
+      if (!stack.empty()) {
+        root = stack.back();
+        stack.pop_back();
+        if (last != nullptr) {
+          if (last->val >= root->val) {
+            return false;
+          }
+        }
+        last = root;
+        if ((root = root->right) != nullptr) {
+          stack.push_back(root);
+          root = root->left;
+        }
+      }
+    } while (!stack.empty());
+    
+    return true;
+  }
+
+  bool recursive_inorder(TreeNode *root) {
     vector<int> array;
     inorder(root, array);
     for (int i = 1; i < array.size(); ++i) {
@@ -28,7 +61,7 @@ public:
     }
     return true;
   }
-private:
+
   void inorder(TreeNode *root, vector<int> &array) {
     if (root != nullptr) {
       inorder(root->left, array);
