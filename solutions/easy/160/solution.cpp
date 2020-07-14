@@ -13,6 +13,29 @@ struct ListNode {
 
 class Solution {
 public:
+#if 1
+  /* Suppose that:
+   * length of headA is "a + m".
+   * length of headB is "b + m".
+   * "m" is the length of common part.
+   *
+   * a + m + b + m = b + m + a + m
+   * =>
+   * a + m + b + "m"
+   * b + m + a + "m"
+   * 
+   */
+  ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+    ListNode *a = headA, *b = headB;
+
+    while (a != b) {
+      a = (a == nullptr) ? headB : a->next;
+      b = (b == nullptr) ? headA : b->next;
+    }
+
+    return a;
+  }
+#else
   ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
     set<ListNode*> footprint;
 
@@ -30,6 +53,7 @@ public:
 
     return nullptr;
   }
+#endif
 };
 
 #ifdef LOCAL_TEST
