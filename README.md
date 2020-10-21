@@ -3,3 +3,7 @@
 ```
 python create_solution.py [path]
 ```
+
+# Solution
+
+See [solution](solution/README.md)
