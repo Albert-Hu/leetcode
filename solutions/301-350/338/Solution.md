@@ -1,26 +1,26 @@
 # Solution 1
 
-To simplify explanations, the following list number from 0 to 15 in 4 bits.
+To simplify explanations, the following list number from 0 to 15 in 4-bit format.
 
 **NOTE: The most right side is a lower bit(bit 0).**
 
 ```
- 0 = 0 0 0 0 0 0 0 0
- 1 = 0 0 0 0 0 0 0 1
- 2 = 0 0 0 0 0 0 1 0
- 3 = 0 0 0 0 0 0 1 1
- 4 = 0 0 0 0 0 1 0 0
- 5 = 0 0 0 0 0 1 0 1
- 6 = 0 0 0 0 0 1 1 0
- 7 = 0 0 0 0 0 1 1 1
- 8 = 0 0 0 0 1 0 0 0
- 9 = 0 0 0 0 1 0 0 1
-10 = 0 0 0 0 1 0 1 0
-11 = 0 0 0 0 1 0 1 1
-12 = 0 0 0 0 1 1 0 0
-13 = 0 0 0 0 1 1 0 1
-14 = 0 0 0 0 1 1 1 0
-15 = 0 0 0 0 1 1 1 1
+ 0 = 0 0 0 0
+ 1 = 0 0 0 1
+ 2 = 0 0 1 0
+ 3 = 0 0 1 1
+ 4 = 0 1 0 0
+ 5 = 0 1 0 1
+ 6 = 0 1 1 0
+ 7 = 0 1 1 1
+ 8 = 1 0 0 0
+ 9 = 1 0 0 1
+10 = 1 0 1 0
+11 = 1 0 1 1
+12 = 1 1 0 0
+13 = 1 1 0 1
+14 = 1 1 1 0
+15 = 1 1 1 1
 ```
 
 Then group numbers through the power of 2.
@@ -28,42 +28,42 @@ Then group numbers through the power of 2.
 Group 2^0
 
 ```
-0 = 0 0 0 0 0 0 0 0
+0 = 0 0 0 0
 ```
 
 And
 
 ```
-1 = 0 0 0 0 0 0 0 1
+1 = 0 0 0 1
 ```
 
 Group 2^1
 
 ```
-2 = 0 0 0 0 0 0 1 0
-3 = 0 0 0 0 0 0 1 1
+2 = 0 0 1 0
+3 = 0 0 1 1
 ```
 
 Group 2^2
 
 ```
-4 = 0 0 0 0 0 1 0 0
-5 = 0 0 0 0 0 1 0 1
-6 = 0 0 0 0 0 1 1 0
-7 = 0 0 0 0 0 1 1 1
+4 = 0 1 0 0
+5 = 0 1 0 1
+6 = 0 1 1 0
+7 = 0 1 1 1
 ```
 
 Group 2^3
 
 ```
- 8 = 0 0 0 0 1 0 0 0
- 9 = 0 0 0 0 1 0 0 1
-10 = 0 0 0 0 1 0 1 0
-11 = 0 0 0 0 1 0 1 1
-12 = 0 0 0 0 1 1 0 0
-13 = 0 0 0 0 1 1 0 1
-14 = 0 0 0 0 1 1 1 0
-15 = 0 0 0 0 1 1 1 1
+ 8 = 1 0 0 0
+ 9 = 1 0 0 1
+10 = 1 0 1 0
+11 = 1 0 1 1
+12 = 1 1 0 0
+13 = 1 1 0 1
+14 = 1 1 1 0
+15 = 1 1 1 1
 ```
 
 To count the bit quickly, that can refer to previous results and simply plus 1 to get the result of the current number.
