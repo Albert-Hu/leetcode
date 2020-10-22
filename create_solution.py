@@ -11,7 +11,7 @@ def copy(number):
     print('The solution already exists.')
   else:
     copy_tree('template', dest)
-    print('created a new solution at {}', dest)
+    print('created a new solution at {}'.format(dest))
 
 if __name__ == '__main__':
   args = argparse.ArgumentParser()
