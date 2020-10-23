@@ -20,4 +20,4 @@ Explanation: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36.
 
 # Solution
 
-See the [solution](solution.md).
+See the [solution](Solution.md).
