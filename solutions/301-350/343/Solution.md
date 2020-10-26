@@ -20,9 +20,9 @@ Assume the input number N, split then N into L and R.
 
 Assume that N = 8, L = 1 and R = 7.
 
-1. 1 x 7 = 12, 7 = 12 because the maximum production of 7 can be consisted by 3 and 4.
-2. 2 x 6 = 18, 6 = 9 because the maximum production of 6 can be consisted by 3 and 3.
-3. 3 x 5 = 18, 5 = 6 because the maximum production of 5 can be consisted by 2 and 3.
-4. 4 x 4 = 16, the maximum production of 4 still is 4.
+- 1 x 7 = 12, 7 = 12 because the maximum production of 7 can be consisted by 3 and 4.
+- 2 x 6 = 18, 6 = 9 because the maximum production of 6 can be consisted by 3 and 3.
+- 3 x 5 = 18, 5 = 6 because the maximum production of 5 can be consisted by 2 and 3.
+- 4 x 4 = 16, the maximum production of 4 still is 4.
 
 **NOTE**: In the above, the 5 can split into 2 and 3 that product is greater than 5, so, if L or R equals the 5 we can replace it into 2 and 3. The 3 although can consist of 2 and 1, but the product is lower than 3, so we don't replace it.
