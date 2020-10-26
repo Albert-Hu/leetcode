@@ -13,6 +13,10 @@ int main(int argc, char *argv[]) {
     {3, 2},
     {4, 4},
     {5, 6},
+    {6, 9},
+    {7, 12},
+    {8, 18},
+    {9, 27},
     {10, 36}
   };
   
@@ -21,6 +25,6 @@ int main(int argc, char *argv[]) {
     cout << "Input: " << setw(2) << test.first << " ... ";
     cout << ((result == test.second) ? "[PASS]" : "[FAIL]") << endl;
   }
-
+  
   return 0;
 }
