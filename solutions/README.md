@@ -142,6 +142,7 @@
 - 334, [Increasing Triplet Subsequence](301-350/334/README.md)(incomplete)
 - 338, [Counting Bits](301-350/338/README.md)
 - 341, [Flatten Nested List Iterator](301-350/341/README.md)(incomplete)
+- 343, [Integer Break](301-350/343/README.md)
 - 344, [Reverse String](301-350/344/README.md)(incomplete)
 - 347, [Top K Frequent Elements](301-350/347/README.md)(incomplete)
 - 350, [Intersection of Two Arrays II](301-350/350/README.md)(incomplete)

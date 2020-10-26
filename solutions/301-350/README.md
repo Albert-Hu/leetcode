@@ -7,6 +7,7 @@
 334, [Increasing Triplet Subsequence](334/README.md)(incomplete)
 338, [Counting Bits](338/README.md)
 341, [Flatten Nested List Iterator](341/README.md)(incomplete)
+343, [Integer Break](343/README.md)
 344, [Reverse String](344/README.md)(incomplete)
 347, [Top K Frequent Elements](347/README.md)(incomplete)
 350, [Intersection of Two Arrays II](350/README.md)(incomplete)

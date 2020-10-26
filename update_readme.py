@@ -7,8 +7,11 @@ def update_readme(path, content):
     readme.write(content)
   print('updated {}.'.format(path))
 
+def list_dirs(root_path):
+  return list(filter(lambda d: os.path.isdir(os.path.join(root_path, d)), os.listdir(root_path)))
+
 root = 'solutions'
-groups = os.listdir(root)
+groups = list_dirs(root)
 groups.sort(key=lambda x: int(x.split('-')[0]))
 
 # generate README.md under the solutions.
@@ -16,7 +19,7 @@ content = ''
 for group in groups:
   group_path = os.path.join(root, group)
   content += '# {}\n\n'.format(group)
-  problems = os.listdir(group_path)
+  problems = list_dirs(group_path)
   problems.sort(key=lambda x: int(x))
   for problem in problems:
     problem_path = os.path.join(group_path, problem)
@@ -36,7 +39,7 @@ for group in groups:
   group_path = os.path.join(root, group)
   readme_path = os.path.join(group_path, 'README.md')
   content = ''
-  problems = os.listdir(os.path.join(group_path))
+  problems = list_dirs(os.path.join(group_path))
   problems.sort(key=lambda x: int(x))
   for problem in problems:
     problem_path = os.path.join(group_path, problem)
