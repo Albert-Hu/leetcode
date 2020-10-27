@@ -1,6 +1,6 @@
 # 1-50
 
-- 1, [Two Sum](1-50/1/README.md)(incomplete)
+- 1, [Two Sum](1-50/1/README.md)
 - 2, [Add Two Numbers](1-50/2/README.md)(incomplete)
 - 3, [Longest Substring Without Repeating Characters](1-50/3/README.md)(incomplete)
 - 4, [Median of Two Sorted Arrays](1-50/4/README.md)(incomplete)
