@@ -4,9 +4,7 @@ Use HashTable to record the index of each number and calculate the difference be
 
 # Example
 
-Target = 9
-Numbers = [2, 7, 11, 15]
-Table = []
+Target = 9, Numbers = [2, 7, 11, 15], Table = []
 
 - Map 2 to index 0, Table[2] = 0
 - Map 7 to index 1, Table[7] = 1
