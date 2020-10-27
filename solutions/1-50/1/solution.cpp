@@ -1,42 +1,30 @@
 #include <iostream>
 #include <vector>
+#include <unordered_map>
+
+#ifdef LOCAL_TEST
+#include "solution.h"
+#else
+class Solution {
+public:
+  vector<int> twoSum(vector<int>& nums, int target);
+};
+#endif
 
 using namespace std;
 
-class Solution {
-public:
-  vector<int> twoSum(vector<int>& nums, int target) {
-    vector<int> answer;
-    for (int i = 0; i < nums.size() && answer.size() != 2; ++i) {
-      for (int j = i + 1; j < nums.size(); ++j) {
-        if ((nums[i] + nums[j]) == target) {
-          answer.push_back(i);
-          answer.push_back(j);
-          break;
-        }
-      }
+vector<int> Solution::twoSum(vector<int>& nums, int target) {
+  unordered_map<int, int> table;
+  vector<int> answer;
+
+  for (unsigned int i = 0; i < nums.size(); i++) {
+    if (table.count(target - nums[i]) > 0) {
+      answer.push_back(table[target - nums[i]]);
+      answer.push_back(i);
+      break;
     }
-    return answer;
+    table[nums[i]] = i;
   }
-};
 
-#ifdef LOCAL_TEST
-
-int main(int argc, char *argv[]) {
-  vector<int> test;
-  vector<int> result;
-  Solution s;
-
-  test.push_back(2);
-  test.push_back(7);
-  test.push_back(11);
-  test.push_back(15);
-
-  result = s.twoSum(test, 9);
-
-  cout << "[" << result[0] << ", " << result[1] << "]" << endl;
-
-  return 0;
+  return answer;
 }
-
-#endif
