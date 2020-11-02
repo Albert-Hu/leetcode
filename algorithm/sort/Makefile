@@ -1,6 +1,6 @@
 all: bubble_sort quick_sort merge_sort heap_sort
 
-test: quick_sort
+test: all
 	@echo "========== Bubble Sort =========="
 	@time -p ./bubble_sort < test1.txt
 	@time -p ./bubble_sort < test2.txt
@@ -19,16 +19,16 @@ test: quick_sort
 	@time -p ./heap_sort < test3.txt
 
 bubble_sort:
-	g++ -o bubble_sort main.cpp bubble_sort.cpp
+	g++ -std=c++11 -o bubble_sort main.cpp bubble_sort.cpp
 
 quick_sort:
-	g++ -o quick_sort main.cpp quick_sort.cpp
+	g++ -std=c++11 -o quick_sort main.cpp quick_sort.cpp
 
 merge_sort:
-	g++ -o merge_sort main.cpp merge_sort.cpp
+	g++ -std=c++11 -o merge_sort main.cpp merge_sort.cpp
 
 heap_sort:
-	g++ -o heap_sort main.cpp heap_sort.cpp
+	g++ -std=c++11 -o heap_sort main.cpp heap_sort.cpp
 
 clean:
 	rm -f bubble_sort quick_sort merge_sort heap_sort
