@@ -1,8 +1,8 @@
-# Solution
+# Solution 1, Hash Table
 
 Use HashTable to record the index of each number and calculate the difference between the target and current number, then check whether the difference is in HashTable or not, if so, the answer is found.
 
-# Example
+## Example
 
 Target = 9, Numbers = [2, 7, 11, 15], Table = []
 
@@ -19,3 +19,14 @@ All of the differences:
 - The index 3, 9 - 15 = -6
 
 We can found the answer is [0, 1].
+
+# Solution 2, Sort and Binary Search
+
+We need to allocate a new array to store the index of numbers, then sort the indices via number, and use binary search to find out the answer.
+
+## Example
+
+Target = 9, Numbers = [7, 11, 2, 15], Indices of Numbers = [0, 1, 2, 3].
+
+- Sort the indices to get a sorted indices = [2, 0, 1, 3].
+- Use the binary search to find the answer out at the index array.
