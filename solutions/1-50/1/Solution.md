@@ -26,7 +26,47 @@ We need to allocate a new array to store the index of numbers, then sort the ind
 
 ## Example
 
-Target = 9, Numbers = [7, 11, 2, 15], Indices of Numbers = [0, 1, 2, 3].
+Target = 9, Numbers = [7, 11, 2, 15].
 
-- Sort the indices to get a sorted indices = [2, 0, 1, 3].
-- Use the binary search to find the answer out at the index array.
+- Map the numbers [7, 11, 2, 15] to an index array [0, 1, 2, 3].
+- Sort the index array.
+- The sorted index array is [2, 0, 1, 3] that map to the sorted numbers [2, 7, 11, 15].
+- Go through every element of the index array to get the difference from the target.
+- Use the binary search to look for the difference in the index array.
+- For example, the index 2 map to number 2, and the number we need to find is 7, so we search its index in the index array.
+
+The source code:
+
+```
+vector<int> Solution::twoSum(vector<int>& nums, int target) {
+  vector<int> answer;
+  vector<int> indices;
+
+  for (unsigned int i = 0; i < nums.size(); i++) {
+    indices.push_back(i);
+  }
+
+  sort(indices.begin(), indices.end(), [&](int a, int b) {
+    /* map the index to the number */
+    return nums[a] < nums[b];
+  });
+
+  for (unsigned int i = 0; i < indices.size(); i++) {
+    int n = target - nums[indices[i]];
+    auto m = lower_bound(indices.begin() + i + 1, indices.end(), n, [&](int index, int value) {
+      /* map the index to the number */
+      return nums[index] < value;
+    });
+
+    if (m != indices.end()) {
+      if (nums[indices[m - indices.begin()]] == n) {
+        answer.push_back(indices[i]);
+        answer.push_back(indices[m - indices.begin()]);
+        break;
+      }
+    }
+  }
+
+  return answer;
+}
+```
