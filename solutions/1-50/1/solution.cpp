@@ -16,6 +16,7 @@ using namespace std;
 
 #ifdef USE_HASH
 
+/* Use Hash Table */
 vector<int> Solution::twoSum(vector<int>& nums, int target) {
   unordered_map<int, int> table;
   vector<int> answer;
@@ -34,6 +35,7 @@ vector<int> Solution::twoSum(vector<int>& nums, int target) {
 
 #else /* USE_HASH */
 
+/* Use Sort and Binary Search */
 vector<int> Solution::twoSum(vector<int>& nums, int target) {
   vector<int> answer;
   vector<int> indices;
