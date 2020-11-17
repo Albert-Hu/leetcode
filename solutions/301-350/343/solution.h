@@ -9,6 +9,7 @@ class Solution {
 public:
   Solution();
   int integerBreak(int n);
+
 private:
   vector<int> integers;
 };

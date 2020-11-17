@@ -11,7 +11,8 @@ struct TreeNode {
   TreeNode *right;
   TreeNode() : val(0), left(nullptr), right(nullptr) {}
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right)
+      : val(x), left(left), right(right) {}
 };
 
 #endif
@@ -20,11 +21,12 @@ class Solution {
 public:
   bool isValidBST(TreeNode *root) {
     return recursive_inorder(root);
-    //return loop_inorder(root);
+    // return loop_inorder(root);
   }
+
 private:
   bool loop_inorder(TreeNode *root) {
-    vector<TreeNode*> stack;
+    vector<TreeNode *> stack;
     TreeNode *last = nullptr;
 
     do {
@@ -47,7 +49,7 @@ private:
         }
       }
     } while (!stack.empty());
-    
+
     return true;
   }
 
@@ -77,22 +79,11 @@ int main(int argc, char *argv[]) {
   Solution s;
   TreeNode *root = nullptr;
 
-  root = new TreeNode(
-    2,
-    new TreeNode(1),
-    new TreeNode(3)
-  );
+  root = new TreeNode(2, new TreeNode(1), new TreeNode(3));
   cout << (s.isValidBST(root) ? "true" : "false") << endl;
 
-  root = new TreeNode(
-    5,
-    new TreeNode(1),
-    new TreeNode(
-      4,
-      new TreeNode(3),
-      new TreeNode(6)
-    )
-  );
+  root = new TreeNode(5, new TreeNode(1),
+                      new TreeNode(4, new TreeNode(3), new TreeNode(6)));
   cout << (s.isValidBST(root) ? "true" : "false") << endl;
 
   return 0;

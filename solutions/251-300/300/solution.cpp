@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  int lengthOfLIS(vector<int>& nums) {
+  int lengthOfLIS(vector<int> &nums) {
     vector<int> record;
 
     if (nums.size() > 0) {
@@ -28,7 +28,7 @@ public:
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<int> nums{10,9,2,5,3,7,101,18};
+  vector<int> nums{10, 9, 2, 5, 3, 7, 101, 18};
 
   cout << s.lengthOfLIS(nums) << endl;
 

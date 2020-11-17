@@ -1,12 +1,13 @@
 #include <iostream>
-#include <vector>
 #include <map>
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  int fourSumCount(vector<int>& A, vector<int>& B, vector<int>& C, vector<int>& D) {
+  int fourSumCount(vector<int> &A, vector<int> &B, vector<int> &C,
+                   vector<int> &D) {
     const int n = A.size();
     int count = 0;
     map<long long int, int> twoSum;

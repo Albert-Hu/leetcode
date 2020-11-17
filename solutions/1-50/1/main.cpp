@@ -1,5 +1,5 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 #include <sstream>
 #include <vector>
 
@@ -48,9 +48,12 @@ int main(int argc, char *argv[]) {
     vector<int> array;
     vector<int> answer;
 
-    if (!get_target(target)) break;
-    if (!get_array(array)) break;
-    if (!get_answer(answer)) break;
+    if (!get_target(target))
+      break;
+    if (!get_array(array))
+      break;
+    if (!get_answer(answer))
+      break;
 
     Solution solution;
     vector<int> result = solution.twoSum(array, target);
@@ -59,14 +62,14 @@ int main(int argc, char *argv[]) {
     if (result.size() != 2) {
       cout << "[FAIL]";
     } else {
-      if (max(result[0], result[1]) == max(answer[0], answer[1]) && min(result[0], result[1]) == min(answer[0], answer[1])) {
+      if (max(result[0], result[1]) == max(answer[0], answer[1]) &&
+          min(result[0], result[1]) == min(answer[0], answer[1])) {
         cout << "[PASS]";
       } else {
         cout << "[FAIL]";
       }
     }
     cout << endl;
-
   }
   return 0;
 }

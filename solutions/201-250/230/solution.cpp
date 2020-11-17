@@ -9,16 +9,17 @@ struct TreeNode {
   TreeNode *right;
   TreeNode() : val(0), left(nullptr), right(nullptr) {}
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right)
+      : val(x), left(left), right(right) {}
 };
 
 #endif
 
 class Solution {
 public:
-  Solution () : count(0), answer(0) {}
+  Solution() : count(0), answer(0) {}
 
-  int kthSmallest(TreeNode* root, int k) {
+  int kthSmallest(TreeNode *root, int k) {
     dfs(root, k);
     return answer;
   }
@@ -47,31 +48,15 @@ int main(int argc, char *argv[]) {
   TreeNode *root;
 
   s = new Solution();
-  root = new TreeNode(
-    3,
-    new TreeNode(
-      1,
-      nullptr,
-      new TreeNode(2)
-    ),
-    new TreeNode(4)
-  );
+  root = new TreeNode(3, new TreeNode(1, nullptr, new TreeNode(2)),
+                      new TreeNode(4));
   cout << s->kthSmallest(root, 1) << endl;
 
   s = new Solution();
-  root = new TreeNode(
-    5,
-    new TreeNode(
-      3,
-      new TreeNode(
-        2,
-        new TreeNode(1),
-        nullptr
-      ),
-      new TreeNode(4)
-    ),
-    new TreeNode(6)
-  );
+  root = new TreeNode(5,
+                      new TreeNode(3, new TreeNode(2, new TreeNode(1), nullptr),
+                                   new TreeNode(4)),
+                      new TreeNode(6));
   cout << s->kthSmallest(root, 3) << endl;
 
   return 0;

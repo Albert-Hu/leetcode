@@ -6,7 +6,8 @@ class Solution {
 public:
   int trailingZeroes(int n) {
     int m = n / 5;
-    if (m < 5) return m;
+    if (m < 5)
+      return m;
     return m + trailingZeroes(m);
   }
 };

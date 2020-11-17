@@ -14,7 +14,7 @@ struct ListNode {
 
 class Solution {
 public:
-  ListNode* deleteDuplicates(ListNode* head) {
+  ListNode *deleteDuplicates(ListNode *head) {
     ListNode **current = &head;
     while (*current != nullptr) {
       if ((*current)->next != nullptr) {
@@ -38,7 +38,7 @@ public:
 
 #ifdef LOCAL_TEST
 
-void dump(ListNode* head) {
+void dump(ListNode *head) {
   if (head != nullptr) {
     cout << head->val << (head->next == nullptr ? "" : "->");
     dump(head->next);
@@ -49,15 +49,23 @@ int main(int argc, char *argv[]) {
   Solution s;
   ListNode *head;
 
-  head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3, new ListNode(4, new ListNode(4, new ListNode(5)))))));
+  head = new ListNode(
+      1,
+      new ListNode(
+          2,
+          new ListNode(
+              3, new ListNode(
+                     3, new ListNode(4, new ListNode(4, new ListNode(5)))))));
   dump(s.deleteDuplicates(head));
   cout << endl;
 
-  head = new ListNode(1, new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3)))));
+  head = new ListNode(
+      1, new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3)))));
   dump(s.deleteDuplicates(head));
   cout << endl;
 
-  head = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3)))));
+  head = new ListNode(
+      1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3)))));
   dump(s.deleteDuplicates(head));
   cout << endl;
 

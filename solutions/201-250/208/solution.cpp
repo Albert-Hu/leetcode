@@ -8,7 +8,7 @@ public:
       next[i] = nullptr;
     }
   }
-  
+
   void insert(string word) {
     int index = static_cast<int>(word[0] - 'a');
 
@@ -22,7 +22,7 @@ public:
       next[index]->insert(word.substr(1));
     }
   }
-  
+
   bool search(string word) {
     int index = static_cast<int>(word[0] - 'a');
 

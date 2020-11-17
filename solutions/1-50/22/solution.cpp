@@ -34,7 +34,8 @@ private:
 void dump(vector<string> ans) {
   cout << "[";
   for (int i = 0; i < ans.size(); ++i) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << ans[i];
   }
   cout << "]" << endl;

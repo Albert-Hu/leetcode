@@ -23,7 +23,7 @@ public:
    * =>
    * a + m + b + "m"
    * b + m + a + "m"
-   * 
+   *
    */
   ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
     ListNode *a = headA, *b = headB;
@@ -37,7 +37,7 @@ public:
   }
 #else
   ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-    set<ListNode*> footprint;
+    set<ListNode *> footprint;
 
     while (headA != nullptr) {
       footprint.insert(headA);

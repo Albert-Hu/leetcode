@@ -23,11 +23,13 @@ public:
         break;
       }
       if (minus) {
-        if (integer > 214748364 || (integer == 214748364 && (str[i] - '0') >= 8)) {
+        if (integer > 214748364 ||
+            (integer == 214748364 && (str[i] - '0') >= 8)) {
           return -2147483648;
         }
       } else {
-        if ((integer > 214748364) || (integer == 214748364 && (str[i] - '0') > 7)) { // overflow
+        if ((integer > 214748364) ||
+            (integer == 214748364 && (str[i] - '0') > 7)) { // overflow
           return 2147483647;
         }
       }

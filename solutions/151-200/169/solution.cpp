@@ -1,12 +1,12 @@
 #include <iostream>
-#include <vector>
 #include <map>
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  int majorityElement(vector<int>& nums) {
+  int majorityElement(vector<int> &nums) {
     pair<int, int> majority(nums[0], 1);
     map<int, int> count;
 

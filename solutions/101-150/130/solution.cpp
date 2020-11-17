@@ -1,27 +1,32 @@
+#include <functional>
 #include <iostream>
 #include <vector>
-#include <functional>
 
 using namespace std;
 
 class Solution {
 public:
-  void solve(vector<vector<char> >& board) {
-    vector<vector<bool> > x;
-    function<void(int,int)> search = [&](int row, int column) {
-      if (row < 0 || row >= board.size()) return;
-      if (column < 0 || column >= board[row].size()) return;
-      if (board[row][column] == 'X' || !x[row][column]) return;
-      
+  void solve(vector<vector<char>> &board) {
+    vector<vector<bool>> x;
+    function<void(int, int)> search = [&](int row, int column) {
+      if (row < 0 || row >= board.size())
+        return;
+      if (column < 0 || column >= board[row].size())
+        return;
+      if (board[row][column] == 'X' || !x[row][column])
+        return;
+
       x[row][column] = false;
       search(row - 1, column);
       search(row + 1, column);
       search(row, column - 1);
       search(row, column + 1);
     };
-    
-    if (board.size() == 0) return;
-    if (board[0].size() == 0) return;
+
+    if (board.size() == 0)
+      return;
+    if (board[0].size() == 0)
+      return;
 
     for (int i = 0; i < board.size(); ++i) {
       vector<bool> row(board[i].size(), true);
@@ -51,12 +56,13 @@ public:
 
 #ifdef LOCAL_TEST
 
-void dump(vector<vector<char> >& board) {
+void dump(vector<vector<char>> &board) {
   cout << "[" << endl;
   for (int i = 0; i < board.size(); ++i) {
     cout << "  [";
     for (int j = 0; j < board[i].size(); ++j) {
-      if (j > 0) cout << ", ";
+      if (j > 0)
+        cout << ", ";
       cout << board[i][j];
     }
     cout << "]" << endl;
@@ -66,7 +72,7 @@ void dump(vector<vector<char> >& board) {
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<vector<char> > board;
+  vector<vector<char>> board;
   vector<char> row;
 
   row.push_back('X');

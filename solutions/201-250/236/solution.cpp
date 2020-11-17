@@ -16,13 +16,13 @@ struct TreeNode {
 
 class Solution {
 public:
-  TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+  TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q) {
     search(root, p, q);
     return node;
   }
 
 private:
-  int search(TreeNode* root, TreeNode* p, TreeNode* q) {
+  int search(TreeNode *root, TreeNode *p, TreeNode *q) {
     int l = 0, r = 0, x = 0;
     if (root == nullptr) {
       return 0;
@@ -51,23 +51,11 @@ int main(int argc, char *argv[]) {
   TreeNode *root, *node;
   TreeNode *p, *q1, *q2;
 
-  root = new TreeNode(
-    3,
-    (p = new TreeNode(
-      5,
-      new TreeNode(6),
-      new TreeNode(
-        2,
-        new TreeNode(7),
-        (q2 = new TreeNode(4))
-      )
-    )),
-    (q1 = new TreeNode(
-      1,
-      new TreeNode(0),
-      new TreeNode(8)
-    ))
-  );
+  root = new TreeNode(3,
+                      (p = new TreeNode(5, new TreeNode(6),
+                                        new TreeNode(2, new TreeNode(7),
+                                                     (q2 = new TreeNode(4))))),
+                      (q1 = new TreeNode(1, new TreeNode(0), new TreeNode(8))));
 
   node = s.lowestCommonAncestor(root, p, q1);
   cout << node->val << endl;

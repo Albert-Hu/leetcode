@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  vector<int> plusOne(vector<int>& digits) {
+  vector<int> plusOne(vector<int> &digits) {
     int sum = 0, carry = 1;
     vector<int> array;
 
@@ -27,7 +27,8 @@ public:
 void dump(vector<int> array) {
   cout << "[";
   for (int i = 0; i < array.size(); i++) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << array[i];
   }
   cout << "]" << endl;
@@ -48,7 +49,6 @@ int main(int argc, char *argv[]) {
   digits.push_back(2);
   digits.push_back(1);
   dump(s.plusOne(digits));
-
 
   return 0;
 }

@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  void moveZeroes(vector<int>& nums) {
+  void moveZeroes(vector<int> &nums) {
     int current = 0, next = 1;
     while (current < nums.size() && next < nums.size()) {
       if (nums[current] == 0) {
@@ -26,10 +26,11 @@ public:
 };
 
 #ifdef LOCAL_TEST
-void dump(vector<int>& nums) {
+void dump(vector<int> &nums) {
   cout << "[";
   for (int i = 0; i < nums.size(); i++) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << nums[i];
   }
   cout << "]" << endl;

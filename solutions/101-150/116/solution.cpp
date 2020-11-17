@@ -1,6 +1,6 @@
+#include <functional>
 #include <iostream>
 #include <vector>
-#include <functional>
 
 using namespace std;
 
@@ -9,25 +9,25 @@ using namespace std;
 class Node {
 public:
   int val;
-  Node* left;
-  Node* right;
-  Node* next;
+  Node *left;
+  Node *right;
+  Node *next;
 
   Node() : val(0), left(NULL), right(NULL), next(NULL) {}
 
   Node(int _val) : val(_val), left(NULL), right(NULL), next(NULL) {}
 
-  Node(int _val, Node* _left, Node* _right, Node* _next)
-    : val(_val), left(_left), right(_right), next(_next) {}
+  Node(int _val, Node *_left, Node *_right, Node *_next)
+      : val(_val), left(_left), right(_right), next(_next) {}
 };
 
 #endif
 
 class Solution {
 public:
-  Node* connect(Node* root) {
-    vector<Node*> nodes;
-    function<Node*(Node*,int)> connect = [&](Node *current, int level) {
+  Node *connect(Node *root) {
+    vector<Node *> nodes;
+    function<Node *(Node *, int)> connect = [&](Node *current, int level) {
       if (current != nullptr) {
         if (level < nodes.size()) {
           nodes[level]->next = current;
@@ -48,8 +48,8 @@ public:
 
 void dump(Node *root) {
   bool first = true;
-  vector<Node*> queue;
-  
+  vector<Node *> queue;
+
   cout << "[";
   if (root != nullptr) {
     queue.push_back(root);
@@ -80,22 +80,8 @@ int main(int argc, char *argv[]) {
   Solution s;
   Node *root = nullptr;
 
-  root = new Node(
-    1,
-    new Node(
-      2,
-      new Node(4),
-      new Node(5),
-      nullptr
-    ),
-    new Node(
-      3,
-      new Node(6),
-      new Node(7),
-      nullptr
-    ),
-    nullptr
-  );
+  root = new Node(1, new Node(2, new Node(4), new Node(5), nullptr),
+                  new Node(3, new Node(6), new Node(7), nullptr), nullptr);
 
   dump(s.connect(root));
 

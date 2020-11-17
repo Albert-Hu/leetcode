@@ -1,6 +1,6 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -8,13 +8,13 @@ class Solution {
 public:
   Solution() : minimalAmount(INT32_MAX) {}
 
-  int coinChange(vector<int>& coins, int amount) {
+  int coinChange(vector<int> &coins, int amount) {
     sort(coins.begin(), coins.end(), greater<int>());
     search(coins, 0, 0, amount);
     return (minimalAmount == INT32_MAX) ? -1 : minimalAmount;
   }
 
-  void search(vector<int>& coins, int index, int count, int amount) {
+  void search(vector<int> &coins, int index, int count, int amount) {
     if (index < coins.size()) {
       int c = coins[index];
       int number = amount / c;

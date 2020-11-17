@@ -5,33 +5,34 @@ using namespace std;
 
 class Solution {
 public:
-  void rotate(vector<vector<int> >& matrix) {
+  void rotate(vector<vector<int>> &matrix) {
     int rows = matrix.size() - 1;
 
     for (int i = 0; i < rows; ++i) {
-        int columns = rows - i;
-        for (int j = i; j < columns; ++j) {
-            int tmp;
+      int columns = rows - i;
+      for (int j = i; j < columns; ++j) {
+        int tmp;
 
-            tmp = matrix[i][j];
+        tmp = matrix[i][j];
 
-            matrix[i][j] = matrix[rows - j][i];
-            matrix[rows - j][i] = matrix[rows - i][rows - j];
-            matrix[rows - i][rows - j] = matrix[j][rows - i];
-            matrix[j][rows - i] = tmp;
-        }
+        matrix[i][j] = matrix[rows - j][i];
+        matrix[rows - j][i] = matrix[rows - i][rows - j];
+        matrix[rows - i][rows - j] = matrix[j][rows - i];
+        matrix[j][rows - i] = tmp;
+      }
     }
   }
 };
 
 #ifdef LOCAL_TEST
 
-void dump(vector<vector<int> > &matrix) {
+void dump(vector<vector<int>> &matrix) {
   cout << "[" << endl;
   for (int i = 0; i < matrix.size(); ++i) {
     cout << "  [";
     for (int j = 0; j < matrix[i].size(); ++j) {
-      if (j > 0) cout << ", ";
+      if (j > 0)
+        cout << ", ";
       cout << matrix[i][j];
     }
     cout << "]" << endl;
@@ -41,7 +42,7 @@ void dump(vector<vector<int> > &matrix) {
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<vector<int> > matrix;
+  vector<vector<int>> matrix;
   vector<int> row;
 
   row.push_back(1);

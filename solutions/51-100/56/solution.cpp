@@ -1,21 +1,20 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 #include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  vector<vector<int>> merge(vector<vector<int> > &intervals) {
-    vector<vector<int >> merged;
+  vector<vector<int>> merge(vector<vector<int>> &intervals) {
+    vector<vector<int>> merged;
 
     if (intervals.size() == 0) {
       return merged;
     }
 
-    sort(intervals.begin(), intervals.end(), [&](vector<int> &a, vector<int> &b) {
-      return a[0] < b[0];
-    });
+    sort(intervals.begin(), intervals.end(),
+         [&](vector<int> &a, vector<int> &b) { return a[0] < b[0]; });
 
     merged.push_back(intervals[0]);
     for (int i = 1; i < intervals.size(); ++i) {
@@ -35,12 +34,13 @@ public:
 
 #ifdef LOCAL_TEST
 
-void dump(vector<vector<int> > intervals) {
+void dump(vector<vector<int>> intervals) {
   cout << "[" << endl;
   for (int i = 0; i < intervals.size(); ++i) {
     cout << "[";
     for (int j = 0; j < intervals[i].size(); ++j) {
-      if (j > 0) cout << ", ";
+      if (j > 0)
+        cout << ", ";
       cout << intervals[i][j];
     }
     cout << "]" << endl;
@@ -50,7 +50,7 @@ void dump(vector<vector<int> > intervals) {
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<vector<int> > intervals;
+  vector<vector<int>> intervals;
   vector<int> line;
 
   line.push_back(1);

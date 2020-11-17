@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  string longestCommonPrefix(vector<string>& strs) {
+  string longestCommonPrefix(vector<string> &strs) {
     int minimumLength = 0;
     string prefix;
 

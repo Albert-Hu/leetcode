@@ -3,10 +3,10 @@
 
 using namespace std;
 
-static auto _______ = [](){
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    return 0;
+static auto _______ = []() {
+  std::ios::sync_with_stdio(false);
+  std::cin.tie(nullptr);
+  return 0;
 }();
 
 #if 1
@@ -26,13 +26,9 @@ public:
     stack.pop_back();
   }
 
-  int top() {
-    return stack.back();
-  }
+  int top() { return stack.back(); }
 
-  int getMin() {
-    return heap.back();
-  }
+  int getMin() { return heap.back(); }
 
 private:
   vector<int> heap;
@@ -41,29 +37,26 @@ private:
 #else
 class MinStack {
 public:
-  MinStack() : minimum(INT32_MAX) {
-  }
+  MinStack() : minimum(INT32_MAX) {}
 
   void push(int x) {
     stack.push_back(x);
-    if (x < minimum) minimum = x;
+    if (x < minimum)
+      minimum = x;
   }
 
   void pop() {
     stack.pop_back();
     minimum = INT32_MAX;
     for (auto x : stack) {
-      if (x < minimum) minimum = x;
+      if (x < minimum)
+        minimum = x;
     }
   }
 
-  int top() {
-    return stack.back();
-  }
+  int top() { return stack.back(); }
 
-  int getMin() {
-    return minimum;
-  }
+  int getMin() { return minimum; }
 
 private:
   int minimum;

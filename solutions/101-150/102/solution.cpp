@@ -1,7 +1,7 @@
 #include <iostream>
-#include <vector>
-#include <queue>
 #include <map>
+#include <queue>
+#include <vector>
 
 using namespace std;
 
@@ -13,21 +13,23 @@ struct TreeNode {
   TreeNode *right;
   TreeNode() : val(0), left(nullptr), right(nullptr) {}
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right)
+      : val(x), left(left), right(right) {}
 };
 
 #endif
 
 class Solution {
 public:
-  vector<vector<int> > levelOrder(TreeNode* root) {
-    vector<vector<int> > result;
+  vector<vector<int>> levelOrder(TreeNode *root) {
+    vector<vector<int>> result;
     dfs(root, 0);
     for (auto it : levels) {
       result.push_back(it.second);
     }
     return result;
   }
+
 private:
   void dfs(TreeNode *root, int n) {
     if (root != nullptr) {
@@ -38,17 +40,18 @@ private:
   }
 
 private:
-  map<int, vector<int> > levels;
+  map<int, vector<int>> levels;
 };
 
 #ifdef LOCAL_TEST
 
-void dump(vector<vector<int> > result) {
+void dump(vector<vector<int>> result) {
   cout << "[" << endl;
   for (int i = 0; i < result.size(); ++i) {
     cout << "  [";
     for (int j = 0; j < result[i].size(); ++j) {
-      if (j > 0) cout << ", ";
+      if (j > 0)
+        cout << ", ";
       cout << result[i][j];
     }
     cout << "]" << endl;
@@ -60,15 +63,8 @@ int main(int argc, char *argv[]) {
   Solution *s;
   TreeNode *root;
 
-  root = new TreeNode(
-    3,
-    new TreeNode(9),
-    new TreeNode(
-      20,
-      new TreeNode(15),
-      new TreeNode(7)
-    )
-  );
+  root = new TreeNode(3, new TreeNode(9),
+                      new TreeNode(20, new TreeNode(15), new TreeNode(7)));
   s = new Solution;
   dump(s->levelOrder(root));
 

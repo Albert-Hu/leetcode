@@ -22,7 +22,7 @@ public:
     return n * n;
   }
 
-  int maximalSquare(vector<vector<char>>& matrix) {
+  int maximalSquare(vector<vector<char>> &matrix) {
     int maximum = 0;
 
     for (int i = 0; i < matrix.size(); i++) {
@@ -36,7 +36,8 @@ public:
       }
     }
 
-    return maximum;;
+    return maximum;
+    ;
   }
 };
 
@@ -45,16 +46,14 @@ public:
 int main(int argc, char *argv[]) {
   Solution s;
 #if 1
-  vector<vector<char>> matrix {
-    {'1', '0', '1', '0', '0'},
-    {'1', '0', '1', '1', '1'},
-    {'1', '1', '1', '1', '1'},
-    {'1', '0', '0', '1', '0'},
+  vector<vector<char>> matrix{
+      {'1', '0', '1', '0', '0'},
+      {'1', '0', '1', '1', '1'},
+      {'1', '1', '1', '1', '1'},
+      {'1', '0', '0', '1', '0'},
   };
 #else
-  vector<vector<char>> matrix {
-    {'1'}
-  };
+  vector<vector<char>> matrix{{'1'}};
 #endif
   cout << s.maximalSquare(matrix) << endl;
 

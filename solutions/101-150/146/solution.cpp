@@ -1,13 +1,13 @@
 #include <iostream>
-#include <map>
 #include <list>
+#include <map>
 
 using namespace std;
 
 class LRUCache {
 public:
   LRUCache(int capacity) : m_capacity(capacity) {}
-  
+
   int get(int key) {
     int value = -1;
     if (table.count(key) > 0) {
@@ -16,7 +16,7 @@ public:
     }
     return value;
   }
-  
+
   void put(int key, int value) {
     if (table.count(key) > 0) {
       table[key].first = value;
@@ -38,7 +38,7 @@ public:
 
 private:
   int m_capacity;
-  map<int, pair<int, list<int>::iterator> > table;
+  map<int, pair<int, list<int>::iterator>> table;
   list<int> keys;
 };
 

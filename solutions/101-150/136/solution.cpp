@@ -1,15 +1,16 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
 class Solution {
 public:
-  int singleNumber(vector<int>& nums) {
+  int singleNumber(vector<int> &nums) {
 #if 1
     int result = 0;
-    for (auto n : nums) result ^= n;
+    for (auto n : nums)
+      result ^= n;
     return result;
 #else
     sort(nums.begin(), nums.end());

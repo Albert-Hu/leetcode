@@ -13,16 +13,21 @@ public:
     if (x == numeric_limits<int>::min())
       return 0;
 
-    if (isNegative) x = -x;
+    if (isNegative)
+      x = -x;
 
     while (x > 0) {
       reversedX = reversedX * 10 + (x % 10);
       x /= 10;
     }
 
-    if (isNegative) reversedX = -reversedX;
+    if (isNegative)
+      reversedX = -reversedX;
 
-    return (reversedX > numeric_limits<int>::max() || reversedX < numeric_limits<int>::min()) ? 0 : static_cast<int>(reversedX);
+    return (reversedX > numeric_limits<int>::max() ||
+            reversedX < numeric_limits<int>::min())
+               ? 0
+               : static_cast<int>(reversedX);
   }
 };
 

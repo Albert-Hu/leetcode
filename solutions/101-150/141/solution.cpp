@@ -19,7 +19,7 @@ public:
     while (head != nullptr && n != nullptr) {
       if (n->next == nullptr)
         break;
-      
+
       n = n->next->next;
       head = head->next;
 

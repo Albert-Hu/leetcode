@@ -3,16 +3,10 @@
 
 using namespace std;
 
-char key_map[8][4] = {
-  {'a', 'b', 'c', '\0'},
-  {'d', 'e', 'f', '\0'},
-  {'g', 'h', 'i', '\0'},
-  {'j', 'k', 'l', '\0'},
-  {'m', 'n', 'o', '\0'},
-  {'p', 'q', 'r', 's'},
-  {'t', 'u', 'v', '\0'},
-  {'w', 'x', 'y', 'z'}
-};
+char key_map[8][4] = {{'a', 'b', 'c', '\0'}, {'d', 'e', 'f', '\0'},
+                      {'g', 'h', 'i', '\0'}, {'j', 'k', 'l', '\0'},
+                      {'m', 'n', 'o', '\0'}, {'p', 'q', 'r', 's'},
+                      {'t', 'u', 'v', '\0'}, {'w', 'x', 'y', 'z'}};
 
 class Solution {
 public:
@@ -29,6 +23,7 @@ public:
 
     return ans;
   }
+
 private:
   void combine(vector<int> &nums, int pos, string s) {
     if (pos == (nums.size() - 1)) {
@@ -41,6 +36,7 @@ private:
       }
     }
   }
+
 private:
   vector<string> ans;
 };
@@ -50,7 +46,8 @@ private:
 void dump(vector<string> ans) {
   cout << "[";
   for (int i = 0; i < ans.size(); ++i) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << ans[i];
   }
   cout << "]" << endl;
@@ -59,7 +56,7 @@ void dump(vector<string> ans) {
 int main(int argc, char *argv[]) {
   Solution s;
   string digits;
-  
+
   digits = "23";
   dump(s.letterCombinations(digits));
 

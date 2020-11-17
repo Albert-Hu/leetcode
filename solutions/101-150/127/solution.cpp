@@ -1,19 +1,20 @@
-#include <iostream>
-#include <vector>
-#include <unordered_set>
-#include <unordered_map>
 #include <functional>
+#include <iostream>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-    //return graph_bfs(beginWord, endWord, wordList);
+  int ladderLength(string beginWord, string endWord, vector<string> &wordList) {
+    // return graph_bfs(beginWord, endWord, wordList);
     return speedup_bfs(beginWord, endWord, wordList);
   }
+
 private:
-  int speedup_bfs(string beginWord, string endWord, vector<string>& wordList) {
+  int speedup_bfs(string beginWord, string endWord, vector<string> &wordList) {
     int length = 0;
     unordered_set<string> path;
     unordered_set<string> words(wordList.begin(), wordList.end());
@@ -21,7 +22,7 @@ private:
     path.insert(beginWord);
     while (!path.empty()) {
       unordered_set<string> next;
-      
+
       length += 1;
       if (path.count(endWord) > 0) {
         return length;
@@ -47,32 +48,34 @@ private:
     return 0;
   }
 
-  int graph_bfs(string beginWord, string endWord, vector<string>& wordList) {
-    unordered_map<string, unordered_set<string> > path;
+  int graph_bfs(string beginWord, string endWord, vector<string> &wordList) {
+    unordered_map<string, unordered_set<string>> path;
     unordered_set<string> visited;
 
-    function<int(int,unordered_set<string>&)> bfs = [&](int n, unordered_set<string> &connections) {
-      if (connections.find(endWord) != connections.end())
-        return n;
+    function<int(int, unordered_set<string> &)> bfs =
+        [&](int n, unordered_set<string> &connections) {
+          if (connections.find(endWord) != connections.end())
+            return n;
 
-      unordered_set<string> next;
-      for (auto c : connections) {
-        for (auto word : path[c]) {
-          if (visited.find(word) == visited.end()) {
-            visited.insert(word);
-            next.insert(word);
+          unordered_set<string> next;
+          for (auto c : connections) {
+            for (auto word : path[c]) {
+              if (visited.find(word) == visited.end()) {
+                visited.insert(word);
+                next.insert(word);
+              }
+            }
           }
-        }
-      }
-      return (next.size() > 0) ? bfs(n + 1, next) : 0;
-    };
+          return (next.size() > 0) ? bfs(n + 1, next) : 0;
+        };
 
     for (int i = 0; i < wordList.size(); ++i) {
       if (canConnect(beginWord, wordList[i])) {
         path[beginWord].insert(wordList[i]);
       }
       for (int j = 0; j < wordList.size(); ++j) {
-        if (i == j) continue;
+        if (i == j)
+          continue;
         if (canConnect(wordList[i], wordList[j])) {
           path[wordList[i]].insert(wordList[j]);
         }

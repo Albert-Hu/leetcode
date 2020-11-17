@@ -1,18 +1,19 @@
 #include <iostream>
-#include <vector>
 #include <tuple>
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  int maxProduct(vector<int>& nums) {
-    vector<tuple<int, int, int> > seg = segment(nums);
+  int maxProduct(vector<int> &nums) {
+    vector<tuple<int, int, int>> seg = segment(nums);
     int max = (seg.size() > 1) ? 0 : nums[0];
-    
+
     for (auto t : seg) {
       int m = maximum(nums, t);
-      if (m > max) max = m;
+      if (m > max)
+        max = m;
     }
 
     return max;
@@ -24,7 +25,8 @@ public:
     int count = get<2>(t);
     int max = 1;
 
-    if (start == end) return nums[start];
+    if (start == end)
+      return nums[start];
 
     if ((count % 2) == 0) {
       for (; start <= end; start++) {
@@ -32,11 +34,11 @@ public:
       }
     } else {
       int left = 1, right = 1;
-      
+
       for (; nums[start] > 0; start++) {
         left *= nums[start];
       }
-      
+
       for (; nums[end] > 0; end--) {
         right *= nums[end];
       }
@@ -56,9 +58,9 @@ public:
     return max;
   }
 
-  vector<tuple<int, int, int> > segment(vector<int> &nums) {
+  vector<tuple<int, int, int>> segment(vector<int> &nums) {
     int start = 0, end = 0, count = 0;
-    vector<tuple<int, int, int> > s;
+    vector<tuple<int, int, int>> s;
 
     for (auto n : nums) {
       if (n == 0) {

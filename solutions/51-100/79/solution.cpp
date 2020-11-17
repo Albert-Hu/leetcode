@@ -4,8 +4,8 @@
 using namespace std;
 class Solution {
 public:
-  bool exist(vector<vector<char> > &board, string word) {
-    vector<vector<bool> > visited;
+  bool exist(vector<vector<char>> &board, string word) {
+    vector<vector<bool>> visited;
 
     for (int i = 0; i < board.size(); ++i) {
       vector<bool> row(board[i].size(), false);
@@ -25,7 +25,8 @@ public:
   }
 
 private:
-  bool search(vector<vector<char> > &board, vector<vector<bool> > &visited, int row, int column, string &word, int pos) {
+  bool search(vector<vector<char>> &board, vector<vector<bool>> &visited,
+              int row, int column, string &word, int pos) {
     if (row < 0 || row >= board.size()) {
       return false;
     }
@@ -59,7 +60,7 @@ private:
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<vector<char> > board;
+  vector<vector<char>> board;
   vector<char> row;
 
   row.push_back('A');

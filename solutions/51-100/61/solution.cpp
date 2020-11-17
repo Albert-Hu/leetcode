@@ -14,10 +14,10 @@ struct ListNode {
 
 class Solution {
 public:
-  ListNode* rotateRight(ListNode* head, int k) {
+  ListNode *rotateRight(ListNode *head, int k) {
     int l;
     ListNode *a;
-    
+
     l = len(head);
     k = (l > 0) ? (k % l) : 0;
     l = l - k - 1;
@@ -57,7 +57,7 @@ private:
 
 #ifdef LOCAL_TEST
 
-void dump(ListNode* head) {
+void dump(ListNode *head) {
   if (head != nullptr) {
     cout << head->val << (head->next == nullptr ? "" : "->");
     dump(head->next);
@@ -68,7 +68,8 @@ int main(int argc, char *argv[]) {
   Solution s;
   ListNode *head;
 
-  head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+  head = new ListNode(
+      1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
   dump(s.rotateRight(head, 2));
   cout << endl;
 

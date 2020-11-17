@@ -5,9 +5,11 @@ using namespace std;
 
 class Solution {
 public:
-  bool searchMatrix(vector<vector<int>>& matrix, int target) {
-    if (matrix.empty()) return false;
-    if (matrix.front().empty()) return false;
+  bool searchMatrix(vector<vector<int>> &matrix, int target) {
+    if (matrix.empty())
+      return false;
+    if (matrix.front().empty())
+      return false;
 
     int m = matrix.front().size() - 1;
     int r1 = 0, r2 = matrix.size() - 1;

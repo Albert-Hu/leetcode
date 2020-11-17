@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  vector<int> spiralOrder(vector<vector<int>>& matrix) {
+  vector<int> spiralOrder(vector<vector<int>> &matrix) {
     int r = 0, c = 1;
     int i = 0, j = 0;
     vector<int> output;
@@ -58,7 +58,8 @@ public:
 void dump(vector<int> output) {
   cout << "[";
   for (int i = 0; i < output.size(); ++i) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << output[i];
   }
   cout << "]" << endl;
@@ -66,7 +67,7 @@ void dump(vector<int> output) {
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<vector<int> > matrix;
+  vector<vector<int>> matrix;
   vector<int> row;
 
   row.push_back(1);

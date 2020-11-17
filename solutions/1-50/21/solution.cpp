@@ -5,18 +5,18 @@ using namespace std;
 #ifdef LOCAL_TEST
 
 struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
+  int val;
+  ListNode *next;
+  ListNode() : val(0), next(nullptr) {}
+  ListNode(int x) : val(x), next(nullptr) {}
+  ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
 #endif
 
 class Solution {
 public:
-  ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+  ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
     ListNode *head = nullptr;
     ListNode **placeholder = &head;
 
@@ -45,7 +45,7 @@ public:
 
 #ifdef LOCAL_TEST
 
-void dump(ListNode* head) {
+void dump(ListNode *head) {
   if (head != nullptr) {
     cout << head->val << (head->next == nullptr ? "" : "->");
     dump(head->next);

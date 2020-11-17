@@ -1,11 +1,11 @@
 #include <iostream>
-#include <vector>
 #include <map>
+#include <vector>
 using namespace std;
 
 class Solution {
 public:
-  vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+  vector<int> intersect(vector<int> &nums1, vector<int> &nums2) {
     vector<int> nums;
     map<int, int> exists;
 
@@ -28,7 +28,8 @@ public:
 void dump(vector<int> nums) {
   cout << "[";
   for (int i = 0; i < nums.size(); i++) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << nums[i];
   }
   cout << "]" << endl;

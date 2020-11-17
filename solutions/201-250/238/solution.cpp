@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  vector<int> productExceptSelf(vector<int>& nums) {
+  vector<int> productExceptSelf(vector<int> &nums) {
     int l = 1, r = 1, n = nums.size();
     vector<int> answer(n, 1);
     for (int i = 0; i < n; i++) {
@@ -24,7 +24,8 @@ public:
 void dump(vector<int> ans) {
   cout << "[";
   for (int i = 0; i < ans.size(); i++) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << ans[i];
   }
   cout << "]" << endl;

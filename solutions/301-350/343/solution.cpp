@@ -8,6 +8,7 @@ class Solution {
 public:
   Solution();
   int integerBreak(int n);
+
 private:
   vector<int> integers;
 };
@@ -32,7 +33,7 @@ Solution::Solution() {
 int Solution::integerBreak(int n) {
   if (integers[n] > -1)
     return integers[n];
-  
+
   int maximum = 0;
   int left = 1, right = n - 1;
 

@@ -1,19 +1,20 @@
 #include <iostream>
-#include <vector>
-#include <set>
 #include <map>
 #include <queue>
+#include <set>
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  bool canFinish(int numCourses, vector<vector<int> > &prerequisites) {
-    map<int, set<int> > graph;
+  bool canFinish(int numCourses, vector<vector<int>> &prerequisites) {
+    map<int, set<int>> graph;
     set<int> visited;
     set<int> courses;
     function<bool(int)> hasCircle = [&](int course) {
-      if (visited.count(course) > 0) return true;
+      if (visited.count(course) > 0)
+        return true;
 
       vector<int> next(graph[course].begin(), graph[course].end());
       visited.insert(course);
@@ -47,23 +48,23 @@ public:
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<vector<int> > prerequisites;
+  vector<vector<int>> prerequisites;
 
-  prerequisites.push_back(vector<int>{1,0});
+  prerequisites.push_back(vector<int>{1, 0});
   cout << (s.canFinish(2, prerequisites) ? "true" : "false") << endl;
 
   prerequisites.clear();
-  prerequisites.push_back(vector<int>{0,1});
+  prerequisites.push_back(vector<int>{0, 1});
   cout << (s.canFinish(2, prerequisites) ? "true" : "false") << endl;
 
   prerequisites.clear();
-  prerequisites.push_back(vector<int>{1,0});
-  prerequisites.push_back(vector<int>{0,1});
+  prerequisites.push_back(vector<int>{1, 0});
+  prerequisites.push_back(vector<int>{0, 1});
   cout << (s.canFinish(2, prerequisites) ? "true" : "false") << endl;
 
   prerequisites.clear();
-  prerequisites.push_back(vector<int>{2,0});
-  prerequisites.push_back(vector<int>{2,1});
+  prerequisites.push_back(vector<int>{2, 0});
+  prerequisites.push_back(vector<int>{2, 1});
   cout << (s.canFinish(2, prerequisites) ? "true" : "false") << endl;
 
   return 0;

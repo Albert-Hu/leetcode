@@ -10,16 +10,16 @@ struct ListNode {
   ListNode(int x) : val(x), next(nullptr) {}
   ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
- #endif
+#endif
 
 class Solution {
 public:
-  bool isPalindrome(ListNode* head) {
+  bool isPalindrome(ListNode *head) {
     if (head == nullptr)
       return true;
     if (head->next == nullptr)
       return true;
-    
+
     ListNode *a = head;
     ListNode *b = head->next->next;
 
@@ -35,7 +35,8 @@ public:
     b = head;
 
     while (a != nullptr) {
-      if (a->val != b->val) return false;
+      if (a->val != b->val)
+        return false;
       a = a->next;
       b = b->next;
     }
@@ -43,7 +44,7 @@ public:
     return true;
   }
 
-  ListNode* reverseList(ListNode* head) {
+  ListNode *reverseList(ListNode *head) {
     ListNode *prev = nullptr;
 
     while (head != nullptr) {
@@ -62,8 +63,13 @@ public:
 int main(int argc, char *argv[]) {
   Solution s;
 
-  cout << (s.isPalindrome(new ListNode(1, new ListNode(2))) ? "true" : "false") << endl;
-  cout << (s.isPalindrome(new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(1))))) ? "true" : "false") << endl;
+  cout << (s.isPalindrome(new ListNode(1, new ListNode(2))) ? "true" : "false")
+       << endl;
+  cout << (s.isPalindrome(new ListNode(
+               1, new ListNode(2, new ListNode(2, new ListNode(1)))))
+               ? "true"
+               : "false")
+       << endl;
 
   return 0;
 }

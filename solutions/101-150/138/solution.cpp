@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <unordered_map>
+#include <vector>
 
 using namespace std;
 
@@ -9,8 +9,8 @@ using namespace std;
 class Node {
 public:
   int val;
-  Node* next;
-  Node* random;
+  Node *next;
+  Node *random;
 
   Node(int _val) {
     val = _val;
@@ -23,13 +23,13 @@ public:
 
 class Solution {
 public:
-  Node* copyRandomList(Node* head) {
+  Node *copyRandomList(Node *head) {
     int index = 0;
-    Node* next = nullptr;
-    Node* prev = nullptr;
-    Node* node = head;
-    unordered_map<Node*,int> table;
-    vector<Node*> list;
+    Node *next = nullptr;
+    Node *prev = nullptr;
+    Node *node = head;
+    unordered_map<Node *, int> table;
+    vector<Node *> list;
 
     while (node != nullptr) {
       table[node] = index;
@@ -61,7 +61,7 @@ public:
 
 void dump(Node *head) {
   bool comma = false;
-  vector<Node*> array;
+  vector<Node *> array;
 
   while (head != nullptr) {
     array.push_back(head);
@@ -70,7 +70,8 @@ void dump(Node *head) {
 
   cout << "[";
   for (int i = 0; i < array.size(); i++) {
-    if (i > 0) cout << ",";
+    if (i > 0)
+      cout << ",";
     cout << "[";
     cout << array[i]->val << ",";
     if (array[i]->random != nullptr) {
@@ -90,7 +91,7 @@ void dump(Node *head) {
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<Node*> linkedList;
+  vector<Node *> linkedList;
 
   linkedList.push_back(new Node(7));
   linkedList.push_back(new Node(13));

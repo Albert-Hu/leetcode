@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  int maxArea(vector<int>& height) {
+  int maxArea(vector<int> &height) {
     int max = 0;
     int l = 0, r = height.size() - 1;
     while (l < r) {

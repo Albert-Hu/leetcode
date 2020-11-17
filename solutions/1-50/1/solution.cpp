@@ -1,14 +1,14 @@
-#include <iostream>
 #include <algorithm>
-#include <vector>
+#include <iostream>
 #include <unordered_map>
+#include <vector>
 
 #ifdef LOCAL_TEST
 #include "solution.h"
 #else
 class Solution {
 public:
-  vector<int> twoSum(vector<int>& nums, int target);
+  vector<int> twoSum(vector<int> &nums, int target);
 };
 #endif
 
@@ -17,7 +17,7 @@ using namespace std;
 #ifdef USE_HASH
 
 /* Use Hash Table */
-vector<int> Solution::twoSum(vector<int>& nums, int target) {
+vector<int> Solution::twoSum(vector<int> &nums, int target) {
   unordered_map<int, int> table;
   vector<int> answer;
 
@@ -36,7 +36,7 @@ vector<int> Solution::twoSum(vector<int>& nums, int target) {
 #else /* USE_HASH */
 
 /* Use Sort and Binary Search */
-vector<int> Solution::twoSum(vector<int>& nums, int target) {
+vector<int> Solution::twoSum(vector<int> &nums, int target) {
   vector<int> answer;
   vector<int> indices;
 
@@ -44,15 +44,14 @@ vector<int> Solution::twoSum(vector<int>& nums, int target) {
     indices.push_back(i);
   }
 
-  sort(indices.begin(), indices.end(), [&](int a, int b) {
-    return nums[a] < nums[b];
-  });
+  sort(indices.begin(), indices.end(),
+       [&](int a, int b) { return nums[a] < nums[b]; });
 
   for (unsigned int i = 0; i < indices.size(); i++) {
     int n = target - nums[indices[i]];
-    auto m = lower_bound(indices.begin() + i + 1, indices.end(), n, [&](int index, int value) {
-      return nums[index] < value;
-    });
+    auto m =
+        lower_bound(indices.begin() + i + 1, indices.end(), n,
+                    [&](int index, int value) { return nums[index] < value; });
 
     if (m != indices.end()) {
       if (nums[indices[m - indices.begin()]] == n) {

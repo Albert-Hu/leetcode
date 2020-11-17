@@ -1,26 +1,24 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
 class Solution {
 public:
-  void wiggleSort(vector<int> &nums) {
-    n_solution(nums);
-  }
+  void wiggleSort(vector<int> &nums) { n_solution(nums); }
 
   /*
    * time complexity O(n)
    * space complexity O(1)
    */
   void n_solution(vector<int> &nums) {
-    /*
-     * index mapping as following:
-     * original: 0 1 2 3 4 5 6 7 8 9
-     * rewire:   1 3 5 7 9 0 2 4 6 8
-     */
-    #define REWIRE_INDEX(i, n) ((1 + ((i) * 2)) % ((n) | 1))
+/*
+ * index mapping as following:
+ * original: 0 1 2 3 4 5 6 7 8 9
+ * rewire:   1 3 5 7 9 0 2 4 6 8
+ */
+#define REWIRE_INDEX(i, n) ((1 + ((i)*2)) % ((n) | 1))
     int n = nums.size();
     auto middle_it = nums.begin() + (n / 2);
 
@@ -29,10 +27,10 @@ public:
 
     // three way partition
     for (int i = 0, j = 0, k = n - 1; j <= k;) {
-      if (nums[REWIRE_INDEX(j,n)] > middle) {
-        swap(nums[REWIRE_INDEX(i++,n)], nums[REWIRE_INDEX(j++,n)]);
-      } else if (nums[REWIRE_INDEX(j,n)] < middle) {
-        swap(nums[REWIRE_INDEX(k--,n)], nums[REWIRE_INDEX(j,n)]);
+      if (nums[REWIRE_INDEX(j, n)] > middle) {
+        swap(nums[REWIRE_INDEX(i++, n)], nums[REWIRE_INDEX(j++, n)]);
+      } else if (nums[REWIRE_INDEX(j, n)] < middle) {
+        swap(nums[REWIRE_INDEX(k--, n)], nums[REWIRE_INDEX(j, n)]);
       } else {
         j++;
       }
@@ -61,7 +59,8 @@ public:
 void dump(vector<int> &nums) {
   cout << "[";
   for (int i = 0; i < nums.size(); i++) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << nums[i];
   }
   cout << "]" << endl;

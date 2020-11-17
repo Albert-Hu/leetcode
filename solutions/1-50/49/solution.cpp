@@ -1,15 +1,15 @@
-#include <iostream>
 #include <algorithm>
-#include <vector>
+#include <iostream>
 #include <map>
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  vector<vector<string> > groupAnagrams(vector<string>& strs) {
-    vector<vector<string> > results;
-    map<string, vector<string> > table;
+  vector<vector<string>> groupAnagrams(vector<string> &strs) {
+    vector<vector<string>> results;
+    map<string, vector<string>> table;
 
     for (auto str : strs) {
       string clone = str;
@@ -27,12 +27,13 @@ public:
 
 #ifdef LOCAL_TEST
 
-void dump(vector<vector<string> > results) {
+void dump(vector<vector<string>> results) {
   cout << "[" << endl;
   for (int i = 0; i < results.size(); ++i) {
     cout << "[";
     for (int j = 0; j < results[i].size(); ++j) {
-      if (j > 0) cout << ", ";
+      if (j > 0)
+        cout << ", ";
       cout << results[i][j];
     }
     cout << "]" << endl;

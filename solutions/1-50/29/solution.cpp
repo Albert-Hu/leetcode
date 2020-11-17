@@ -38,12 +38,14 @@ public:
       c = ~c + 1;
     }
 
-    return (int) c;
+    return (int)c;
   }
+
 private:
   int len(long long int bits) {
     int l = 31;
-    while (!(bits >> l) && l > 0) --l;
+    while (!(bits >> l) && l > 0)
+      --l;
     return l + 1;
   }
 };
@@ -52,7 +54,7 @@ private:
 
 int main(int argc, char *argv[]) {
   Solution s;
-  
+
   cout << s.divide(1, 1) << endl;
   cout << s.divide(10, 3) << endl;
   cout << s.divide(7, -3) << endl;

@@ -1,16 +1,16 @@
+#include <functional>
 #include <iostream>
 #include <vector>
-#include <functional>
 
 using namespace std;
 
 class Solution {
 public:
-  vector<vector<string> > partition(string s) {
-    vector<vector<string> > palindromes;
+  vector<vector<string>> partition(string s) {
+    vector<vector<string>> palindromes;
     vector<string> list;
 
-    function<bool(string&)> verify = [](string &str) {
+    function<bool(string &)> verify = [](string &str) {
       int endIndex = str.length() - 1;
       int halfLength = str.length() / 2;
       for (int index = 0; index < halfLength; ++index) {
@@ -21,7 +21,7 @@ public:
       return true;
     };
 
-    function<void(string&)> search = [&](string &str) {
+    function<void(string &)> search = [&](string &str) {
       if (verify(str)) {
         list.push_back(str);
         palindromes.push_back(list);
@@ -46,12 +46,13 @@ public:
 
 #ifdef LOCAL_TEST
 
-void dump(vector<vector<string> > palindromes) {
+void dump(vector<vector<string>> palindromes) {
   cout << "[" << endl;
   for (int i = 0; i < palindromes.size(); ++i) {
     cout << "  [";
     for (int j = 0; j < palindromes[i].size(); ++j) {
-      if (j > 0) cout << ", ";
+      if (j > 0)
+        cout << ", ";
       cout << palindromes[i][j];
     }
     cout << "]" << (i < (palindromes.size() - 1) ? "," : "") << endl;

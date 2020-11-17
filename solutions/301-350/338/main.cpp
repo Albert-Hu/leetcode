@@ -8,7 +8,7 @@ using namespace std;
 bool pass(vector<int> &result, vector<int> &answer) {
   if (result.size() != answer.size())
     return false;
-  
+
   for (unsigned int i = 0; i < answer.size(); i++) {
     if (result[i] != answer[i])
       return false;
@@ -18,14 +18,14 @@ bool pass(vector<int> &result, vector<int> &answer) {
 }
 
 int main(int argc, char *argv[]) {
-  vector<vector<int> > testCases = {
-    {0},
-    {0, 1},
-    {0, 1, 1},
-    {0, 1, 1, 2},
-    {0, 1, 1, 2, 1},
-    {0, 1, 1, 2, 1, 2},
-    {0, 1, 1, 2, 1, 2, 2},
+  vector<vector<int>> testCases = {
+      {0},
+      {0, 1},
+      {0, 1, 1},
+      {0, 1, 1, 2},
+      {0, 1, 1, 2, 1},
+      {0, 1, 1, 2, 1, 2},
+      {0, 1, 1, 2, 1, 2, 2},
   };
 
   for (unsigned int i = 0; i < testCases.size(); i++) {

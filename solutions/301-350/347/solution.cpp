@@ -1,13 +1,13 @@
-#include <iostream>
 #include <algorithm>
-#include <vector>
+#include <iostream>
 #include <map>
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  vector<int> topKFrequent(vector<int>& nums, int k) {
+  vector<int> topKFrequent(vector<int> &nums, int k) {
     map<int, int> table;
     vector<int> keys;
 
@@ -19,9 +19,8 @@ public:
       keys.push_back(t.first);
     }
 
-    sort(keys.begin(), keys.end(), [&](int a, int b) {
-      return table[a] > table[b];
-    });
+    sort(keys.begin(), keys.end(),
+         [&](int a, int b) { return table[a] > table[b]; });
 
     return vector<int>(keys.begin(), keys.begin() + k);
   }
@@ -32,7 +31,8 @@ public:
 void dump(vector<int> nums) {
   cout << "[";
   for (int i = 0; i < nums.size(); ++i) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << nums[i];
   }
   cout << "]";
@@ -41,7 +41,7 @@ void dump(vector<int> nums) {
 int main(int argc, char *argv[]) {
   Solution s;
   vector<int> array;
-  
+
   array.push_back(1);
   array.push_back(1);
   array.push_back(1);

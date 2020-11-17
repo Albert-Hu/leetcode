@@ -1,13 +1,13 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 #include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  vector<vector<int> > threeSum(vector<int>& nums) {
-    vector<vector<int> > matrix;
+  vector<vector<int>> threeSum(vector<int> &nums) {
+    vector<vector<int>> matrix;
 
     if (nums.size() < 3) {
       return matrix;
@@ -40,6 +40,7 @@ public:
 
     return matrix;
   }
+
 private:
   int binarySearch(vector<int> &nums, int start, int end, int target) {
     while (start < end) {
@@ -56,11 +57,12 @@ private:
 
 #ifdef LOCAL_TEST
 
-void dump(vector<vector<int> > matrix) {
+void dump(vector<vector<int>> matrix) {
   for (int i = 0; i < matrix.size(); ++i) {
     cout << "[";
     for (int j = 0; j < matrix[i].size(); ++j) {
-      if (j > 0) cout << ", ";
+      if (j > 0)
+        cout << ", ";
       cout << matrix[i][j];
     }
     cout << "]" << endl;

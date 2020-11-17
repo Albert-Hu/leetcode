@@ -16,8 +16,10 @@ public:
       for (int i = start; i < len; i++) {
         int c = static_cast<int>(s[i] - 'a');
         count[c]++;
-        if (count[c] == 1) n++;
-        if (count[c] == k) n--;
+        if (count[c] == 1)
+          n++;
+        if (count[c] == k)
+          n--;
         if (n == 0) {
           maximum = max(maximum, (i - start) + 1);
           next = i;
@@ -28,7 +30,6 @@ public:
 
     return maximum;
   }
-
 };
 
 #ifdef LOCAL_TEST

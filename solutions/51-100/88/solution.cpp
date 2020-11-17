@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+  void merge(vector<int> &nums1, int m, vector<int> &nums2, int n) {
     int current = nums1.size() - 1;
     int a = m - 1, b = n - 1;
 
@@ -35,7 +35,8 @@ public:
 void dump(vector<int> &nums) {
   cout << "[";
   for (int i = 0; i < nums.size(); i++) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << nums[i];
   }
   cout << "]" << endl;

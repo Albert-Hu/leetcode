@@ -5,12 +5,14 @@ using namespace std;
 
 class Solution {
 public:
-  int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+  int canCompleteCircuit(vector<int> &gas, vector<int> &cost) {
     return speedup(gas, cost);
   }
+
 private:
-  int speedup(vector<int>& gas, vector<int>& cost) {
-    if (gas.size() == 0) return -1;
+  int speedup(vector<int> &gas, vector<int> &cost) {
+    if (gas.size() == 0)
+      return -1;
 
     int start = gas.size() - 1;
     int end = 0;
@@ -29,7 +31,7 @@ private:
     return (remain < 0) ? -1 : start;
   }
 
-  int bruteForce(vector<int>& gas, vector<int>& cost) {
+  int bruteForce(vector<int> &gas, vector<int> &cost) {
     for (int start = 0; start < gas.size(); start++) {
       if (gas[start] >= cost[start]) {
         int total = gas[start] - cost[start];

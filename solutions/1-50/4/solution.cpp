@@ -1,5 +1,5 @@
+#include <iomanip>
 #include <iostream>
-#include<iomanip>
 #include <vector>
 
 using namespace std;
@@ -11,7 +11,7 @@ public:
     return static_cast<double>(nums[len / 2] + nums[(len - 1) / 2]) / 2.;
   }
 
-  double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+  double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
     int m = nums1.size(), n = nums2.size(), len = m + n;
     if (nums1.size() < nums2.size())
       return findMedianSortedArrays(nums2, nums1);

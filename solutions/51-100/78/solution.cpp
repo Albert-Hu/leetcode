@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  vector<vector<int> > subsets(vector<int>& nums) {
+  vector<vector<int>> subsets(vector<int> &nums) {
     int n;
     vector<int> set;
 
@@ -16,6 +16,7 @@ public:
     }
     return result;
   }
+
 private:
   void generate(vector<int> &nums, int pos, int n, vector<int> &set) {
     if (set.size() == n) {
@@ -30,17 +31,18 @@ private:
   }
 
 private:
-  vector<vector<int> > result;
+  vector<vector<int>> result;
 };
 
 #ifdef LOCAL_TEST
 
-void dump(vector<vector<int> > result) {
+void dump(vector<vector<int>> result) {
   cout << "[" << endl;
   for (int i = 0; i < result.size(); ++i) {
     cout << "  [";
     for (int j = 0; j < result[i].size(); ++j) {
-      if (j > 0) cout << ", ";
+      if (j > 0)
+        cout << ", ";
       cout << result[i][j];
     }
     cout << "]" << endl;

@@ -1,14 +1,14 @@
 #include <iostream>
-#include <vector>
 #include <queue>
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  int findKthLargest(vector<int>& nums, int k) {
+  int findKthLargest(vector<int> &nums, int k) {
     priority_queue<int, vector<int>, less<int>> q;
-    
+
     k = nums.size() - k + 1;
     for (auto n : nums) {
       q.push(n);
@@ -26,7 +26,7 @@ public:
 int main(int argc, char *argv[]) {
   Solution s;
   vector<int> array;
-  
+
   array.push_back(3);
   array.push_back(2);
   array.push_back(1);

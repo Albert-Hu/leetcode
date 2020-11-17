@@ -13,7 +13,7 @@ public:
 
     int min = n;
     int sr = sqrt(n);
-    
+
     for (int i = sr; i > 0; i--) {
       int squart = i * i;
       if ((n % squart) == 0) {
@@ -32,6 +32,7 @@ public:
 
     return min;
   }
+
 private:
   map<int, int> numbers;
 };

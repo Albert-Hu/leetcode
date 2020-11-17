@@ -25,13 +25,16 @@ public:
           op = '+';
         } else {
           switch (op) {
-            case '+': result += i; break;
-            case '-': result -= i; break;
+          case '+':
+            result += i;
+            break;
+          case '-':
+            result -= i;
+            break;
           }
           if (c == ')') {
-            result = (operators.top() == '+')
-              ? (integers.top() + result)
-              : (integers.top() - result);
+            result = (operators.top() == '+') ? (integers.top() + result)
+                                              : (integers.top() - result);
             integers.pop();
             operators.pop();
             op = '+';
@@ -43,7 +46,7 @@ public:
       }
     }
 
-    return (int) result;
+    return (int)result;
   }
 };
 

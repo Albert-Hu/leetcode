@@ -1,16 +1,17 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
 class Solution {
 public:
 #if 1
-  int missingNumber(vector<int>& nums) {
+  int missingNumber(vector<int> &nums) {
     int number = nums[0];
     vector<bool> exist(nums.size() + 1, false);
-    for (auto n : nums) exist[n] = true;
+    for (auto n : nums)
+      exist[n] = true;
     for (int i = 0; i < exist.size(); i++) {
       if (!exist[i]) {
         number = i;
@@ -20,7 +21,7 @@ public:
     return number;
   }
 #else
-  int missingNumber(vector<int>& nums) {
+  int missingNumber(vector<int> &nums) {
     sort(nums.begin(), nums.end());
     for (int i = 1; i < nums.size(); i++) {
       if ((nums[i] - nums[i - 1]) > 1) {

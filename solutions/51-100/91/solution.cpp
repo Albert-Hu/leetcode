@@ -5,9 +5,8 @@ using namespace std;
 
 class Solution {
 public:
-  int numDecodings(string s) {
-    return speedup(s);
-  }
+  int numDecodings(string s) { return speedup(s); }
+
 private:
   int speedup(string s) {
     int first = 1, second = 1, n = 0;
@@ -25,9 +24,12 @@ private:
   }
 
   int decode(string s) {
-    if (s.length() == 0) return 0;
-    if (s[0] == '0') return 0;
-    if (s.length() == 1) return 1;
+    if (s.length() == 0)
+      return 0;
+    if (s[0] == '0')
+      return 0;
+    if (s.length() == 1)
+      return 1;
 
     if (record.find(s) != record.end()) {
       return record[s];
@@ -50,6 +52,7 @@ private:
 
     return n;
   }
+
 private:
   map<string, int> record;
 };

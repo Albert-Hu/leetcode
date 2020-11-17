@@ -10,7 +10,8 @@ struct TreeNode {
   TreeNode *right;
   TreeNode() : val(0), left(nullptr), right(nullptr) {}
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right)
+      : val(x), left(left), right(right) {}
 };
 #endif
 
@@ -18,7 +19,7 @@ class Solution {
 public:
   Solution() : sum(0) {}
 
-  TreeNode* convertBST(TreeNode* root) {
+  TreeNode *convertBST(TreeNode *root) {
     if (root != nullptr) {
       convertBST(root->right);
       root->val += sum;
@@ -48,11 +49,7 @@ int main(int argc, char *argv[]) {
   Solution s;
   TreeNode *root = nullptr;
 
-  root = s.convertBST(new TreeNode(
-    5,
-    new TreeNode(2),
-    new TreeNode(13)
-  ));
+  root = s.convertBST(new TreeNode(5, new TreeNode(2), new TreeNode(13)));
   dump(root, 0);
 
   return 0;

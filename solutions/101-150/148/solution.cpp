@@ -15,7 +15,7 @@ struct ListNode {
 
 class Solution {
 public:
-  ListNode* sortList(ListNode *head) {
+  ListNode *sortList(ListNode *head) {
     if (head == nullptr) {
       return head;
     }
@@ -79,7 +79,7 @@ public:
 
 #ifdef LOCAL_TEST
 
-void dump(ListNode* head) {
+void dump(ListNode *head) {
   bool first = true;
   while (head != nullptr) {
     if (first) {

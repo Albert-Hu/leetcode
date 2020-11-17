@@ -5,13 +5,15 @@ using namespace std;
 
 class Solution {
 public:
-  int findPeakElement(vector<int>& nums) {
+  int findPeakElement(vector<int> &nums) {
     int left = 0, right = nums.size() - 1;
-    
+
     while (left < right) {
       int peek = left + (right - left) / 2;
-      if (nums[peek] < nums[peek+1]) left = peek + 1;
-      else right = peek;
+      if (nums[peek] < nums[peek + 1])
+        left = peek + 1;
+      else
+        right = peek;
     }
 
     return left;

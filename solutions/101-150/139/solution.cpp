@@ -1,7 +1,7 @@
 #include <iostream>
-#include <vector>
-#include <unordered_set>
 #include <unordered_map>
+#include <unordered_set>
+#include <vector>
 
 using namespace std;
 
@@ -40,7 +40,7 @@ public:
   }
 
 private:
-  unordered_map<string,unordered_set<int> > visitedIndex;
+  unordered_map<string, unordered_set<int>> visitedIndex;
 };
 
 #ifdef LOCAL_TEST

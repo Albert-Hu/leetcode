@@ -1,6 +1,6 @@
 #include <iostream>
-#include <set>
 #include <map>
+#include <set>
 
 using namespace std;
 
@@ -11,10 +11,11 @@ public:
     bool sign = (numerator < 0) ^ (denominator < 0);
     long long int longNumerator = abs(numerator);
     long long int longDenominator = abs(denominator);
-    map<string, set<int> > remainders;
+    map<string, set<int>> remainders;
     string result;
 
-    if (numerator == 0) return "0";
+    if (numerator == 0)
+      return "0";
 
     while (longNumerator != 0) {
       string quotient;
@@ -50,7 +51,8 @@ public:
       result += quotient;
     }
 
-    if (sign) result.insert(result.begin(), '-');
+    if (sign)
+      result.insert(result.begin(), '-');
 
     return result;
   }
@@ -60,7 +62,7 @@ public:
 
 int main(int argc, char *argv[]) {
   Solution s;
-  
+
   cout << s.fractionToDecimal(1, 2) << endl;
   cout << s.fractionToDecimal(2, 1) << endl;
   cout << s.fractionToDecimal(2, 3) << endl;

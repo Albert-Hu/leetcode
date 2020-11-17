@@ -18,7 +18,9 @@ public:
       count[index]--;
     }
 
-    for (auto c : count) if (c != 0) return false;
+    for (auto c : count)
+      if (c != 0)
+        return false;
 
     return true;
   }

@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <stack>
+#include <vector>
 
 using namespace std;
 
@@ -12,24 +12,26 @@ struct TreeNode {
   TreeNode *right;
   TreeNode() : val(0), left(nullptr), right(nullptr) {}
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right)
+      : val(x), left(left), right(right) {}
 };
 
 #endif
 
 class Solution {
 public:
-  vector<TreeNode*> generateTrees(int n) {
+  vector<TreeNode *> generateTrees(int n) {
     if (n == 0) {
-      vector<TreeNode*> empty;
+      vector<TreeNode *> empty;
       return empty;
     }
     return generate(1, n);
   }
-  vector<TreeNode*> generate(int start, int end) {
-    if (start > end) return { nullptr };
+  vector<TreeNode *> generate(int start, int end) {
+    if (start > end)
+      return {nullptr};
 
-    vector<TreeNode*> nodes;
+    vector<TreeNode *> nodes;
     for (int i = start; i <= end; i++) {
       auto left = generate(start, i - 1);
       auto right = generate(i + 1, end);
@@ -58,7 +60,7 @@ void dump(TreeNode *root) {
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<TreeNode*> answer;
+  vector<TreeNode *> answer;
 
   answer = s.generateTrees(3);
   for (auto node : answer) {

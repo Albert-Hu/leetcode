@@ -6,7 +6,7 @@ using namespace std;
 class Solution {
 public:
 #if 1
-  void rotate(vector<int>& nums, int k) {
+  void rotate(vector<int> &nums, int k) {
     const int n = nums.size();
 
     k = k % n;
@@ -24,7 +24,7 @@ public:
     }
   }
 #else
-  void rotate(vector<int>& nums, int k) {
+  void rotate(vector<int> &nums, int k) {
     const int n = nums.size();
     vector<int> clone(nums.begin(), nums.end());
 
@@ -41,7 +41,8 @@ public:
 void dump(vector<int> &nums) {
   cout << "[";
   for (int i = 0; i < nums.size(); i++) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << nums[i];
   }
   cout << "]" << endl;

@@ -15,7 +15,7 @@ struct ListNode {
 
 class Solution {
 public:
-  ListNode* partition(ListNode* head, int x) {
+  ListNode *partition(ListNode *head, int x) {
     ListNode a, b;
     ListNode *less, *greater;
 
@@ -34,13 +34,14 @@ public:
     greater->next = nullptr;
     less->next = b.next;
 
-    return a.next;;
+    return a.next;
+    ;
   }
 };
 
 #ifdef LOCAL_TEST
 
-void dump(ListNode* head) {
+void dump(ListNode *head) {
   if (head != nullptr) {
     cout << head->val << (head->next == nullptr ? "" : "->");
     dump(head->next);
@@ -51,7 +52,10 @@ int main(int argc, char *argv[]) {
   Solution s;
   ListNode *head;
 
-  head = new ListNode(1, new ListNode(4, new ListNode(3, new ListNode(2, new ListNode(5, new ListNode(2))))));
+  head = new ListNode(
+      1, new ListNode(
+             4, new ListNode(
+                    3, new ListNode(2, new ListNode(5, new ListNode(2))))));
   dump(s.partition(head, 3));
   cout << endl;
 

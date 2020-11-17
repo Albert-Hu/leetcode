@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  vector<int> searchRange(vector<int>& nums, int target) {
+  vector<int> searchRange(vector<int> &nums, int target) {
     int l = 0, r = 0;
     vector<int> ans;
 
@@ -53,7 +53,8 @@ public:
 void dump(vector<int> ans) {
   cout << "[";
   for (int i = 0; i < ans.size(); ++i) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << ans[i];
   }
   cout << "]" << endl;
@@ -79,7 +80,7 @@ int main(int argc, char *argv[]) {
   nums.push_back(8);
   nums.push_back(10);
   dump(s.searchRange(nums, 6));
-  
+
   return 0;
 }
 

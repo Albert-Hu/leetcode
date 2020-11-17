@@ -5,12 +5,15 @@ using namespace std;
 
 class Solution {
 public:
-  bool increasingTriplet(vector<int>& nums) {
+  bool increasingTriplet(vector<int> &nums) {
     int i = INT32_MAX, j = INT32_MAX;
     for (auto n : nums) {
-      if (n <= i) i = n;
-      else if (n <= j) j = n;
-      else return true;
+      if (n <= i)
+        i = n;
+      else if (n <= j)
+        j = n;
+      else
+        return true;
     }
     return false;
   }

@@ -4,10 +4,11 @@
 using namespace std;
 class Solution {
 public:
-  bool canJump(vector<int>& nums) {
+  bool canJump(vector<int> &nums) {
     vector<bool> visited(nums.size(), false);
     return search(nums, visited, 0);
   }
+
 private:
   bool search(vector<int> &nums, vector<bool> &visited, int index) {
     const int n = nums.size() - 1;

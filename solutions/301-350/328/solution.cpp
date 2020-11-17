@@ -15,7 +15,7 @@ struct ListNode {
 
 class Solution {
 public:
-  ListNode* oddEvenList(ListNode* head) {
+  ListNode *oddEvenList(ListNode *head) {
     ListNode *odd = head;
     ListNode *even = (head != nullptr) ? head->next : nullptr;
     ListNode *evenHead = even;
@@ -44,8 +44,10 @@ void dump(ListNode *head) {
   bool showComma = false;
   cout << "[";
   while (head != nullptr) {
-    if (showComma) cout << ", ";
-    else showComma = true;
+    if (showComma)
+      cout << ", ";
+    else
+      showComma = true;
     cout << head->val;
     head = head->next;
   }
@@ -57,14 +59,7 @@ int main(int argc, char *argv[]) {
   ListNode *head;
 
   head = new ListNode(
-    1, new ListNode(
-      2, new ListNode(
-        3, new ListNode(
-          4, new ListNode(5)
-        )
-      )
-    )
-  );
+      1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
   dump(s.oddEvenList(head));
 
   return 0;

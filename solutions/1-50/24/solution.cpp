@@ -14,7 +14,7 @@ struct ListNode {
 
 class Solution {
 public:
-  ListNode* swapPairs(ListNode* head) {
+  ListNode *swapPairs(ListNode *head) {
     if (head == nullptr) {
       return head;
     }
@@ -34,7 +34,7 @@ public:
 
 #ifdef LOCAL_TEST
 
-void dump(ListNode* head) {
+void dump(ListNode *head) {
   if (head != nullptr) {
     cout << head->val << (head->next == nullptr ? "" : "->");
     dump(head->next);
@@ -45,7 +45,8 @@ int main(int argc, char *argv[]) {
   Solution s;
   ListNode *head;
 
-  head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+  head = new ListNode(
+      1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
   dump(s.swapPairs(head));
   cout << endl;
 

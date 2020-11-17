@@ -5,14 +5,15 @@ using namespace std;
 
 class Solution {
 public:
-  int findDuplicate(vector<int>& nums) {
+  int findDuplicate(vector<int> &nums) {
     int left = 1, right = nums.size() - 1;
 
     while (left < right) {
       int middle = left + (right - left) / 2;
       int count = 0;
       for (auto n : nums) {
-        if (n <= middle) count++;
+        if (n <= middle)
+          count++;
       }
       if (count <= middle) {
         left = middle + 1;

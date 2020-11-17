@@ -1,11 +1,11 @@
 #include <iostream>
-#include <vector>
 #include <stack>
+#include <vector>
 using namespace std;
 
 class Solution {
 public:
-  int evalRPN(vector<string>& tokens) {
+  int evalRPN(vector<string> &tokens) {
     stack<int> numbers;
     for (auto t : tokens) {
       if ((t[0] >= '0' && t[0] <= '9') || (t[0] == '-' && t.length() > 1)) {
@@ -17,10 +17,17 @@ public:
         a = numbers.top();
         numbers.pop();
         switch (t[0]) {
-          case '+': a += b; break;
-          case '-': a -= b; break;
-          case '*': a *= b; break;
-          default: a /= b;
+        case '+':
+          a += b;
+          break;
+        case '-':
+          a -= b;
+          break;
+        case '*':
+          a *= b;
+          break;
+        default:
+          a /= b;
         }
         numbers.push(a);
       }
@@ -39,7 +46,7 @@ int main(int argc, char *argv[]) {
   tokens.push_back("1");
   tokens.push_back("+");
   tokens.push_back("3");
-  tokens.push_back("*"); 
+  tokens.push_back("*");
   cout << s.evalRPN(tokens) << endl;
 
   tokens.clear();
@@ -47,7 +54,7 @@ int main(int argc, char *argv[]) {
   tokens.push_back("13");
   tokens.push_back("5");
   tokens.push_back("/");
-  tokens.push_back("+"); 
+  tokens.push_back("+");
   cout << s.evalRPN(tokens) << endl;
 
   tokens.clear();

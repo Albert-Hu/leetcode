@@ -22,13 +22,16 @@ public:
   }
 
   bool isSameLetter(char a, char b) {
-    if (a >= 'a' && a <= 'z') a = (a - 'a') + 'A';
-    if (b >= 'a' && b <= 'z') b = (b - 'a') + 'A';
+    if (a >= 'a' && a <= 'z')
+      a = (a - 'a') + 'A';
+    if (b >= 'a' && b <= 'z')
+      b = (b - 'a') + 'A';
     return (a == b);
   }
 
   bool isAlphanumeric(char c) {
-    return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'));
+    return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ||
+            (c >= '0' && c <= '9'));
   }
 };
 
@@ -37,7 +40,8 @@ public:
 int main(int argc, char *argv[]) {
   Solution s;
 
-  cout << (s.isPalindrome("A man, a plan, a canal: Panama") ? "true" : "false") << endl;
+  cout << (s.isPalindrome("A man, a plan, a canal: Panama") ? "true" : "false")
+       << endl;
   cout << (s.isPalindrome("race a car") ? "true" : "false") << endl;
   cout << (s.isPalindrome("0P") ? "true" : "false") << endl;
 

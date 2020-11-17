@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  bool searchMatrix(vector<vector<int>>& matrix, int target) {
+  bool searchMatrix(vector<vector<int>> &matrix, int target) {
     if (matrix.empty()) {
       return false;
     }

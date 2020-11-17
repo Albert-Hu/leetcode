@@ -1,15 +1,16 @@
-#include <iostream>
 #include <functional>
+#include <iostream>
 
 using namespace std;
 
 class Solution {
 public:
   string decodeString(string s) {
-    function<int(int,string&)> decodeString = [&](int start, string &result) {
+    function<int(int, string &)> decodeString = [&](int start, string &result) {
       int times = 0;
       while (start < s.length()) {
-        if (s[start] == ']') break;
+        if (s[start] == ']')
+          break;
         if (s[start] >= '0' && s[start] <= '9') {
           times = times * 10 + s[start] - '0';
         } else if (s[start] == '[') {

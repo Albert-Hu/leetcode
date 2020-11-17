@@ -7,7 +7,7 @@ class Solution {
 public:
   vector<string> fizzBuzz(int n) {
     vector<string> results;
-    
+
     for (int i = 1; i <= n; i++) {
       if ((i % 15) == 0) {
         results.push_back("FizzBuzz");
@@ -29,7 +29,8 @@ void dump(vector<string> results) {
   cout << "[" << endl;
   for (int i = 0; i < results.size(); i++) {
     cout << "  " << results[i];
-    if (i < (results.size() - 1)) cout << ",";
+    if (i < (results.size() - 1))
+      cout << ",";
     cout << endl;
   }
   cout << "]" << endl;

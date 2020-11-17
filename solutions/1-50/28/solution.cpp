@@ -11,7 +11,7 @@ public:
 
     if (haystack.length() == 0)
       return -1;
-    
+
     int end = haystack.length() - needle.length() + 1;
     for (int index = 0; index < end; index++) {
       int n = 0;

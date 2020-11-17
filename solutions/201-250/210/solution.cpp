@@ -1,15 +1,15 @@
 #include <iostream>
-#include <vector>
 #include <map>
 #include <set>
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
-  vector<int> findOrder(int numCourses, vector<vector<int> > &prerequisites) {
+  vector<int> findOrder(int numCourses, vector<vector<int>> &prerequisites) {
     vector<int> result;
-    map<int, set<int> > graph;
+    map<int, set<int>> graph;
 
     for (auto p : prerequisites) {
       graph[p[0]].insert(p[1]);
@@ -27,7 +27,7 @@ public:
     return result;
   }
 
-  void topologicalSort(map<int, set<int> > &graph, vector<int> &result) {
+  void topologicalSort(map<int, set<int>> &graph, vector<int> &result) {
     map<int, int> references;
 
     for (auto g : graph) {
@@ -59,7 +59,7 @@ public:
     }
   }
 
-  bool isValid(map<int, set<int> > &graph) {
+  bool isValid(map<int, set<int>> &graph) {
     set<int> visited;
     set<int> valid;
 
@@ -71,13 +71,15 @@ public:
       }
     }
 
-    return true;;
+    return true;
+    ;
   }
 
-  bool isValid(map<int, set<int> > &graph, int beginning, set<int> &valid, set<int> &visited) {
+  bool isValid(map<int, set<int>> &graph, int beginning, set<int> &valid,
+               set<int> &visited) {
     if (visited.count(beginning) > 0)
       return false;
-    
+
     visited.insert(beginning);
     for (auto next : graph[beginning]) {
       if (valid.count(next) > 0)
@@ -89,7 +91,7 @@ public:
     visited.erase(beginning);
 
     valid.insert(beginning);
-    
+
     return true;
   }
 };
@@ -99,7 +101,8 @@ public:
 void dump(vector<int> result) {
   cout << "[";
   for (int i = 0; i < result.size(); i++) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << result[i];
   }
   cout << "]" << endl;
@@ -107,19 +110,19 @@ void dump(vector<int> result) {
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<vector<int> > prerequisites;
+  vector<vector<int>> prerequisites;
 
   dump(s.findOrder(2, prerequisites));
 
   prerequisites.clear();
-  prerequisites.push_back(vector<int>{1,0});
+  prerequisites.push_back(vector<int>{1, 0});
   dump(s.findOrder(2, prerequisites));
 
   prerequisites.clear();
-  prerequisites.push_back(vector<int>{1,0});
-  prerequisites.push_back(vector<int>{2,0});
-  prerequisites.push_back(vector<int>{3,1});
-  prerequisites.push_back(vector<int>{3,2});
+  prerequisites.push_back(vector<int>{1, 0});
+  prerequisites.push_back(vector<int>{2, 0});
+  prerequisites.push_back(vector<int>{3, 1});
+  prerequisites.push_back(vector<int>{3, 2});
   dump(s.findOrder(4, prerequisites));
 
   return 0;

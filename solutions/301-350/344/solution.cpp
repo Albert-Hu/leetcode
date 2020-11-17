@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  void reverseString(vector<char>& s) {
+  void reverseString(vector<char> &s) {
     int left = 0, right = s.size() - 1;
     while (left < right) {
       swap(s[left++], s[right--]);
@@ -14,10 +14,11 @@ public:
 };
 
 #ifdef LOCAL_TEST
-void dump(vector<char>& s) {
+void dump(vector<char> &s) {
   cout << "[";
   for (int i = 0; i < s.size(); i++) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << s[i];
   }
   cout << "]" << endl;

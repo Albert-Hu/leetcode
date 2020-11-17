@@ -14,10 +14,10 @@ public:
 
     if (start > end)
       return 0;
-    
+
     if (start == end)
       return 1;
-    
+
     for (int i = start; i <= end; i++) {
       int left = search(start, i - 1);
       int right = search(i + 1, end);
@@ -32,9 +32,7 @@ public:
     return count;
   }
 
-  int numTrees(int n) {
-    return search(1, n);
-  }
+  int numTrees(int n) { return search(1, n); }
 
   map<int, int> table;
 };

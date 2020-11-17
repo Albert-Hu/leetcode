@@ -16,7 +16,7 @@ public:
     return b;
   }
 
-  int rob(vector<int>& nums) {
+  int rob(vector<int> &nums) {
     if (nums.size() == 0)
       return 0;
     if (nums.size() == 1)
@@ -29,11 +29,7 @@ public:
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<vector<int>> nums = {
-    {2, 3, 2},
-    {1, 2, 3, 1},
-    {0}
-  };
+  vector<vector<int>> nums = {{2, 3, 2}, {1, 2, 3, 1}, {0}};
 
   for (auto n : nums)
     cout << s.rob(n) << endl;

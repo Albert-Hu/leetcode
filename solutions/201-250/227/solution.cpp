@@ -15,10 +15,18 @@ public:
       }
       if (c == '+' || c == '-' || c == '*' || c == '/' || j == n) {
         switch (op) {
-          case '+': r1 += i; break;
-          case '-': r1 -= i; break;
-          case '*': r1 *= i; break;
-          case '/': r1 /= i; break;
+        case '+':
+          r1 += i;
+          break;
+        case '-':
+          r1 -= i;
+          break;
+        case '*':
+          r1 *= i;
+          break;
+        case '/':
+          r1 /= i;
+          break;
         }
         if (c == '+' || c == '-' || j == n) {
           r2 += r1;
@@ -29,7 +37,7 @@ public:
       }
     }
 
-    return (int) r2;
+    return (int)r2;
   }
 };
 

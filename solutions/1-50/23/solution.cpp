@@ -15,13 +15,14 @@ struct ListNode {
 
 class Solution {
 public:
-  ListNode* mergeKLists(vector<ListNode*> &lists) {
+  ListNode *mergeKLists(vector<ListNode *> &lists) {
     bool done = false;
     ListNode *head = nullptr;
     ListNode **iterator = &head;
 
     while (!done) {
-      if (lists.empty()) break;
+      if (lists.empty())
+        break;
       done = true;
       for (int i = 0; i < lists.size(); i++) {
         if (lists[i] == nullptr) {
@@ -40,7 +41,7 @@ public:
     return head;
   }
 
-  ListNode* getNode(vector<ListNode*> &lists) {
+  ListNode *getNode(vector<ListNode *> &lists) {
     if (lists.size() == 0)
       return nullptr;
 
@@ -64,7 +65,7 @@ public:
 };
 
 #ifdef LOCAL_TEST
-void dump(ListNode* head) {
+void dump(ListNode *head) {
   while (head != nullptr) {
     cout << head->val;
     if (head->next != nullptr)
@@ -76,7 +77,7 @@ void dump(ListNode* head) {
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<ListNode*> lists;
+  vector<ListNode *> lists;
 
   lists.push_back(new ListNode(1, new ListNode(4, new ListNode(5))));
   lists.push_back(new ListNode(1, new ListNode(3, new ListNode(4))));

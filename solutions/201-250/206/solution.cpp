@@ -16,21 +16,21 @@ class Solution {
 public:
 #if 1
   // recursively solution
-  ListNode* reverseList(ListNode* head) {
+  ListNode *reverseList(ListNode *head) {
     if (head == nullptr)
       return nullptr;
     if (head->next == nullptr)
       return head;
     return reverseList(nullptr, head);
   }
-  ListNode* reverseList(ListNode* first, ListNode* second) {
+  ListNode *reverseList(ListNode *first, ListNode *second) {
     ListNode *next = second->next;
     second->next = first;
     return (next == nullptr) ? second : reverseList(second, next);
   }
 #else
   // iteratively solution
-  ListNode* reverseList(ListNode* head) {
+  ListNode *reverseList(ListNode *head) {
     if (head != nullptr) {
       ListNode *prev = nullptr;
       while (head != nullptr) {
@@ -47,7 +47,7 @@ public:
 };
 
 #ifdef LOCAL_TEST
-void dump(ListNode* head) {
+void dump(ListNode *head) {
   while (head != nullptr) {
     cout << head->val;
     cout << "->";
@@ -59,14 +59,7 @@ void dump(ListNode* head) {
 int main(int argc, char *argv[]) {
   Solution s;
   ListNode *head = new ListNode(
-    1, new ListNode(
-      2, new ListNode(
-        3, new ListNode(
-          4, new ListNode(5)
-        )
-      )
-    )
-  );
+      1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
 
   dump(s.reverseList(head));
 

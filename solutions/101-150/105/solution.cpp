@@ -1,7 +1,7 @@
-#include <iostream>
 #include <functional>
-#include <vector>
+#include <iostream>
 #include <map>
+#include <vector>
 
 using namespace std;
 
@@ -13,20 +13,23 @@ struct TreeNode {
   TreeNode *right;
   TreeNode() : val(0), left(nullptr), right(nullptr) {}
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right)
+      : val(x), left(left), right(right) {}
 };
 
 #endif
 
 class Solution {
 public:
-  TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+  TreeNode *buildTree(vector<int> &preorder, vector<int> &inorder) {
     map<int, int> inorder_indices;
     for (int i = 0; i < inorder.size(); ++i) {
       inorder_indices[inorder[i]] = i;
     }
-    function<TreeNode*(int,int,int,int)> build = [&](int ps, int pe, int is, int ie) {
-      if (ps > pe) return (TreeNode*)nullptr;
+    function<TreeNode *(int, int, int, int)> build = [&](int ps, int pe, int is,
+                                                         int ie) {
+      if (ps > pe)
+        return (TreeNode *)nullptr;
       TreeNode *root = new TreeNode(preorder[ps]);
       int im = inorder_indices[preorder[ps]];
       int pm = ps + (im - is);
@@ -43,7 +46,8 @@ public:
 void dump(vector<int> &array) {
   cout << "[";
   for (int i = 0; i < array.size(); ++i) {
-    if (i > 0) cout << ", ";
+    if (i > 0)
+      cout << ", ";
     cout << array[i];
   }
   cout << "]" << endl;

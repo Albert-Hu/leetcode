@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  int search(vector<int>& nums, int target) {
+  int search(vector<int> &nums, int target) {
     int l = 0, r = nums.size() - 1;
 
     while (l < r) {
@@ -20,7 +20,7 @@ public:
           l = middle + 1;
         }
       } else { // ascending order part on right side
-      if (target > nums[middle] && target <= nums[r]) {
+        if (target > nums[middle] && target <= nums[r]) {
           l = middle + 1;
         } else {
           r = middle;

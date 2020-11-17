@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-  int minPathSum(vector<vector<int> >& grid) {
+  int minPathSum(vector<vector<int>> &grid) {
     for (int i = 0; i < grid.size(); i++) {
       for (int j = 0; j < grid[i].size(); j++) {
         if (i == 0) {
@@ -29,11 +29,7 @@ public:
 
 int main(int argc, char *argv[]) {
   Solution s;
-  vector<vector<int> > grid {
-    {1, 3, 1},
-    {1, 5, 1},
-    {4, 2, 1}
-  };
+  vector<vector<int>> grid{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}};
 
   cout << s.minPathSum(grid) << endl;
 

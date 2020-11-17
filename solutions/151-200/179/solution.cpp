@@ -1,17 +1,16 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
 class Solution {
 public:
-  string largestNumber(vector<int>& nums) {
+  string largestNumber(vector<int> &nums) {
     vector<string> intStrings = toStringArray(nums);
 
-    sort(intStrings.begin(), intStrings.end(), [](string a, string b) {
-      return (b+a) < (a+b);
-    });
+    sort(intStrings.begin(), intStrings.end(),
+         [](string a, string b) { return (b + a) < (a + b); });
 
     return merge(intStrings);
   }
@@ -22,7 +21,8 @@ public:
       str = intStrings[0];
     }
     for (int index = 1; index < intStrings.size(); index++) {
-      if (str.length() == 1 && str[0] == '0') break;
+      if (str.length() == 1 && str[0] == '0')
+        break;
       str += intStrings[index];
     }
     return str;
