@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 
 #include "solution.h"
@@ -5,14 +6,29 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-  Solution s;
+  int test_case = 1;
 
-  cout << s.convert("PAYPALISHIRING", 3) << endl;
-  cout << s.convert("PAYPALISHIRING", 4) << endl;
-  cout << s.convert("A", 1) << endl;
-  cout << s.convert("A", 2) << endl;
-  cout << s.convert("A", 3) << endl;
-  cout << s.convert("AB", 1) << endl;
+  while (1) {
+    Solution s;
+    int num_row;
+    string test;
+    string answer;
+
+    if (!(cin >> num_row))
+      break;
+    if (!(cin >> test))
+      break;
+    if (!(cin >> answer))
+      break;
+
+    cout << "Test " << std::left << setw(3) << test_case++ << ": ";
+    if (s.convert(test, num_row) == answer) {
+      cout << "[PASS]";
+    } else {
+      cout << "[FAIL]";
+    }
+    cout << endl;
+  }
 
   return 0;
 }
