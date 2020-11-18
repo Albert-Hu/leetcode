@@ -39,7 +39,7 @@ ListNode *strToListNode(string &str) {
 
 int main(int argc, char *argv[]) {
   int test_case = 1;
-  
+
   while (1) {
     string s1, s2, answer;
     ListNode *l1, *l2, *result;
@@ -64,7 +64,6 @@ int main(int argc, char *argv[]) {
       cout << "[FAIL]";
     }
     cout << endl;
-
   }
 
   return 0;
