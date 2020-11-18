@@ -55,7 +55,19 @@ generate(10, 1)
 generate(1, 10)
 
 # Test 9
-generate(1000, 50)
+generate(4, 5)
 
 # Test 10
+generate(5, 4)
+
+# Test 11
+generate(100, 100)
+
+# Test 12
+generate(1000, 50)
+
+# Test 13
+generate(50, 1000)
+
+# Test 14
 generate(1000, 1000)
