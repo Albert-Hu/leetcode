@@ -22,7 +22,7 @@ string Solution::convert(string s, int numRows) {
       static_cast<unsigned int>(numRows) >= s.length())
     return s;
 
-  int index = 0, column = 0;
+  unsigned int index = 0, column = 0;
   int numColumns = s.length();
   string answer;
   vector<string> table(numRows, string(numColumns, ' '));
@@ -58,12 +58,12 @@ string Solution::convert(string s, int numRows) {
   for (int i = 0; i < numRows; i++) {
     unsigned int index = i, next = 0;
     int interval = numRows + numRows - 2;
-    int skip[2] = {interval - ((i * 2) % interval),
+    int jump[2] = {interval - ((i * 2) % interval),
                    interval - ((interval - i * 2) % interval)};
 
     while (index < s.length()) {
       answer.push_back(s[index]);
-      index += skip[next];
+      index += jump[next];
       next = (next + 1) % 2;
     }
   }
