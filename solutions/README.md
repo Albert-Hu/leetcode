@@ -5,7 +5,7 @@
 - 3, [Longest Substring Without Repeating Characters](1-50/3/README.md)(incomplete)
 - 4, [Median of Two Sorted Arrays](1-50/4/README.md)(incomplete)
 - 5, [Longest Palindromic Substring](1-50/5/README.md)(incomplete)
-- 6, [ZigZag Conversion](1-50/6/README.md)(incomplete)
+- 6, [ZigZag Conversion](1-50/6/README.md)
 - 7, [Reverse Integer](1-50/7/README.md)(incomplete)
 - 8, [String to Integer (atoi)](1-50/8/README.md)(incomplete)
 - 11, [Container With Most Water](1-50/11/README.md)(incomplete)

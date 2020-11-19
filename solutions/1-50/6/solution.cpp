@@ -39,7 +39,8 @@ string Solution::convert(string s, int numRows) {
 
   for (auto line : table) {
     for (auto c : line) {
-      if (c != ' ') answer.push_back(c);
+      if (c != ' ')
+        answer.push_back(c);
     }
   }
 
