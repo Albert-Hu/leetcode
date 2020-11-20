@@ -1,3 +1,3 @@
 # Problem Title
 
-description of problem.
+See the [solution](Solution.md).

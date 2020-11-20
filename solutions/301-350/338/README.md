@@ -22,6 +22,4 @@ Output: [0,1,1,2,1,2]
 - Space complexity should be O(n).
 - Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.
 
-# Solution
-
 See the [solution](Solution.md).
