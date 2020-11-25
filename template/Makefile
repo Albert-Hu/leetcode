@@ -5,7 +5,7 @@ source = $(wildcard *.cpp)
 test: $(source)
 	g++ $(CPPFLAGS) -o $@ $^
 	@echo "========== Run Test =========="
-	@./test
+	@./test < input.txt
 
 clean:
 	rm -f test
