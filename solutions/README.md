@@ -2,7 +2,7 @@
 
 - 1, [Two Sum](1-50/1/README.md)
 - 2, [Add Two Numbers](1-50/2/README.md)
-- 3, [Longest Substring Without Repeating Characters](1-50/3/README.md)(incomplete)
+- 3, [Longest Substring Without Repeating Characters](1-50/3/README.md)
 - 4, [Median of Two Sorted Arrays](1-50/4/README.md)(incomplete)
 - 5, [Longest Palindromic Substring](1-50/5/README.md)(incomplete)
 - 6, [ZigZag Conversion](1-50/6/README.md)
