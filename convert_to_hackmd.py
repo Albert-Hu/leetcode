@@ -39,7 +39,7 @@ def convert(output_dir):
         content = readme.readlines()
         content[0] = ' '.join(content[0].split()[1:])
         content[0] = '# {}. {}'.format(problem, content[0])
-        title = content[0].replace('#', '')
+        title = content[0].replace('# ', '')
         for line in range(len(content)):
           if content[line] == 'See the [solution](Solution.md).\n':
             break
