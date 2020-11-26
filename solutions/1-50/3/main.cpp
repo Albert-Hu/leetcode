@@ -1,7 +1,7 @@
-#include <iostream>
-#include <iomanip>
-#include <vector>
 #include "solution.h"
+#include <iomanip>
+#include <iostream>
+#include <vector>
 
 int main(int argc, char *argv[]) {
   int test_case = 1;
@@ -11,10 +11,12 @@ int main(int argc, char *argv[]) {
     string s;
     string a;
 
-    if (cin.eof()) break;
+    if (cin.eof())
+      break;
     getline(cin, s);
 
-    if (cin.eof()) break;
+    if (cin.eof())
+      break;
     getline(cin, a);
     answer = stoi(a);
 
