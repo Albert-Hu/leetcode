@@ -49,7 +49,7 @@ def convert(output_dir):
           document += content[line]
       with open(solution_md) as solution:
         document += '\n---\n\n' + solution.read()
-      document += 'See the full [solution]({}/{}/{}).\n'.format(SOLUTION_URL, group, problem)
+      document += '\nSee the full [solution]({}/{}/{}).\n'.format(SOLUTION_URL, group, problem)
       document += '\n\n###### tags: `leetcode`'
       document_link = '- [{}]({}/leetcode-{})\n'.format(title, HACKMD_URL, problem)
       tags_path = os.path.join(problem_path, 'tags')
