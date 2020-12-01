@@ -1,14 +1,15 @@
-#include <iostream>
-#include <iomanip>
-#include <sstream>
 #include <algorithm>
+#include <iomanip>
+#include <iostream>
+#include <sstream>
 
 #include "solution.h"
 
 using namespace std;
 
 bool get_answer(vector<string> &answer) {
-  if (cin.eof()) return false;
+  if (cin.eof())
+    return false;
 
   string s;
   string line;
@@ -23,7 +24,8 @@ bool get_answer(vector<string> &answer) {
 }
 
 bool get_target(int &target) {
-  if (cin.eof()) return false;
+  if (cin.eof())
+    return false;
 
   string line;
   getline(cin, line);
@@ -35,7 +37,8 @@ bool get_target(int &target) {
 }
 
 bool get_number(string &number) {
-  if (cin.eof()) return false;
+  if (cin.eof())
+    return false;
 
   string line;
   getline(cin, line);
@@ -54,7 +57,8 @@ bool verify(vector<string> &results, vector<string> &answer) {
   sort(answer.begin(), answer.end());
 
   for (unsigned int i = 0; i < answer.size(); i++) {
-    if (results[i] != answer[i]) return false;
+    if (results[i] != answer[i])
+      return false;
   }
 
   return true;
@@ -70,9 +74,12 @@ int main(int argc, char *argv[]) {
     vector<string> answer;
     vector<string> results;
 
-    if (!get_number(numbers)) break;
-    if (!get_target(target)) break;
-    if (!get_answer(answer)) break;
+    if (!get_number(numbers))
+      break;
+    if (!get_target(target))
+      break;
+    if (!get_answer(answer))
+      break;
 
     results = s.addOperators(numbers, target);
     cout << "Test " << std::left << setw(3) << test_case++ << ": ";

@@ -10,7 +10,8 @@ typedef long long int ll;
 
 class Solution {
 public:
-  void search(string &num, int target, ll previous, ll result, string e, vector<string> &expressions);
+  void search(string &num, int target, ll previous, ll result, string e,
+              vector<string> &expressions);
   vector<string> addOperators(string num, int target);
 };
 

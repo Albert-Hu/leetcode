@@ -127,6 +127,7 @@
 - 264, [Ugly Number II](251-300/264/README.md)(incomplete)
 - 268, [Missing Number](251-300/268/README.md)(incomplete)
 - 279, [Perfect Squares](251-300/279/README.md)(incomplete)
+- 282, [Expression Add Operators](251-300/282/README.md)(incomplete)
 - 283, [Move Zeroes](251-300/283/README.md)(incomplete)
 - 287, [Find the Duplicate Number](251-300/287/README.md)(incomplete)
 - 289, [Game of Life](251-300/289/README.md)(incomplete)
