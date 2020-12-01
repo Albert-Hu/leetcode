@@ -73,19 +73,8 @@ int main(int argc, char *argv[]) {
     if (!get_number(numbers)) break;
     if (!get_target(target)) break;
     if (!get_answer(answer)) break;
-#if 0
-    cout << "Number: " << numbers << endl;
-    cout << "Target: " << target << endl;
-    cout << "Answer:";
-    for (auto ans : answer) cout << " " << ans;
-    cout << endl;
-#endif
+
     results = s.addOperators(numbers, target);
-/*
-    cout << "Results:";
-    for (auto r : results) cout << " " << r;
-    cout << endl;
-*/
     cout << "Test " << std::left << setw(3) << test_case++ << ": ";
     if (verify(results, answer)) {
       cout << "[PASS]";

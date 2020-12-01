@@ -3,19 +3,15 @@
 
 #include <iostream>
 #include <vector>
-#include <set>
 
 using namespace std;
 
+typedef long long int ll;
+
 class Solution {
 public:
-  bool canCompute(string &expression);
-  int compute(string &expression);
-  void search(string &expression, unsigned int op, int target);
+  void search(string &num, int target, ll previous, ll result, string e, vector<string> &expressions);
   vector<string> addOperators(string num, int target);
-private:
-  set<string> ignore;
-  vector<string> results;
 };
 
 #endif /* _SOLUTION_H_ */
