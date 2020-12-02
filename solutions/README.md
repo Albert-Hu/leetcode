@@ -27,6 +27,7 @@
 - 34, [Find First and Last Position of Element in Sorted Array](1-50/34/README.md)(incomplete)
 - 36, [Valid Sudoku](1-50/36/README.md)(incomplete)
 - 38, [Count and Say](1-50/38/README.md)(incomplete)
+- 41, [First Missing Positive](1-50/41/README.md)(incomplete)
 - 46, [Permutations](1-50/46/README.md)(incomplete)
 - 48, [Rotate Image](1-50/48/README.md)(incomplete)
 - 49, [Group Anagrams](1-50/49/README.md)(incomplete)
