@@ -6,6 +6,7 @@
 6, [ZigZag Conversion](6/README.md)
 7, [Reverse Integer](7/README.md)(incomplete)
 8, [String to Integer (atoi)](8/README.md)(incomplete)
+10, [Regular Expression Matching](10/README.md)(incomplete)
 11, [Container With Most Water](11/README.md)(incomplete)
 13, [Roman to Integer](13/README.md)(incomplete)
 14, [Longest Common Prefix](14/README.md)(incomplete)
