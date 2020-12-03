@@ -26,6 +26,7 @@
 36, [Valid Sudoku](36/README.md)(incomplete)
 38, [Count and Say](38/README.md)(incomplete)
 41, [First Missing Positive](41/README.md)(incomplete)
+42, [Trapping Rain Water](42/README.md)(incomplete)
 46, [Permutations](46/README.md)(incomplete)
 48, [Rotate Image](48/README.md)(incomplete)
 49, [Group Anagrams](49/README.md)(incomplete)
