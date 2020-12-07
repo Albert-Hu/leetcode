@@ -25,3 +25,9 @@ aaaaa
 aaaaaaaaaaaaab
 *b
 1
+aaaaabaaaaaaaa
+*?*
+1
+abcabcxabc
+*abc?abc
+1

@@ -10,25 +10,28 @@ public:
 #endif
 
 bool Solution::isMatch(string s, string p) {
-  if (s.length() == 0) {
-    for (unsigned int i = 0; i < p.length(); i++) {
-      if (p[i] != '*') return false;
-    }
-    return true;
-  } else if (p.length() == 0) {
-    return false;
+  int sPrevious = -1 , pPrevious = -1;
+  unsigned int sIndex = 0, pIndex = 0;
+
+  while (sIndex < s.length()) {
+    if (s[sIndex] == p[pIndex] || p[pIndex] == '?') {
+      sIndex++;
+      pIndex++;
+    } else if (p[pIndex] == '*') {
+      sPrevious = sIndex;
+      pPrevious = pIndex;
+      pIndex++;
+    } else if (sPrevious > -1) {
+      sPrevious++;
+      sIndex = sPrevious;
+      pIndex = pPrevious + 1;
+    } else return false;
   }
 
-  if (s[0] == p[0] || p[0] == '?')
-    return isMatch(s.substr(1), p.substr(1));
-  
-  if (p[0] == '*') {
-    for (unsigned int i = 0; i < s.length(); i++) {
-      if (isMatch(s.substr(i + 1), p))
-        return true;
-    }
-    return isMatch(s, p.substr(1));
+  while (pIndex < p.length()) {
+    if (p[pIndex] != '*') break;
+    pIndex++;
   }
 
-  return false;
+  return (pIndex == p.length());
 }

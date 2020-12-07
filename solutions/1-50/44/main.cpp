@@ -11,18 +11,17 @@ int main(int argc, char *argv[]) {
   while (1) {
     string str;
     string pattern;
-    bool ans;
+    string ans;
     Solution s;
 
-    if (!(cin >> str))
-      break;
-    if (!(cin >> pattern))
-      break;
-    if (!(cin >> ans))
-      break;
+    if (!getline(cin, str)) break;
+
+    if (!getline(cin, pattern)) break;
+
+    if (!getline(cin, ans)) break;
 
     cout << "Test " << std::left << setw(3) << test_case++ << ": ";
-    if (s.isMatch(str, pattern) == ans) {
+    if (s.isMatch(str, pattern) == (ans[0] == '0' ? 0 : 1)) {
       cout << "[PASS]";
     } else {
       cout << "[FAIL]";
