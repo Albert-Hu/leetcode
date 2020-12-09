@@ -10,7 +10,7 @@ public:
 #endif
 
 bool Solution::isMatch(string s, string p) {
-  int sPrevious = -1 , pPrevious = -1;
+  int sPrevious = -1, pPrevious = -1;
   unsigned int sIndex = 0, pIndex = 0;
 
   while (sIndex < s.length()) {
@@ -25,11 +25,13 @@ bool Solution::isMatch(string s, string p) {
       sPrevious++;
       sIndex = sPrevious;
       pIndex = pPrevious + 1;
-    } else return false;
+    } else
+      return false;
   }
 
   while (pIndex < p.length()) {
-    if (p[pIndex] != '*') break;
+    if (p[pIndex] != '*')
+      break;
     pIndex++;
   }
 

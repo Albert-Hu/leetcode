@@ -14,11 +14,14 @@ int main(int argc, char *argv[]) {
     string ans;
     Solution s;
 
-    if (!getline(cin, str)) break;
+    if (!getline(cin, str))
+      break;
 
-    if (!getline(cin, pattern)) break;
+    if (!getline(cin, pattern))
+      break;
 
-    if (!getline(cin, ans)) break;
+    if (!getline(cin, ans))
+      break;
 
     cout << "Test " << std::left << setw(3) << test_case++ << ": ";
     if (s.isMatch(str, pattern) == (ans[0] == '0' ? 0 : 1)) {
