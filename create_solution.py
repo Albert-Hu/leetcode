@@ -4,8 +4,8 @@ from distutils.dir_util import copy_tree
 import argparse, os
 
 def copy(number):
-  upper_bound = ((number + 49) / 50) * 50
-  group = '{}-{}'.format(upper_bound - 49, upper_bound)
+  upper_bound = int((number + 49) / 50) * 50
+  group = '{}-{}'.format(int(upper_bound - 49), int(upper_bound))
   dest = os.path.join('solutions', group, str(number))
   if os.path.exists(dest):
     print('The solution already exists.')
