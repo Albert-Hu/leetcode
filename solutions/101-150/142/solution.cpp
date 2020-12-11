@@ -9,6 +9,8 @@ public:
 
 #endif
 
+#if USE_HASH
+
 ListNode *Solution::detectCycle(ListNode *head) {
   set<ListNode *> nodes;
 
@@ -19,3 +21,30 @@ ListNode *Solution::detectCycle(ListNode *head) {
 
   return head;
 }
+
+#else
+
+ListNode *Solution::detectCycle(ListNode *head) {
+  ListNode *slow = head;
+  ListNode *fast = head;
+
+  while (fast) {
+    fast = fast->next;
+    if (fast) {
+      fast = fast->next;
+    }
+    slow = slow->next;
+    if (fast == slow)
+      break;
+  }
+
+  slow = head;
+  while (fast && fast != slow) {
+    fast = fast->next;
+    slow = slow->next;
+  }
+
+  return fast;
+}
+
+#endif
