@@ -1,7 +1,7 @@
 #include <iomanip>
 #include <iostream>
-#include <vector>
 #include <queue>
+#include <vector>
 
 #include "solution.h"
 
@@ -18,21 +18,21 @@ string remove_space(string str) {
   return new_str;
 }
 
-TreeNode* build_node(string value) {
+TreeNode *build_node(string value) {
   return (value == "null") ? nullptr : new TreeNode(stod(value));
 }
 
 bool get_tree(TreeNode **root) {
   size_t begin = 0, end;
   string line;
-  vector<TreeNode*> array;
-  queue<TreeNode*> q;
+  vector<TreeNode *> array;
+  queue<TreeNode *> q;
 
   *root = nullptr;
 
   if (!getline(cin, line))
     return false;
-  
+
   if (line.length() == 0)
     return true;
 
@@ -46,20 +46,22 @@ bool get_tree(TreeNode **root) {
 
   *root = array.front();
   q.push(*root);
-  
+
   begin = 1;
   while (!q.empty()) {
     TreeNode *node = q.front();
     q.pop();
-    
+
     if (begin < array.size()) {
       node->left = array[begin++];
-      if (node->left) q.push(node->left);
+      if (node->left)
+        q.push(node->left);
     }
 
     if (begin < array.size()) {
       node->right = array[begin++];
-      if (node->right) q.push(node->right);
+      if (node->right)
+        q.push(node->right);
     }
   }
 
@@ -67,8 +69,8 @@ bool get_tree(TreeNode **root) {
 }
 
 void dump(TreeNode *root) {
-  queue<TreeNode*> q;
-  
+  queue<TreeNode *> q;
+
   q.push(root);
 
   while (!q.empty()) {
@@ -111,8 +113,10 @@ int main(int argc, char *argv[]) {
     Solution s;
     TreeNode *input, *answer;
 
-    if (!get_tree(&input)) break;
-    if (!get_tree(&answer)) break;
+    if (!get_tree(&input))
+      break;
+    if (!get_tree(&answer))
+      break;
 
     s.flatten(input);
 

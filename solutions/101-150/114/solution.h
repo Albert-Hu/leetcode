@@ -12,13 +12,14 @@ typedef struct TreeNode {
   TreeNode *right;
   TreeNode() : val(0), left(nullptr), right(nullptr) {}
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right)
+      : val(x), left(left), right(right) {}
 } TreeNode;
 
 class Solution {
 public:
-  TreeNode* search(TreeNode* root);
-  void flatten(TreeNode* root);
+  TreeNode *search(TreeNode *root);
+  void flatten(TreeNode *root);
 };
 
 #endif /* _SOLUTION_H_ */

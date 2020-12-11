@@ -3,6 +3,7 @@
 104, [Maximum Depth of Binary Tree](104/README.md)(incomplete)
 105, [Construct Binary Tree from Preorder and Inorder Traversal](105/README.md)(incomplete)
 108, [Convert Sorted Array to Binary Search Tree](108/README.md)(incomplete)
+114, [Flatten Binary Tree to Linked List](114/README.md)(incomplete)
 116, [Populating Next Right Pointers in Each Node](116/README.md)(incomplete)
 118, [Pascal's Triangle](118/README.md)(incomplete)
 120, [Triangle](120/README.md)(incomplete)

@@ -4,13 +4,13 @@
 
 class Solution {
 public:
-  TreeNode* search(TreeNode* root);
-  void flatten(TreeNode* root);
+  TreeNode *search(TreeNode *root);
+  void flatten(TreeNode *root);
 };
 
 #endif
 
-TreeNode* Solution::search(TreeNode* root) {
+TreeNode *Solution::search(TreeNode *root) {
   TreeNode *leftTail, *rightTail, *tail = root;
 
   if (root) {
@@ -32,6 +32,4 @@ TreeNode* Solution::search(TreeNode* root) {
   return tail;
 }
 
-void Solution::flatten(TreeNode* root) {
-  search(root);
-}
+void Solution::flatten(TreeNode *root) { search(root); }
