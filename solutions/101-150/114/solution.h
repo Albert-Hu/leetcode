@@ -2,6 +2,7 @@
 #define _SOLUTION_H_
 
 #include <iostream>
+#include <queue>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ typedef struct TreeNode {
 
 class Solution {
 public:
+  TreeNode* search(TreeNode* root);
   void flatten(TreeNode* root);
 };
 

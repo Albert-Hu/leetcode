@@ -2,21 +2,36 @@
 #include "solution.h"
 #else
 
-typedef struct TreeNode {
-  int val;
-  TreeNode *left;
-  TreeNode *right;
-  TreeNode() : val(0), left(nullptr), right(nullptr) {}
-  TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-} TreeNode;
-
 class Solution {
 public:
+  TreeNode* search(TreeNode* root);
   void flatten(TreeNode* root);
 };
 
 #endif
 
+TreeNode* Solution::search(TreeNode* root) {
+  TreeNode *leftTail, *rightTail, *tail = root;
+
+  if (root) {
+    leftTail = search(root->left);
+    rightTail = search(root->right);
+
+    if (leftTail) {
+      leftTail->right = root->right;
+      root->right = root->left;
+      root->left = nullptr;
+      tail = leftTail;
+    }
+
+    if (rightTail) {
+      tail = rightTail;
+    }
+  }
+
+  return tail;
+}
+
 void Solution::flatten(TreeNode* root) {
+  search(root);
 }

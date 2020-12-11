@@ -26,6 +26,7 @@ bool get_tree(TreeNode **root) {
   size_t begin = 0, end;
   string line;
   vector<TreeNode*> array;
+  queue<TreeNode*> q;
 
   *root = nullptr;
 
@@ -43,35 +44,24 @@ bool get_tree(TreeNode **root) {
   }
   array.push_back(build_node(line.substr(begin)));
 
-  cout << "array: ";
-  for (auto node : array) {
-    cout << (node ? to_string(node->val) : "null") << " ";
-  }
-  cout << endl;
-
-  begin = 0;
-  while (begin < array.size()) {
-    size_t left = begin * 2 + 1;
-    size_t right = left + 1;
-
-    if (array[begin]) {
-      if (right < array.size()) {
-        array[begin]->right = array[right];
-
-        cout << array[begin]->val << "->right: " << (array[right] ? to_string(array[right]->val) : "null") << endl;
-      }
-
-      if (left < array.size()) {
-        array[begin]->left = array[left];
-
-        cout << array[begin]->val << "->left: " << (array[left] ? to_string(array[left]->val) : "null") << endl;
-      }
+  *root = array.front();
+  q.push(*root);
+  
+  begin = 1;
+  while (!q.empty()) {
+    TreeNode *node = q.front();
+    q.pop();
+    
+    if (begin < array.size()) {
+      node->left = array[begin++];
+      if (node->left) q.push(node->left);
     }
 
-    begin = (left < array.size()) ? (begin + 1) : array.size();
+    if (begin < array.size()) {
+      node->right = array[begin++];
+      if (node->right) q.push(node->right);
+    }
   }
-
-  *root = array.front();
 
   return true;
 }
@@ -85,9 +75,11 @@ void dump(TreeNode *root) {
     root = q.front();
     q.pop();
     if (root) {
-      q.push(root->left);
-      q.push(root->right);
-      cout << root->val << " ";
+      if (root->left != nullptr || root->right != nullptr) {
+        q.push(root->left);
+        q.push(root->right);
+        cout << root->val << " ";
+      }
     } else {
       cout << "null ";
     }
@@ -96,20 +88,36 @@ void dump(TreeNode *root) {
   cout << endl;
 }
 
+bool verify(TreeNode *result, TreeNode *answer) {
+  if (result == nullptr || answer == nullptr) {
+    return (result == nullptr && answer == nullptr);
+  }
+
+  if (result->val != answer->val) {
+    return false;
+  }
+
+  if (!verify(result->left, answer->left)) {
+    return false;
+  }
+
+  return verify(result->right, answer->right);
+}
+
 int main(int argc, char *argv[]) {
   int test_case = 1;
 
   while (1) {
+    Solution s;
     TreeNode *input, *answer;
 
     if (!get_tree(&input)) break;
     if (!get_tree(&answer)) break;
 
-    //dump(input);
-    dump(answer);
+    s.flatten(input);
 
     cout << "Test " << std::left << setw(3) << test_case++ << ": ";
-    if (0) {
+    if (verify(input, answer)) {
       cout << "[PASS]";
     } else {
       cout << "[FAIL]";
