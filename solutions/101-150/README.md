@@ -18,6 +18,7 @@
 138, [Copy List with Random Pointer](138/README.md)(incomplete)
 139, [Word Break](139/README.md)(incomplete)
 141, [Linked List Cycle](141/README.md)(incomplete)
+142, [Linked List Cycle II](142/README.md)(incomplete)
 146, [LRU Cache](146/README.md)(incomplete)
 148, [Sort List](148/README.md)(incomplete)
 150, [Evaluate Reverse Polish Notation](150/README.md)(incomplete)
