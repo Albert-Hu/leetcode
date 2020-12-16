@@ -1,8 +1,8 @@
 #ifndef _SOLUTION_H_
 #define _SOLUTION_H_
 
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 
 using namespace std;
 
@@ -12,13 +12,14 @@ typedef struct TreeNode {
   TreeNode *right;
   TreeNode() : val(0), left(nullptr), right(nullptr) {}
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right)
+      : val(x), left(left), right(right) {}
 } TreeNode;
 
 class Solution {
 public:
-  int search(TreeNode* root, int &left, int &right);
-  int rob(TreeNode* root);
+  int search(TreeNode *root, int &left, int &right);
+  int rob(TreeNode *root);
 };
 
 #endif /* _SOLUTION_H_ */

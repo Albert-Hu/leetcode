@@ -1,7 +1,7 @@
 #include <iomanip>
 #include <iostream>
-#include <vector>
 #include <queue>
+#include <vector>
 
 #include "solution.h"
 
@@ -73,7 +73,7 @@ bool get_answer(int &answer) {
 
   if (!getline(cin, line))
     return false;
-  
+
   answer = stod(line);
 
   return true;
@@ -87,8 +87,10 @@ int main(int argc, char *argv[]) {
     TreeNode *root;
     Solution s;
 
-    if (!get_tree(&root)) break;
-    if (!get_answer(answer)) break;
+    if (!get_tree(&root))
+      break;
+    if (!get_answer(answer))
+      break;
 
     cout << "Test " << std::left << setw(3) << test_case++ << ": ";
     if (s.rob(root) == answer) {

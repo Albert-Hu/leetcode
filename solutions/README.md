@@ -149,6 +149,7 @@
 - 326, [Power of Three](301-350/326/README.md)(incomplete)
 - 328, [Odd Even Linked List](301-350/328/README.md)(incomplete)
 - 334, [Increasing Triplet Subsequence](301-350/334/README.md)(incomplete)
+- 337, [House Robber III](301-350/337/README.md)(incomplete)
 - 338, [Counting Bits](301-350/338/README.md)
 - 341, [Flatten Nested List Iterator](301-350/341/README.md)(incomplete)
 - 343, [Integer Break](301-350/343/README.md)
