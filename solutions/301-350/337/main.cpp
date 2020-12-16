@@ -89,7 +89,7 @@ int main(int argc, char *argv[]) {
 
     if (!get_tree(&root)) break;
     if (!get_answer(answer)) break;
-    
+
     cout << "Test " << std::left << setw(3) << test_case++ << ": ";
     if (s.rob(root) == answer) {
       cout << "[PASS]";

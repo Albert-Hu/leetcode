@@ -4,53 +4,24 @@
 
 class Solution {
 public:
-  int search(TreeNode* root);
+  int search(TreeNode* root, int &left, int &right);
   int rob(TreeNode* root);
 };
 
 #endif
 
-int Solution::search(TreeNode* root) {
-  if (!root)
-    return 0;
-
-  bool addRoot = true;
-  int value = 0;
-  int left = rob(root->left);
-  int right = rob(root->right);
-
-  if (root->left) {
-    if (root->left->val > left) {
-      value = root->left->val;
-      addRoot = false;
-    } else {
-      value = left;
-    }
+int Solution::search(TreeNode* root, int &left, int &right) {
+  if (root) {
+    int left_left = 0, left_right = 0;
+    int right_left = 0, right_right = 0;
+    left = search(root->left, left_left, left_right);
+    right = search(root->right, right_left, right_right);
+    return max(root->val + left_left + left_right + right_left + right_right, left + right);
   }
-
-  if (root->right) {
-    if (root->right->val > right) {
-      value = value + root->right->val;
-      addRoot = false;
-    } else {
-      value = value + right;
-    }
-  }
-
-  if (addRoot) {
-    root->val = root->val + value;
-  } else {
-    root->val = value;
-  }
-
-  return max((root->left ? root->left->val : 0), (root->right ? root->right->val : 0));
+  return 0;
 }
 
 int Solution::rob(TreeNode* root) {
-  if (!root)
-    return 0;
-  
-  search(root);
-
-  return root->val;
+  int left = 0, right = 0;
+  return search(root, left, right);
 }

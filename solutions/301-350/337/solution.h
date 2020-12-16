@@ -17,7 +17,7 @@ typedef struct TreeNode {
 
 class Solution {
 public:
-  int search(TreeNode* root);
+  int search(TreeNode* root, int &left, int &right);
   int rob(TreeNode* root);
 };
 
