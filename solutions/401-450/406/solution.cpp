@@ -4,12 +4,12 @@
 
 class Solution {
 public:
-  vector<vector<int>> reconstructQueue(vector<vector<int>>& people);
+  vector<vector<int>> reconstructQueue(vector<vector<int>> &people);
 };
 
 #endif
 
-vector<vector<int>> Solution::reconstructQueue(vector<vector<int>>& people) {
+vector<vector<int>> Solution::reconstructQueue(vector<vector<int>> &people) {
   vector<vector<int>> result;
 
   sort(people.begin(), people.end(), [=](vector<int> &a, vector<int> &b) {

@@ -169,6 +169,7 @@
 
 # 401-450
 
+- 406, [Queue Reconstruction by Height](401-450/406/README.md)(incomplete)
 - 412, [Fizz Buzz](401-450/412/README.md)(incomplete)
 
 # 451-500
