@@ -2,193 +2,193 @@
 
 **Total 185 similarities, latest updated at 2021/03/22.**
 
-|                                                                          Group                                                                          |Total|Easy|Medium|Hard|
-|---------------------------------------------------------------------------------------------------------------------------------------------------------|----:|---:|-----:|---:|
-|[array, backtracking](#array, backtracking)                                                                                                              |    7|   0|     6|   1|
-|[array, binary-search](#array, binary-search)                                                                                                            |   28|   6|    16|   6|
-|[array, binary-search, hash-table](#array, binary-search, hash-table)                                                                                    |    2|   1|     1|   0|
-|[array, binary-search, two-pointers](#array, binary-search, two-pointers)                                                                                |    3|   1|     2|   0|
-|[array, bit-manipulation](#array, bit-manipulation)                                                                                                      |    5|   2|     1|   2|
-|[array, bit-manipulation, math](#array, bit-manipulation, math)                                                                                          |    2|   1|     0|   1|
-|[array, depth-first-search](#array, depth-first-search)                                                                                                  |    4|   0|     4|   0|
-|[array, depth-first-search, tree](#array, depth-first-search, tree)                                                                                      |    2|   0|     2|   0|
-|[array, design](#array, design)                                                                                                                          |    5|   1|     3|   1|
-|[array, design, hash-table](#array, design, hash-table)                                                                                                  |    2|   0|     1|   1|
-|[array, divide-and-conquer](#array, divide-and-conquer)                                                                                                  |    3|   2|     0|   1|
-|[array, dynamic-programming](#array, dynamic-programming)                                                                                                |   19|   4|    10|   5|
-|[array, dynamic-programming, hash-table](#array, dynamic-programming, hash-table)                                                                        |    2|   0|     1|   1|
-|[array, dynamic-programming, sliding-window](#array, dynamic-programming, sliding-window)                                                                |    3|   0|     3|   0|
-|[array, dynamic-programming, stack](#array, dynamic-programming, stack)                                                                                  |    2|   0|     0|   2|
-|[array, geometry](#array, geometry)                                                                                                                      |    2|   0|     1|   1|
-|[array, greedy](#array, greedy)                                                                                                                          |   15|   4|    10|   1|
-|[array, greedy, math](#array, greedy, math)                                                                                                              |    2|   0|     2|   0|
-|[array, hash-table](#array, hash-table)                                                                                                                  |   25|   6|    13|   6|
-|[array, hash-table, math](#array, hash-table, math)                                                                                                      |    2|   1|     0|   1|
-|[array, hash-table, sort](#array, hash-table, sort)                                                                                                      |    3|   1|     1|   1|
-|[array, hash-table, two-pointers](#array, hash-table, two-pointers)                                                                                      |    2|   0|     1|   1|
-|[array, math](#array, math)                                                                                                                              |   17|   3|     6|   8|
-|[array, sliding-window](#array, sliding-window)                                                                                                          |   10|   2|     7|   1|
-|[array, sort](#array, sort)                                                                                                                              |   22|   8|    12|   2|
-|[array, sort, two-pointers](#array, sort, two-pointers)                                                                                                  |    2|   1|     1|   0|
-|[array, stack](#array, stack)                                                                                                                            |    4|   0|     0|   4|
-|[array, string](#array, string)                                                                                                                          |    5|   2|     2|   1|
-|[array, two-pointers](#array, two-pointers)                                                                                                              |   22|   6|    14|   2|
-|[array, union-find](#array, union-find)                                                                                                                  |    2|   0|     1|   1|
-|[backtracking, bit-manipulation](#backtracking, bit-manipulation)                                                                                        |    6|   3|     2|   1|
-|[backtracking, breadth-first-search](#backtracking, breadth-first-search)                                                                                |    2|   0|     1|   1|
-|[backtracking, depth-first-search](#backtracking, depth-first-search)                                                                                    |    7|   1|     6|   0|
-|[backtracking, depth-first-search, recursion](#backtracking, depth-first-search, recursion)                                                              |    2|   0|     2|   0|
-|[backtracking, design](#backtracking, design)                                                                                                            |    2|   1|     1|   0|
-|[backtracking, dynamic-programming](#backtracking, dynamic-programming)                                                                                  |   12|   1|     5|   6|
-|[backtracking, dynamic-programming, math](#backtracking, dynamic-programming, math)                                                                      |    2|   0|     1|   1|
-|[backtracking, dynamic-programming, string](#backtracking, dynamic-programming, string)                                                                  |    2|   0|     0|   2|
-|[backtracking, graph](#backtracking, graph)                                                                                                              |    2|   0|     2|   0|
-|[backtracking, greedy](#backtracking, greedy)                                                                                                            |    3|   1|     0|   2|
-|[backtracking, greedy, string](#backtracking, greedy, string)                                                                                            |    2|   1|     0|   1|
-|[backtracking, math](#backtracking, math)                                                                                                                |    7|   0|     5|   2|
-|[backtracking, string](#backtracking, string)                                                                                                            |    7|   1|     3|   3|
-|[backtracking, trie](#backtracking, trie)                                                                                                                |    3|   0|     1|   2|
-|[binary-indexed-tree, binary-search, divide-and-conquer, segment-tree, sort](#binary-indexed-tree, binary-search, divide-and-conquer, segment-tree, sort)|    3|   0|     0|   3|
-|[binary-indexed-tree, binary-search, segment-tree](#binary-indexed-tree, binary-search, segment-tree)                                                    |    4|   0|     1|   3|
-|[binary-indexed-tree, divide-and-conquer, segment-tree](#binary-indexed-tree, divide-and-conquer, segment-tree)                                          |    4|   0|     0|   4|
-|[binary-indexed-tree, segment-tree](#binary-indexed-tree, segment-tree)                                                                                  |    7|   0|     2|   5|
-|[binary-search, depth-first-search, union-find](#binary-search, depth-first-search, union-find)                                                          |    2|   0|     2|   0|
-|[binary-search, divide-and-conquer](#binary-search, divide-and-conquer)                                                                                  |    5|   0|     1|   4|
-|[binary-search, dynamic-programming](#binary-search, dynamic-programming)                                                                                |    9|   1|     4|   4|
-|[binary-search, greedy](#binary-search, greedy)                                                                                                          |    5|   1|     2|   2|
-|[binary-search, hash-table](#binary-search, hash-table)                                                                                                  |    9|   4|     5|   0|
-|[binary-search, hash-table, sort](#binary-search, hash-table, sort)                                                                                      |    3|   2|     1|   0|
-|[binary-search, hash-table, sort, two-pointers](#binary-search, hash-table, sort, two-pointers)                                                          |    2|   2|     0|   0|
-|[binary-search, heap](#binary-search, heap)                                                                                                              |    5|   0|     4|   1|
-|[binary-search, math](#binary-search, math)                                                                                                              |   12|   4|     6|   2|
-|[binary-search, ordered-map](#binary-search, ordered-map)                                                                                                |    2|   0|     1|   1|
-|[binary-search, queue](#binary-search, queue)                                                                                                            |    2|   1|     0|   1|
-|[binary-search, random](#binary-search, random)                                                                                                          |    3|   1|     2|   0|
-|[binary-search, segment-tree](#binary-search, segment-tree)                                                                                              |    6|   0|     2|   4|
-|[binary-search, sort](#binary-search, sort)                                                                                                              |    7|   2|     2|   3|
-|[binary-search, string](#binary-search, string)                                                                                                          |    2|   0|     1|   1|
-|[binary-search, tree](#binary-search, tree)                                                                                                              |    3|   1|     2|   0|
-|[binary-search, two-pointers](#binary-search, two-pointers)                                                                                              |    6|   3|     2|   1|
-|[binary-search-tree, depth-first-search, recursion, tree](#binary-search-tree, depth-first-search, recursion, tree)                                      |    2|   1|     1|   0|
-|[bit-manipulation, depth-first-search](#bit-manipulation, depth-first-search)                                                                            |    2|   0|     0|   2|
-|[bit-manipulation, dynamic-programming](#bit-manipulation, dynamic-programming)                                                                          |    5|   1|     2|   2|
-|[bit-manipulation, hash-table](#bit-manipulation, hash-table)                                                                                            |    4|   2|     2|   0|
-|[bit-manipulation, math](#bit-manipulation, math)                                                                                                        |    6|   3|     2|   1|
-|[bit-manipulation, string](#bit-manipulation, string)                                                                                                    |    5|   1|     2|   2|
-|[brainteaser, math](#brainteaser, math)                                                                                                                  |    2|   0|     2|   0|
-|[breadth-first-search, depth-first-search](#breadth-first-search, depth-first-search)                                                                    |   45|   9|    30|   6|
-|[breadth-first-search, depth-first-search, graph](#breadth-first-search, depth-first-search, graph)                                                      |    8|   1|     7|   0|
-|[breadth-first-search, depth-first-search, graph, topological-sort](#breadth-first-search, depth-first-search, graph, topological-sort)                  |    2|   0|     2|   0|
-|[breadth-first-search, depth-first-search, graph, union-find](#breadth-first-search, depth-first-search, graph, union-find)                              |    2|   0|     2|   0|
-|[breadth-first-search, depth-first-search, hash-table](#breadth-first-search, depth-first-search, hash-table)                                            |    5|   2|     3|   0|
-|[breadth-first-search, depth-first-search, hash-table, tree](#breadth-first-search, depth-first-search, hash-table, tree)                                |    3|   1|     2|   0|
-|[breadth-first-search, depth-first-search, recursion](#breadth-first-search, depth-first-search, recursion)                                              |    5|   1|     4|   0|
-|[breadth-first-search, depth-first-search, recursion, tree](#breadth-first-search, depth-first-search, recursion, tree)                                  |    3|   1|     2|   0|
-|[breadth-first-search, depth-first-search, tree](#breadth-first-search, depth-first-search, tree)                                                        |   14|   5|     8|   1|
-|[breadth-first-search, depth-first-search, union-find](#breadth-first-search, depth-first-search, union-find)                                            |    5|   0|     5|   0|
-|[breadth-first-search, dynamic-programming](#breadth-first-search, dynamic-programming)                                                                  |    4|   1|     2|   1|
-|[breadth-first-search, graph](#breadth-first-search, graph)                                                                                              |   12|   2|    10|   0|
-|[breadth-first-search, hash-table](#breadth-first-search, hash-table)                                                                                    |    6|   3|     3|   0|
-|[breadth-first-search, heap](#breadth-first-search, heap)                                                                                                |    5|   1|     1|   3|
-|[breadth-first-search, string](#breadth-first-search, string)                                                                                            |    2|   1|     0|   1|
-|[breadth-first-search, tree](#breadth-first-search, tree)                                                                                                |   21|   5|    14|   2|
-|[depth-first-search, dynamic-programming](#depth-first-search, dynamic-programming)                                                                      |   13|   0|     9|   4|
-|[depth-first-search, dynamic-programming, tree](#depth-first-search, dynamic-programming, tree)                                                          |    3|   0|     3|   0|
-|[depth-first-search, graph](#depth-first-search, graph)                                                                                                  |   22|   6|    13|   3|
-|[depth-first-search, graph, topological-sort](#depth-first-search, graph, topological-sort)                                                              |    3|   1|     2|   0|
-|[depth-first-search, graph, union-find](#depth-first-search, graph, union-find)                                                                          |    8|   2|     4|   2|
-|[depth-first-search, hash-table](#depth-first-search, hash-table)                                                                                        |    6|   2|     3|   1|
-|[depth-first-search, heap](#depth-first-search, heap)                                                                                                    |    2|   1|     1|   0|
-|[depth-first-search, linked-list](#depth-first-search, linked-list)                                                                                      |    2|   1|     1|   0|
-|[depth-first-search, recursion](#depth-first-search, recursion)                                                                                          |   16|   6|     8|   2|
-|[depth-first-search, recursion, tree](#depth-first-search, recursion, tree)                                                                              |   13|   6|     5|   2|
-|[depth-first-search, stack](#depth-first-search, stack)                                                                                                  |    2|   0|     2|   0|
-|[depth-first-search, topological-sort](#depth-first-search, topological-sort)                                                                            |    4|   1|     2|   1|
-|[depth-first-search, tree](#depth-first-search, tree)                                                                                                    |   58|  20|    31|   7|
-|[depth-first-search, trie](#depth-first-search, trie)                                                                                                    |    2|   0|     1|   1|
-|[depth-first-search, union-find](#depth-first-search, union-find)                                                                                        |   19|   2|    14|   3|
-|[design, hash-table](#design, hash-table)                                                                                                                |   12|   3|     7|   2|
-|[design, heap](#design, heap)                                                                                                                            |    3|   0|     2|   1|
-|[design, linked-list](#design, linked-list)                                                                                                              |    3|   0|     2|   1|
-|[design, queue](#design, queue)                                                                                                                          |    4|   3|     1|   0|
-|[design, stack](#design, stack)                                                                                                                          |    6|   3|     3|   0|
-|[design, tree](#design, tree)                                                                                                                            |    5|   2|     2|   1|
-|[design, trie](#design, trie)                                                                                                                            |    3|   0|     2|   1|
-|[divide-and-conquer, dynamic-programming](#divide-and-conquer, dynamic-programming)                                                                      |    4|   1|     1|   2|
-|[divide-and-conquer, heap](#divide-and-conquer, heap)                                                                                                    |    4|   0|     2|   2|
-|[divide-and-conquer, linked-list](#divide-and-conquer, linked-list)                                                                                      |    2|   1|     0|   1|
-|[divide-and-conquer, sort](#divide-and-conquer, sort)                                                                                                    |    4|   0|     1|   3|
-|[dynamic-programming, graph](#dynamic-programming, graph)                                                                                                |    3|   0|     2|   1|
-|[dynamic-programming, greedy](#dynamic-programming, greedy)                                                                                              |   12|   4|     6|   2|
-|[dynamic-programming, greedy, math](#dynamic-programming, greedy, math)                                                                                  |    2|   0|     2|   0|
-|[dynamic-programming, hash-table](#dynamic-programming, hash-table)                                                                                      |    4|   0|     2|   2|
-|[dynamic-programming, heap](#dynamic-programming, heap)                                                                                                  |    4|   1|     1|   2|
-|[dynamic-programming, math](#dynamic-programming, math)                                                                                                  |   26|   5|    18|   3|
-|[dynamic-programming, minimax](#dynamic-programming, minimax)                                                                                            |    4|   0|     4|   0|
-|[dynamic-programming, sliding-window](#dynamic-programming, sliding-window)                                                                              |    4|   0|     3|   1|
-|[dynamic-programming, sort](#dynamic-programming, sort)                                                                                                  |    2|   0|     2|   0|
-|[dynamic-programming, stack](#dynamic-programming, stack)                                                                                                |    4|   1|     1|   2|
-|[dynamic-programming, string](#dynamic-programming, string)                                                                                              |   14|   0|     5|   9|
-|[dynamic-programming, tree](#dynamic-programming, tree)                                                                                                  |    8|   3|     5|   0|
-|[dynamic-programming, two-pointers](#dynamic-programming, two-pointers)                                                                                  |    3|   2|     0|   1|
-|[geometry, math](#geometry, math)                                                                                                                        |    3|   0|     1|   2|
-|[graph, topological-sort](#graph, topological-sort)                                                                                                      |    5|   1|     3|   1|
-|[graph, tree, union-find](#graph, tree, union-find)                                                                                                      |    2|   0|     1|   1|
-|[graph, union-find](#graph, union-find)                                                                                                                  |   14|   2|     8|   4|
-|[greedy, hash-table](#greedy, hash-table)                                                                                                                |    2|   0|     1|   1|
-|[greedy, heap](#greedy, heap)                                                                                                                            |    8|   0|     3|   5|
-|[greedy, heap, sort](#greedy, heap, sort)                                                                                                                |    2|   0|     1|   1|
-|[greedy, math](#greedy, math)                                                                                                                            |   11|   1|     8|   2|
-|[greedy, queue](#greedy, queue)                                                                                                                          |    2|   0|     2|   0|
-|[greedy, sliding-window](#greedy, sliding-window)                                                                                                        |    2|   1|     0|   1|
-|[greedy, sort](#greedy, sort)                                                                                                                            |   11|   1|     6|   4|
-|[greedy, stack](#greedy, stack)                                                                                                                          |    5|   0|     4|   1|
-|[greedy, stack, string](#greedy, stack, string)                                                                                                          |    2|   0|     1|   1|
-|[greedy, string](#greedy, string)                                                                                                                        |   13|   1|     6|   6|
-|[greedy, two-pointers](#greedy, two-pointers)                                                                                                            |    5|   2|     0|   3|
-|[greedy, union-find](#greedy, union-find)                                                                                                                |    2|   0|     1|   1|
-|[hash-table, heap](#hash-table, heap)                                                                                                                    |    5|   0|     4|   1|
-|[hash-table, math](#hash-table, math)                                                                                                                    |   15|   5|     7|   3|
-|[hash-table, sliding-window, string, two-pointers](#hash-table, sliding-window, string, two-pointers)                                                    |    4|   0|     3|   1|
-|[hash-table, sliding-window, two-pointers](#hash-table, sliding-window, two-pointers)                                                                    |    5|   0|     4|   1|
-|[hash-table, sort](#hash-table, sort)                                                                                                                    |    9|   5|     3|   1|
-|[hash-table, stack](#hash-table, stack)                                                                                                                  |    6|   0|     4|   2|
-|[hash-table, string](#hash-table, string)                                                                                                                |   18|   2|    11|   5|
-|[hash-table, string, trie](#hash-table, string, trie)                                                                                                    |    2|   0|     1|   1|
-|[hash-table, string, two-pointers](#hash-table, string, two-pointers)                                                                                    |    6|   0|     3|   3|
-|[hash-table, tree](#hash-table, tree)                                                                                                                    |    7|   1|     6|   0|
-|[hash-table, trie](#hash-table, trie)                                                                                                                    |    6|   1|     4|   1|
-|[hash-table, two-pointers](#hash-table, two-pointers)                                                                                                    |   13|   2|     7|   4|
-|[heap, math](#heap, math)                                                                                                                                |    2|   0|     2|   0|
-|[heap, sort](#heap, sort)                                                                                                                                |    4|   0|     3|   1|
-|[line-sweep, segment-tree](#line-sweep, segment-tree)                                                                                                    |    2|   0|     1|   1|
-|[line-sweep, sort](#line-sweep, sort)                                                                                                                    |    2|   1|     1|   0|
-|[linked-list, recursion](#linked-list, recursion)                                                                                                        |    4|   1|     3|   0|
-|[linked-list, sort](#linked-list, sort)                                                                                                                  |    2|   0|     2|   0|
-|[linked-list, tree](#linked-list, tree)                                                                                                                  |    2|   2|     0|   0|
-|[linked-list, two-pointers](#linked-list, two-pointers)                                                                                                  |    6|   2|     4|   0|
-|[math, recursion](#math, recursion)                                                                                                                      |    5|   0|     3|   2|
-|[math, sort](#math, sort)                                                                                                                                |    5|   1|     2|   2|
-|[math, string](#math, string)                                                                                                                            |   14|   3|     7|   4|
-|[math, two-pointers](#math, two-pointers)                                                                                                                |    2|   0|     1|   1|
-|[math, union-find](#math, union-find)                                                                                                                    |    2|   1|     0|   1|
-|[ordered-map, segment-tree](#ordered-map, segment-tree)                                                                                                  |    4|   0|     1|   3|
-|[queue, tree](#queue, tree)                                                                                                                              |    2|   0|     2|   0|
-|[random, rejection-sampling](#random, rejection-sampling)                                                                                                |    2|   0|     1|   1|
-|[recursion, string](#recursion, string)                                                                                                                  |    3|   0|     3|   0|
-|[recursion, tree](#recursion, tree)                                                                                                                      |   17|   6|     9|   2|
-|[rolling-hash, string](#rolling-hash, string)                                                                                                            |    2|   0|     2|   0|
-|[segment-tree, sort](#segment-tree, sort)                                                                                                                |    4|   0|     0|   4|
-|[sliding-window, string](#sliding-window, string)                                                                                                        |    6|   1|     4|   1|
-|[sliding-window, two-pointers](#sliding-window, two-pointers)                                                                                            |    9|   1|     6|   2|
-|[sort, string](#sort, string)                                                                                                                            |    5|   0|     3|   2|
-|[sort, two-pointers](#sort, two-pointers)                                                                                                                |    8|   5|     3|   0|
-|[stack, string](#stack, string)                                                                                                                          |   15|   1|    11|   3|
-|[stack, tree](#stack, tree)                                                                                                                              |    8|   1|     6|   1|
-|[stack, two-pointers](#stack, two-pointers)                                                                                                              |    2|   1|     0|   1|
-|[string, tree](#string, tree)                                                                                                                            |    3|   2|     1|   0|
-|[string, trie](#string, trie)                                                                                                                            |    4|   1|     2|   1|
-|[string, two-pointers](#string, two-pointers)                                                                                                            |   13|   6|     3|   4|
+|                                                                        Group                                                                        |Total|Easy|Medium|Hard|
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|----:|---:|-----:|---:|
+|[array, backtracking](#array-backtracking)                                                                                                           |    7|   0|     6|   1|
+|[array, binary-search](#array-binary-search)                                                                                                         |   28|   6|    16|   6|
+|[array, binary-search, hash-table](#array-binary-search-hash-table)                                                                                  |    2|   1|     1|   0|
+|[array, binary-search, two-pointers](#array-binary-search-two-pointers)                                                                              |    3|   1|     2|   0|
+|[array, bit-manipulation](#array-bit-manipulation)                                                                                                   |    5|   2|     1|   2|
+|[array, bit-manipulation, math](#array-bit-manipulation-math)                                                                                        |    2|   1|     0|   1|
+|[array, depth-first-search](#array-depth-first-search)                                                                                               |    4|   0|     4|   0|
+|[array, depth-first-search, tree](#array-depth-first-search-tree)                                                                                    |    2|   0|     2|   0|
+|[array, design](#array-design)                                                                                                                       |    5|   1|     3|   1|
+|[array, design, hash-table](#array-design-hash-table)                                                                                                |    2|   0|     1|   1|
+|[array, divide-and-conquer](#array-divide-and-conquer)                                                                                               |    3|   2|     0|   1|
+|[array, dynamic-programming](#array-dynamic-programming)                                                                                             |   19|   4|    10|   5|
+|[array, dynamic-programming, hash-table](#array-dynamic-programming-hash-table)                                                                      |    2|   0|     1|   1|
+|[array, dynamic-programming, sliding-window](#array-dynamic-programming-sliding-window)                                                              |    3|   0|     3|   0|
+|[array, dynamic-programming, stack](#array-dynamic-programming-stack)                                                                                |    2|   0|     0|   2|
+|[array, geometry](#array-geometry)                                                                                                                   |    2|   0|     1|   1|
+|[array, greedy](#array-greedy)                                                                                                                       |   15|   4|    10|   1|
+|[array, greedy, math](#array-greedy-math)                                                                                                            |    2|   0|     2|   0|
+|[array, hash-table](#array-hash-table)                                                                                                               |   25|   6|    13|   6|
+|[array, hash-table, math](#array-hash-table-math)                                                                                                    |    2|   1|     0|   1|
+|[array, hash-table, sort](#array-hash-table-sort)                                                                                                    |    3|   1|     1|   1|
+|[array, hash-table, two-pointers](#array-hash-table-two-pointers)                                                                                    |    2|   0|     1|   1|
+|[array, math](#array-math)                                                                                                                           |   17|   3|     6|   8|
+|[array, sliding-window](#array-sliding-window)                                                                                                       |   10|   2|     7|   1|
+|[array, sort](#array-sort)                                                                                                                           |   22|   8|    12|   2|
+|[array, sort, two-pointers](#array-sort-two-pointers)                                                                                                |    2|   1|     1|   0|
+|[array, stack](#array-stack)                                                                                                                         |    4|   0|     0|   4|
+|[array, string](#array-string)                                                                                                                       |    5|   2|     2|   1|
+|[array, two-pointers](#array-two-pointers)                                                                                                           |   22|   6|    14|   2|
+|[array, union-find](#array-union-find)                                                                                                               |    2|   0|     1|   1|
+|[backtracking, bit-manipulation](#backtracking-bit-manipulation)                                                                                     |    6|   3|     2|   1|
+|[backtracking, breadth-first-search](#backtracking-breadth-first-search)                                                                             |    2|   0|     1|   1|
+|[backtracking, depth-first-search](#backtracking-depth-first-search)                                                                                 |    7|   1|     6|   0|
+|[backtracking, depth-first-search, recursion](#backtracking-depth-first-search-recursion)                                                            |    2|   0|     2|   0|
+|[backtracking, design](#backtracking-design)                                                                                                         |    2|   1|     1|   0|
+|[backtracking, dynamic-programming](#backtracking-dynamic-programming)                                                                               |   12|   1|     5|   6|
+|[backtracking, dynamic-programming, math](#backtracking-dynamic-programming-math)                                                                    |    2|   0|     1|   1|
+|[backtracking, dynamic-programming, string](#backtracking-dynamic-programming-string)                                                                |    2|   0|     0|   2|
+|[backtracking, graph](#backtracking-graph)                                                                                                           |    2|   0|     2|   0|
+|[backtracking, greedy](#backtracking-greedy)                                                                                                         |    3|   1|     0|   2|
+|[backtracking, greedy, string](#backtracking-greedy-string)                                                                                          |    2|   1|     0|   1|
+|[backtracking, math](#backtracking-math)                                                                                                             |    7|   0|     5|   2|
+|[backtracking, string](#backtracking-string)                                                                                                         |    7|   1|     3|   3|
+|[backtracking, trie](#backtracking-trie)                                                                                                             |    3|   0|     1|   2|
+|[binary-indexed-tree, binary-search, divide-and-conquer, segment-tree, sort](#binary-indexed-tree-binary-search-divide-and-conquer-segment-tree-sort)|    3|   0|     0|   3|
+|[binary-indexed-tree, binary-search, segment-tree](#binary-indexed-tree-binary-search-segment-tree)                                                  |    4|   0|     1|   3|
+|[binary-indexed-tree, divide-and-conquer, segment-tree](#binary-indexed-tree-divide-and-conquer-segment-tree)                                        |    4|   0|     0|   4|
+|[binary-indexed-tree, segment-tree](#binary-indexed-tree-segment-tree)                                                                               |    7|   0|     2|   5|
+|[binary-search, depth-first-search, union-find](#binary-search-depth-first-search-union-find)                                                        |    2|   0|     2|   0|
+|[binary-search, divide-and-conquer](#binary-search-divide-and-conquer)                                                                               |    5|   0|     1|   4|
+|[binary-search, dynamic-programming](#binary-search-dynamic-programming)                                                                             |    9|   1|     4|   4|
+|[binary-search, greedy](#binary-search-greedy)                                                                                                       |    5|   1|     2|   2|
+|[binary-search, hash-table](#binary-search-hash-table)                                                                                               |    9|   4|     5|   0|
+|[binary-search, hash-table, sort](#binary-search-hash-table-sort)                                                                                    |    3|   2|     1|   0|
+|[binary-search, hash-table, sort, two-pointers](#binary-search-hash-table-sort-two-pointers)                                                         |    2|   2|     0|   0|
+|[binary-search, heap](#binary-search-heap)                                                                                                           |    5|   0|     4|   1|
+|[binary-search, math](#binary-search-math)                                                                                                           |   12|   4|     6|   2|
+|[binary-search, ordered-map](#binary-search-ordered-map)                                                                                             |    2|   0|     1|   1|
+|[binary-search, queue](#binary-search-queue)                                                                                                         |    2|   1|     0|   1|
+|[binary-search, random](#binary-search-random)                                                                                                       |    3|   1|     2|   0|
+|[binary-search, segment-tree](#binary-search-segment-tree)                                                                                           |    6|   0|     2|   4|
+|[binary-search, sort](#binary-search-sort)                                                                                                           |    7|   2|     2|   3|
+|[binary-search, string](#binary-search-string)                                                                                                       |    2|   0|     1|   1|
+|[binary-search, tree](#binary-search-tree)                                                                                                           |    3|   1|     2|   0|
+|[binary-search, two-pointers](#binary-search-two-pointers)                                                                                           |    6|   3|     2|   1|
+|[binary-search-tree, depth-first-search, recursion, tree](#binary-search-tree-depth-first-search-recursion-tree)                                     |    2|   1|     1|   0|
+|[bit-manipulation, depth-first-search](#bit-manipulation-depth-first-search)                                                                         |    2|   0|     0|   2|
+|[bit-manipulation, dynamic-programming](#bit-manipulation-dynamic-programming)                                                                       |    5|   1|     2|   2|
+|[bit-manipulation, hash-table](#bit-manipulation-hash-table)                                                                                         |    4|   2|     2|   0|
+|[bit-manipulation, math](#bit-manipulation-math)                                                                                                     |    6|   3|     2|   1|
+|[bit-manipulation, string](#bit-manipulation-string)                                                                                                 |    5|   1|     2|   2|
+|[brainteaser, math](#brainteaser-math)                                                                                                               |    2|   0|     2|   0|
+|[breadth-first-search, depth-first-search](#breadth-first-search-depth-first-search)                                                                 |   45|   9|    30|   6|
+|[breadth-first-search, depth-first-search, graph](#breadth-first-search-depth-first-search-graph)                                                    |    8|   1|     7|   0|
+|[breadth-first-search, depth-first-search, graph, topological-sort](#breadth-first-search-depth-first-search-graph-topological-sort)                 |    2|   0|     2|   0|
+|[breadth-first-search, depth-first-search, graph, union-find](#breadth-first-search-depth-first-search-graph-union-find)                             |    2|   0|     2|   0|
+|[breadth-first-search, depth-first-search, hash-table](#breadth-first-search-depth-first-search-hash-table)                                          |    5|   2|     3|   0|
+|[breadth-first-search, depth-first-search, hash-table, tree](#breadth-first-search-depth-first-search-hash-table-tree)                               |    3|   1|     2|   0|
+|[breadth-first-search, depth-first-search, recursion](#breadth-first-search-depth-first-search-recursion)                                            |    5|   1|     4|   0|
+|[breadth-first-search, depth-first-search, recursion, tree](#breadth-first-search-depth-first-search-recursion-tree)                                 |    3|   1|     2|   0|
+|[breadth-first-search, depth-first-search, tree](#breadth-first-search-depth-first-search-tree)                                                      |   14|   5|     8|   1|
+|[breadth-first-search, depth-first-search, union-find](#breadth-first-search-depth-first-search-union-find)                                          |    5|   0|     5|   0|
+|[breadth-first-search, dynamic-programming](#breadth-first-search-dynamic-programming)                                                               |    4|   1|     2|   1|
+|[breadth-first-search, graph](#breadth-first-search-graph)                                                                                           |   12|   2|    10|   0|
+|[breadth-first-search, hash-table](#breadth-first-search-hash-table)                                                                                 |    6|   3|     3|   0|
+|[breadth-first-search, heap](#breadth-first-search-heap)                                                                                             |    5|   1|     1|   3|
+|[breadth-first-search, string](#breadth-first-search-string)                                                                                         |    2|   1|     0|   1|
+|[breadth-first-search, tree](#breadth-first-search-tree)                                                                                             |   21|   5|    14|   2|
+|[depth-first-search, dynamic-programming](#depth-first-search-dynamic-programming)                                                                   |   13|   0|     9|   4|
+|[depth-first-search, dynamic-programming, tree](#depth-first-search-dynamic-programming-tree)                                                        |    3|   0|     3|   0|
+|[depth-first-search, graph](#depth-first-search-graph)                                                                                               |   22|   6|    13|   3|
+|[depth-first-search, graph, topological-sort](#depth-first-search-graph-topological-sort)                                                            |    3|   1|     2|   0|
+|[depth-first-search, graph, union-find](#depth-first-search-graph-union-find)                                                                        |    8|   2|     4|   2|
+|[depth-first-search, hash-table](#depth-first-search-hash-table)                                                                                     |    6|   2|     3|   1|
+|[depth-first-search, heap](#depth-first-search-heap)                                                                                                 |    2|   1|     1|   0|
+|[depth-first-search, linked-list](#depth-first-search-linked-list)                                                                                   |    2|   1|     1|   0|
+|[depth-first-search, recursion](#depth-first-search-recursion)                                                                                       |   16|   6|     8|   2|
+|[depth-first-search, recursion, tree](#depth-first-search-recursion-tree)                                                                            |   13|   6|     5|   2|
+|[depth-first-search, stack](#depth-first-search-stack)                                                                                               |    2|   0|     2|   0|
+|[depth-first-search, topological-sort](#depth-first-search-topological-sort)                                                                         |    4|   1|     2|   1|
+|[depth-first-search, tree](#depth-first-search-tree)                                                                                                 |   58|  20|    31|   7|
+|[depth-first-search, trie](#depth-first-search-trie)                                                                                                 |    2|   0|     1|   1|
+|[depth-first-search, union-find](#depth-first-search-union-find)                                                                                     |   19|   2|    14|   3|
+|[design, hash-table](#design-hash-table)                                                                                                             |   12|   3|     7|   2|
+|[design, heap](#design-heap)                                                                                                                         |    3|   0|     2|   1|
+|[design, linked-list](#design-linked-list)                                                                                                           |    3|   0|     2|   1|
+|[design, queue](#design-queue)                                                                                                                       |    4|   3|     1|   0|
+|[design, stack](#design-stack)                                                                                                                       |    6|   3|     3|   0|
+|[design, tree](#design-tree)                                                                                                                         |    5|   2|     2|   1|
+|[design, trie](#design-trie)                                                                                                                         |    3|   0|     2|   1|
+|[divide-and-conquer, dynamic-programming](#divide-and-conquer-dynamic-programming)                                                                   |    4|   1|     1|   2|
+|[divide-and-conquer, heap](#divide-and-conquer-heap)                                                                                                 |    4|   0|     2|   2|
+|[divide-and-conquer, linked-list](#divide-and-conquer-linked-list)                                                                                   |    2|   1|     0|   1|
+|[divide-and-conquer, sort](#divide-and-conquer-sort)                                                                                                 |    4|   0|     1|   3|
+|[dynamic-programming, graph](#dynamic-programming-graph)                                                                                             |    3|   0|     2|   1|
+|[dynamic-programming, greedy](#dynamic-programming-greedy)                                                                                           |   12|   4|     6|   2|
+|[dynamic-programming, greedy, math](#dynamic-programming-greedy-math)                                                                                |    2|   0|     2|   0|
+|[dynamic-programming, hash-table](#dynamic-programming-hash-table)                                                                                   |    4|   0|     2|   2|
+|[dynamic-programming, heap](#dynamic-programming-heap)                                                                                               |    4|   1|     1|   2|
+|[dynamic-programming, math](#dynamic-programming-math)                                                                                               |   26|   5|    18|   3|
+|[dynamic-programming, minimax](#dynamic-programming-minimax)                                                                                         |    4|   0|     4|   0|
+|[dynamic-programming, sliding-window](#dynamic-programming-sliding-window)                                                                           |    4|   0|     3|   1|
+|[dynamic-programming, sort](#dynamic-programming-sort)                                                                                               |    2|   0|     2|   0|
+|[dynamic-programming, stack](#dynamic-programming-stack)                                                                                             |    4|   1|     1|   2|
+|[dynamic-programming, string](#dynamic-programming-string)                                                                                           |   14|   0|     5|   9|
+|[dynamic-programming, tree](#dynamic-programming-tree)                                                                                               |    8|   3|     5|   0|
+|[dynamic-programming, two-pointers](#dynamic-programming-two-pointers)                                                                               |    3|   2|     0|   1|
+|[geometry, math](#geometry-math)                                                                                                                     |    3|   0|     1|   2|
+|[graph, topological-sort](#graph-topological-sort)                                                                                                   |    5|   1|     3|   1|
+|[graph, tree, union-find](#graph-tree-union-find)                                                                                                    |    2|   0|     1|   1|
+|[graph, union-find](#graph-union-find)                                                                                                               |   14|   2|     8|   4|
+|[greedy, hash-table](#greedy-hash-table)                                                                                                             |    2|   0|     1|   1|
+|[greedy, heap](#greedy-heap)                                                                                                                         |    8|   0|     3|   5|
+|[greedy, heap, sort](#greedy-heap-sort)                                                                                                              |    2|   0|     1|   1|
+|[greedy, math](#greedy-math)                                                                                                                         |   11|   1|     8|   2|
+|[greedy, queue](#greedy-queue)                                                                                                                       |    2|   0|     2|   0|
+|[greedy, sliding-window](#greedy-sliding-window)                                                                                                     |    2|   1|     0|   1|
+|[greedy, sort](#greedy-sort)                                                                                                                         |   11|   1|     6|   4|
+|[greedy, stack](#greedy-stack)                                                                                                                       |    5|   0|     4|   1|
+|[greedy, stack, string](#greedy-stack-string)                                                                                                        |    2|   0|     1|   1|
+|[greedy, string](#greedy-string)                                                                                                                     |   13|   1|     6|   6|
+|[greedy, two-pointers](#greedy-two-pointers)                                                                                                         |    5|   2|     0|   3|
+|[greedy, union-find](#greedy-union-find)                                                                                                             |    2|   0|     1|   1|
+|[hash-table, heap](#hash-table-heap)                                                                                                                 |    5|   0|     4|   1|
+|[hash-table, math](#hash-table-math)                                                                                                                 |   15|   5|     7|   3|
+|[hash-table, sliding-window, string, two-pointers](#hash-table-sliding-window-string-two-pointers)                                                   |    4|   0|     3|   1|
+|[hash-table, sliding-window, two-pointers](#hash-table-sliding-window-two-pointers)                                                                  |    5|   0|     4|   1|
+|[hash-table, sort](#hash-table-sort)                                                                                                                 |    9|   5|     3|   1|
+|[hash-table, stack](#hash-table-stack)                                                                                                               |    6|   0|     4|   2|
+|[hash-table, string](#hash-table-string)                                                                                                             |   18|   2|    11|   5|
+|[hash-table, string, trie](#hash-table-string-trie)                                                                                                  |    2|   0|     1|   1|
+|[hash-table, string, two-pointers](#hash-table-string-two-pointers)                                                                                  |    6|   0|     3|   3|
+|[hash-table, tree](#hash-table-tree)                                                                                                                 |    7|   1|     6|   0|
+|[hash-table, trie](#hash-table-trie)                                                                                                                 |    6|   1|     4|   1|
+|[hash-table, two-pointers](#hash-table-two-pointers)                                                                                                 |   13|   2|     7|   4|
+|[heap, math](#heap-math)                                                                                                                             |    2|   0|     2|   0|
+|[heap, sort](#heap-sort)                                                                                                                             |    4|   0|     3|   1|
+|[line-sweep, segment-tree](#line-sweep-segment-tree)                                                                                                 |    2|   0|     1|   1|
+|[line-sweep, sort](#line-sweep-sort)                                                                                                                 |    2|   1|     1|   0|
+|[linked-list, recursion](#linked-list-recursion)                                                                                                     |    4|   1|     3|   0|
+|[linked-list, sort](#linked-list-sort)                                                                                                               |    2|   0|     2|   0|
+|[linked-list, tree](#linked-list-tree)                                                                                                               |    2|   2|     0|   0|
+|[linked-list, two-pointers](#linked-list-two-pointers)                                                                                               |    6|   2|     4|   0|
+|[math, recursion](#math-recursion)                                                                                                                   |    5|   0|     3|   2|
+|[math, sort](#math-sort)                                                                                                                             |    5|   1|     2|   2|
+|[math, string](#math-string)                                                                                                                         |   14|   3|     7|   4|
+|[math, two-pointers](#math-two-pointers)                                                                                                             |    2|   0|     1|   1|
+|[math, union-find](#math-union-find)                                                                                                                 |    2|   1|     0|   1|
+|[ordered-map, segment-tree](#ordered-map-segment-tree)                                                                                               |    4|   0|     1|   3|
+|[queue, tree](#queue-tree)                                                                                                                           |    2|   0|     2|   0|
+|[random, rejection-sampling](#random-rejection-sampling)                                                                                             |    2|   0|     1|   1|
+|[recursion, string](#recursion-string)                                                                                                               |    3|   0|     3|   0|
+|[recursion, tree](#recursion-tree)                                                                                                                   |   17|   6|     9|   2|
+|[rolling-hash, string](#rolling-hash-string)                                                                                                         |    2|   0|     2|   0|
+|[segment-tree, sort](#segment-tree-sort)                                                                                                             |    4|   0|     0|   4|
+|[sliding-window, string](#sliding-window-string)                                                                                                     |    6|   1|     4|   1|
+|[sliding-window, two-pointers](#sliding-window-two-pointers)                                                                                         |    9|   1|     6|   2|
+|[sort, string](#sort-string)                                                                                                                         |    5|   0|     3|   2|
+|[sort, two-pointers](#sort-two-pointers)                                                                                                             |    8|   5|     3|   0|
+|[stack, string](#stack-string)                                                                                                                       |   15|   1|    11|   3|
+|[stack, tree](#stack-tree)                                                                                                                           |    8|   1|     6|   1|
+|[stack, two-pointers](#stack-two-pointers)                                                                                                           |    2|   1|     0|   1|
+|[string, tree](#string-tree)                                                                                                                         |    3|   2|     1|   0|
+|[string, trie](#string-trie)                                                                                                                         |    4|   1|     2|   1|
+|[string, two-pointers](#string-two-pointers)                                                                                                         |   13|   6|     3|   4|
 
 
 ## array, backtracking
