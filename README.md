@@ -1,3 +1,7 @@
+# Statistics
+
+See the [statistics](statistics/README.md) of all topics.
+
 # Solution
 
 See all [solutions](solutions/README.md).
