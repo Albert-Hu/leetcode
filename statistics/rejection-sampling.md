@@ -1,10 +1,13 @@
-# Rejection Sampling
+# List of All Questions in Rejection Sampling
 
-**Total 2 questions, latest updated at 2021/03/22.**
+**Total Questions: 2, Easy: 0, Medium: 1, Hard: 1, latest updated at 2021/03/25.**
 
-|ID |                                                     Title                                                      |Difficulty|Accepted|Submissions|Acceptance|
-|--:|----------------------------------------------------------------------------------------------------------------|:--------:|-------:|----------:|---------:|
-|903|[Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence)          |   hard   |   8,074|     14,904|       54%|
-|915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|  medium  |  24,839|     53,785|       46%|
+- [math, random](math-random)
+
+## math, random
+
+|Number|                                                     Title                                                      |Level |Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|   915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|Medium|  24,980|     54,021|       46%|
 
 

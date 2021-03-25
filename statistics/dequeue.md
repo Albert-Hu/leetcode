@@ -1,11 +1,29 @@
-# Dequeue
+# List of All Questions in Dequeue
 
-**Total 3 questions, latest updated at 2021/03/22.**
+**Total Questions: 3, Easy: 1, Medium: 0, Hard: 2, latest updated at 2021/03/25.**
 
-| ID |                                                    Title                                                     |Difficulty|Accepted|Submissions|Acceptance|
-|---:|--------------------------------------------------------------------------------------------------------------|:--------:|-------:|----------:|---------:|
-| 239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)                                |   hard   | 378,259|    846,604|       45%|
-|1767|[Find the Subtasks That Did Not Execute](https://leetcode.com/problems/find-the-subtasks-that-did-not-execute)|   hard   |     663|        754|       88%|
-|1789|[Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee)    |   easy   |     683|        873|       78%|
+- [design, linked-list](design-linked-list)
+- [dynamic-programming, segment-tree, two-pointers](dynamic-programming-segment-tree-two-pointers)
+- [heap, sliding-window](heap-sliding-window)
+
+## design, linked-list
+
+|Number|                                                    Title                                                     |Level|Accepted|Submissions|Acceptance|
+|-----:|--------------------------------------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1767|[Find the Subtasks That Did Not Execute](https://leetcode.com/problems/find-the-subtasks-that-did-not-execute)|Hard |     724|        831|       87%|
+
+
+## dynamic-programming, segment-tree, two-pointers
+
+|Number|                                                  Title                                                   |Level|Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1789|[Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee)|Easy |     919|      1,152|       80%|
+
+
+## heap, sliding-window
+
+|Number|                                    Title                                     |Level|Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|   239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)|Hard | 379,807|    849,660|       45%|
 
 

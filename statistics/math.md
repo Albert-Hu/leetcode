@@ -1,201 +1,161 @@
-# Math
+# List of All Questions in Math
 
-**Total 193 questions, latest updated at 2021/03/22.**
+**Total Questions: 194, Easy: 53, Medium: 99, Hard: 42, latest updated at 2021/03/25.**
 
-| ID |                                                                                      Title                                                                                       |Difficulty|Accepted |Submissions|Acceptance|
-|---:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|--------:|----------:|---------:|
-|   2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)                                                                                                                  |  medium  |1,840,455|  5,170,882|       36%|
-|   7|[Reverse Integer](https://leetcode.com/problems/reverse-integer)                                                                                                                  |   easy   |1,444,735|  5,572,529|       26%|
-|   8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)                                                                                                  |  medium  |  706,179|  4,504,602|       16%|
-|   9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)                                                                                                              |   easy   |1,199,989|  2,404,845|       50%|
-|  12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman)                                                                                                                |  medium  |  468,098|    821,172|       57%|
-|  13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)                                                                                                                |   easy   |  930,973|  1,634,902|       57%|
-|  29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers)                                                                                                          |  medium  |  355,082|  2,096,878|       17%|
-|  43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)                                                                                                                |  medium  |  356,096|  1,016,446|       35%|
-|  50|[Pow(x, n)](https://leetcode.com/problems/powx-n)                                                                                                                                 |  medium  |  608,665|  1,964,140|       31%|
-|  60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence)                                                                                                        |   hard   |  221,839|    561,969|       39%|
-|  65|[Valid Number](https://leetcode.com/problems/valid-number)                                                                                                                        |   hard   |  197,273|  1,235,517|       16%|
-|  67|[Add Binary](https://leetcode.com/problems/add-binary)                                                                                                                            |   easy   |  579,291|  1,229,006|       47%|
-|  69|[Sqrt(x)](https://leetcode.com/problems/sqrtx)                                                                                                                                    |   easy   |  693,247|  1,969,060|       35%|
-| 149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line)                                                                                                        |   hard   |  174,740|    997,465|       18%|
-| 166|[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal)                                                                                      |  medium  |  147,185|    658,547|       22%|
-| 168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)                                                                                                |   easy   |  248,758|    781,556|       32%|
-| 171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)                                                                                              |   easy   |  367,601|    644,756|       57%|
-| 172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)                                                                                              |   easy   |  250,345|    647,231|       39%|
-| 202|[Happy Number](https://leetcode.com/problems/happy-number)                                                                                                                        |   easy   |  609,376|  1,187,269|       51%|
-| 204|[Count Primes](https://leetcode.com/problems/count-primes)                                                                                                                        |   easy   |  449,563|  1,392,187|       32%|
-| 223|[Rectangle Area](https://leetcode.com/problems/rectangle-area)                                                                                                                    |  medium  |  117,551|    307,018|       38%|
-| 224|[Basic Calculator](https://leetcode.com/problems/basic-calculator)                                                                                                                |   hard   |  201,107|    526,277|       38%|
-| 231|[Power of Two](https://leetcode.com/problems/power-of-two)                                                                                                                        |   easy   |  404,598|    923,504|       44%|
-| 233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one)                                                                                                          |   hard   |   52,556|    165,224|       32%|
-| 246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number)                                                                                                    |   easy   |  102,479|    220,913|       46%|
-| 247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii)                                                                                              |  medium  |   91,319|    187,740|       49%|
-| 248|[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii)                                                                                            |   hard   |   30,517|     75,709|       40%|
-| 258|[Add Digits](https://leetcode.com/problems/add-digits)                                                                                                                            |   easy   |  346,242|    590,952|       59%|
-| 263|[Ugly Number](https://leetcode.com/problems/ugly-number)                                                                                                                          |   easy   |  234,284|    561,879|       42%|
-| 264|[Ugly Number II](https://leetcode.com/problems/ugly-number-ii)                                                                                                                    |  medium  |  202,004|    470,430|       43%|
-| 268|[Missing Number](https://leetcode.com/problems/missing-number)                                                                                                                    |   easy   |  637,962|  1,159,182|       55%|
-| 273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words)                                                                                                |   hard   |  226,040|    802,062|       28%|
-| 279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)                                                                                                                  |  medium  |  383,865|    782,417|       49%|
-| 296|[Best Meeting Point](https://leetcode.com/problems/best-meeting-point)                                                                                                            |   hard   |   42,071|     72,343|       58%|
-| 313|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number)                                                                                                              |  medium  |   86,009|    185,967|       46%|
-| 319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher)                                                                                                                      |  medium  |   90,407|    199,155|       45%|
-| 326|[Power of Three](https://leetcode.com/problems/power-of-three)                                                                                                                    |   easy   |  319,269|    758,325|       42%|
-| 335|[Self Crossing](https://leetcode.com/problems/self-crossing)                                                                                                                      |   hard   |   24,925|     86,850|       29%|
-| 343|[Integer Break](https://leetcode.com/problems/integer-break)                                                                                                                      |  medium  |  126,461|    246,636|       51%|
-| 356|[Line Reflection](https://leetcode.com/problems/line-reflection)                                                                                                                  |  medium  |   26,114|     79,171|       33%|
-| 357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits)                                                                                |  medium  |   86,564|    177,004|       49%|
-| 360|[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array)                                                                                                    |  medium  |   39,043|     78,447|       50%|
-| 365|[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem)                                                                                                      |  medium  |   46,342|    148,730|       31%|
-| 367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square)                                                                                                        |   easy   |  261,558|    621,963|       42%|
-| 368|[Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset)                                                                                                |  medium  |  109,366|    285,055|       38%|
-| 372|[Super Pow](https://leetcode.com/problems/super-pow)                                                                                                                              |  medium  |   39,746|    108,197|       37%|
-| 396|[Rotate Function](https://leetcode.com/problems/rotate-function)                                                                                                                  |  medium  |   49,134|    134,135|       37%|
-| 397|[Integer Replacement](https://leetcode.com/problems/integer-replacement)                                                                                                          |  medium  |   63,980|    190,892|       34%|
-| 400|[Nth Digit](https://leetcode.com/problems/nth-digit)                                                                                                                              |  medium  |   65,292|    201,517|       32%|
-| 413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices)                                                                                                              |  medium  |  128,184|    213,802|       60%|
-| 423|[Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english)                                                                |  medium  |   26,717|     56,227|       48%|
-| 441|[Arranging Coins](https://leetcode.com/problems/arranging-coins)                                                                                                                  |   easy   |  186,551|    439,884|       42%|
-| 447|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs)                                                                                                        |  medium  |   72,855|    138,810|       52%|
-| 453|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements)                                                                      |   easy   |   88,884|    174,808|       51%|
-| 458|[Poor Pigs](https://leetcode.com/problems/poor-pigs)                                                                                                                              |   hard   |   30,750|     56,384|       55%|
-| 462|[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii)                                                                |  medium  |   51,662|     94,947|       54%|
-| 469|[Convex Polygon](https://leetcode.com/problems/convex-polygon)                                                                                                                    |  medium  |    8,818|     23,487|       38%|
-| 483|[Smallest Good Base](https://leetcode.com/problems/smallest-good-base)                                                                                                            |   hard   |   14,166|     39,057|       36%|
-| 492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle)                                                                                                  |   easy   |   63,669|    126,080|       50%|
-| 507|[Perfect Number](https://leetcode.com/problems/perfect-number)                                                                                                                    |   easy   |   77,400|    213,450|       36%|
-| 517|[Super Washing Machines](https://leetcode.com/problems/super-washing-machines)                                                                                                    |   hard   |   18,695|     48,399|       39%|
-| 523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum)                                                                                                  |  medium  |  180,561|    730,511|       25%|
-| 535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl)                                                                                              |  medium  |  140,655|    170,969|       82%|
-| 537|[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication)                                                                                      |  medium  |   53,819|     78,761|       68%|
-| 553|[Optimal Division](https://leetcode.com/problems/optimal-division)                                                                                                                |  medium  |   27,391|     47,644|       57%|
-| 573|[Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation)                                                                                                          |  medium  |   15,640|     28,895|       54%|
-| 592|[Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction)                                                                              |  medium  |   21,887|     43,605|       50%|
-| 593|[Valid Square](https://leetcode.com/problems/valid-square)                                                                                                                        |  medium  |   58,749|    135,697|       43%|
-| 598|[Range Addition II](https://leetcode.com/problems/range-addition-ii)                                                                                                              |   easy   |   45,919|     91,525|       50%|
-| 625|[Minimum Factorization](https://leetcode.com/problems/minimum-factorization)                                                                                                      |  medium  |    9,195|     27,917|       33%|
-| 628|[Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers)                                                                                |   easy   |  146,796|    313,482|       47%|
-| 633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers)                                                                                                      |  medium  |   81,494|    249,956|       33%|
-| 634|[Find the Derangement of An Array](https://leetcode.com/problems/find-the-derangement-of-an-array)                                                                                |  medium  |    7,318|     18,039|       41%|
-| 640|[Solve the Equation](https://leetcode.com/problems/solve-the-equation)                                                                                                            |  medium  |   27,882|     65,202|       43%|
-| 645|[Set Mismatch](https://leetcode.com/problems/set-mismatch)                                                                                                                        |   easy   |  124,181|    298,377|       42%|
-| 651|[4 Keys Keyboard](https://leetcode.com/problems/4-keys-keyboard)                                                                                                                  |  medium  |   18,222|     34,254|       53%|
-| 660|[Remove 9](https://leetcode.com/problems/remove-9)                                                                                                                                |   hard   |    7,498|     13,821|       54%|
-| 670|[Maximum Swap](https://leetcode.com/problems/maximum-swap)                                                                                                                        |  medium  |   94,420|    208,832|       45%|
-| 672|[Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii)                                                                                                                |  medium  |   14,238|     27,834|       51%|
-| 728|[Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers)                                                                                                      |   easy   |  148,449|    196,526|       76%|
-| 754|[Reach a Number](https://leetcode.com/problems/reach-a-number)                                                                                                                    |  medium  |   30,647|     75,605|       41%|
-| 755|[Pour Water](https://leetcode.com/problems/pour-water)                                                                                                                            |  medium  |   23,902|     54,096|       44%|
-| 790|[Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling)                                                                                              |  medium  |   18,533|     46,114|       40%|
-| 796|[Rotate String](https://leetcode.com/problems/rotate-string)                                                                                                                      |   easy   |   94,192|    191,675|       49%|
-| 797|[All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target)                                                                                  |  medium  |  125,936|    160,402|       79%|
-| 798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score)                                                                        |   hard   |    6,880|     15,282|       45%|
-| 805|[Split Array With Same Average](https://leetcode.com/problems/split-array-with-same-average)                                                                                      |   hard   |   19,044|     70,706|       27%|
-| 810|[Chalkboard XOR Game](https://leetcode.com/problems/chalkboard-xor-game)                                                                                                          |   hard   |    4,932|      9,842|       50%|
-| 818|[Race Car](https://leetcode.com/problems/race-car)                                                                                                                                |   hard   |   23,871|     59,483|       40%|
-| 823|[Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors)                                                                                              |  medium  |   31,403|     71,781|       44%|
-| 828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string)                          |   hard   |   14,891|     31,812|       47%|
-| 830|[Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups)                                                                                              |   easy   |   54,978|    109,017|       50%|
-| 856|[Score of Parentheses](https://leetcode.com/problems/score-of-parentheses)                                                                                                        |  medium  |   71,582|    110,387|       65%|
-| 866|[Prime Palindrome](https://leetcode.com/problems/prime-palindrome)                                                                                                                |  medium  |   21,160|     84,493|       25%|
-| 888|[Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap)                                                                                                                  |   easy   |   60,089|    101,663|       59%|
-| 897|[Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree)                                                                                        |   easy   |  118,132|    158,437|       75%|
-| 899|[Orderly Queue](https://leetcode.com/problems/orderly-queue)                                                                                                                      |   hard   |    9,354|     17,544|       53%|
-| 900|[RLE Iterator](https://leetcode.com/problems/rle-iterator)                                                                                                                        |  medium  |   30,042|     54,154|       55%|
-| 909|[Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders)                                                                                                            |  medium  |   45,292|    115,098|       39%|
-| 910|[Smallest Range II](https://leetcode.com/problems/smallest-range-ii)                                                                                                              |  medium  |   25,131|     80,463|       31%|
-| 915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)                                                                  |  medium  |   24,839|     53,785|       46%|
-| 919|[Complete Binary Tree Inserter](https://leetcode.com/problems/complete-binary-tree-inserter)                                                                                      |  medium  |   22,404|     38,006|       59%|
-| 921|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)                                                                      |  medium  |   95,879|    128,043|       75%|
-| 923|[3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity)                                                                                                    |  medium  |   23,007|     63,363|       36%|
-| 927|[Three Equal Parts](https://leetcode.com/problems/three-equal-parts)                                                                                                              |   hard   |    9,055|     26,130|       35%|
-| 928|[Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii)                                                                                            |   hard   |   12,060|     29,040|       42%|
-| 935|[Knight Dialer](https://leetcode.com/problems/knight-dialer)                                                                                                                      |  medium  |   47,312|    101,559|       47%|
-| 938|[Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)                                                                                                                |   easy   |  349,404|    420,444|       83%|
-| 942|[DI String Match](https://leetcode.com/problems/di-string-match)                                                                                                                  |   easy   |   79,128|    107,456|       74%|
-| 944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted)                                                                                      |   easy   |   51,219|     72,272|       71%|
-| 946|[Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences)                                                                                                |  medium  |   99,245|    154,033|       64%|
-| 950|[Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order)                                                                                |  medium  |   44,026|     58,360|       75%|
-| 963|[Minimum Area Rectangle II](https://leetcode.com/problems/minimum-area-rectangle-ii)                                                                                              |  medium  |   15,620|     30,003|       52%|
-| 979|[Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree)                                                                                  |  medium  |   56,053|     80,265|       70%|
-| 986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections)                                                                                          |  medium  |  171,950|    251,360|       68%|
-| 989|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer)                                                                                        |   easy   |   65,272|    145,297|       45%|
-|1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions)                                                            |  medium  |   28,852|     51,042|       57%|
-|1004|[Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii)                                                                                                |  medium  |   93,702|    153,874|       61%|
-|1010|[Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60)                                          |  medium  |   91,727|    181,811|       50%|
-|1012|[Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits)                                                                                        |   hard   |    6,913|     18,274|       38%|
-|1018|[Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5)                                                                                        |   easy   |   30,133|     63,055|       48%|
-|1033|[Moving Stones Until Consecutive](https://leetcode.com/problems/moving-stones-until-consecutive)                                                                                  |   easy   |   16,033|     37,057|       43%|
-|1038|[Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree)                                                                    |  medium  |   75,067|     91,126|       82%|
-|1048|[Longest String Chain](https://leetcode.com/problems/longest-string-chain)                                                                                                        |  medium  |   94,403|    169,969|       56%|
-|1053|[Previous Permutation With One Swap](https://leetcode.com/problems/previous-permutation-with-one-swap)                                                                            |  medium  |   19,385|     37,925|       51%|
-|1054|[Distant Barcodes](https://leetcode.com/problems/distant-barcodes)                                                                                                                |  medium  |   21,863|     49,442|       44%|
-|1057|[Campus Bikes](https://leetcode.com/problems/campus-bikes)                                                                                                                        |  medium  |   46,611|     80,631|       58%|
-|1064|[Fixed Point](https://leetcode.com/problems/fixed-point)                                                                                                                          |   easy   |   22,921|     35,332|       65%|
-|1068|[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i)                                                                                                |   easy   |   30,780|     37,474|       82%|
-|1069|[Product Sales Analysis II](https://leetcode.com/problems/product-sales-analysis-ii)                                                                                              |   easy   |   25,375|     30,480|       83%|
-|1070|[Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii)                                                                                            |  medium  |   18,112|     36,297|       50%|
-|1077|[Project Employees III](https://leetcode.com/problems/project-employees-iii)                                                                                                      |  medium  |   19,024|     24,442|       78%|
-|1086|[High Five](https://leetcode.com/problems/high-five)                                                                                                                              |   easy   |   52,198|     67,292|       78%|
-|1090|[Largest Values From Labels](https://leetcode.com/problems/largest-values-from-labels)                                                                                            |  medium  |   19,583|     32,618|       60%|
-|1115|[Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately)                                                                                                |  medium  |   35,987|     60,995|       59%|
-|1118|[Number of Days in a Month](https://leetcode.com/problems/number-of-days-in-a-month)                                                                                              |   easy   |    5,031|      8,785|       57%|
-|1119|[Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string)                                                                                          |   easy   |   62,746|     69,333|       90%|
-|1131|[Maximum of Absolute Value Expression](https://leetcode.com/problems/maximum-of-absolute-value-expression)                                                                        |  medium  |   11,597|     22,435|       52%|
-|1148|[Article Views I](https://leetcode.com/problems/article-views-i)                                                                                                                  |   easy   |   20,694|     26,849|       77%|
-|1152|[Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern)                                                                            |  medium  |   28,825|     66,819|       43%|
-|1164|[Product Price at a Given Date](https://leetcode.com/problems/product-price-at-a-given-date)                                                                                      |  medium  |   14,592|     21,220|       69%|
-|1166|[Design File System](https://leetcode.com/problems/design-file-system)                                                                                                            |  medium  |   10,497|     17,965|       58%|
-|1167|[Minimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks)                                                                                    |  medium  |   43,080|     66,717|       65%|
-|1183|[Maximum Number of Ones](https://leetcode.com/problems/maximum-number-of-ones)                                                                                                    |   hard   |    1,681|      2,918|       58%|
-|1189|[Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons)                                                                                            |   easy   |   58,091|     93,609|       62%|
-|1194|[Tournament Winners](https://leetcode.com/problems/tournament-winners)                                                                                                            |   hard   |    7,978|     15,236|       52%|
-|1195|[Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded)                                                                                                  |  medium  |   17,747|     25,077|       71%|
-|1199|[Minimum Time to Build Blocks](https://leetcode.com/problems/minimum-time-to-build-blocks)                                                                                        |   hard   |    2,752|      7,099|       39%|
-|1200|[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference)                                                                                          |   easy   |   59,279|     88,470|       67%|
-|1206|[Design Skiplist](https://leetcode.com/problems/design-skiplist)                                                                                                                  |   hard   |    7,271|     12,353|       59%|
-|1213|[Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays)                                                                          |   easy   |   41,766|     52,618|       79%|
-|1223|[Dice Roll Simulation](https://leetcode.com/problems/dice-roll-simulation)                                                                                                        |   hard   |   16,889|     36,176|       47%|
-|1230|[Toss Strange Coins](https://leetcode.com/problems/toss-strange-coins)                                                                                                            |  medium  |    5,743|     11,404|       50%|
-|1255|[Maximum Score Words Formed by Letters](https://leetcode.com/problems/maximum-score-words-formed-by-letters)                                                                      |   hard   |   11,768|     16,807|       70%|
-|1260|[Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid)                                                                                                                      |   easy   |   24,766|     40,068|       62%|
-|1276|[Number of Burgers with No Waste of Ingredients](https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients)                                                    |  medium  |   13,565|     27,077|       50%|
-|1277|[Count Square Submatrices with All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones)                                                                    |  medium  |   92,204|    126,692|       73%|
-|1279|[Traffic Light Controlled Intersection](https://leetcode.com/problems/traffic-light-controlled-intersection)                                                                      |   easy   |    5,660|      7,444|       76%|
-|1284|[Minimum Number of Flips to Convert Binary Matrix to Zero Matrix](https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix)                  |   hard   |   11,237|     16,031|       70%|
-|1307|[Verbal Arithmetic Puzzle](https://leetcode.com/problems/verbal-arithmetic-puzzle)                                                                                                |   hard   |    5,478|     14,901|       37%|
-|1329|[Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally)                                                                                            |  medium  |   53,862|     65,907|       82%|
-|1330|[Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value)                                                                |   hard   |    2,865|      7,793|       37%|
-|1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv)                                                                                                                        |   hard   |   31,004|     73,955|       42%|
-|1349|[Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam)                                                                                        |   hard   |    7,307|     16,530|       44%|
-|1358|[Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters)                                        |  medium  |   20,345|     33,606|       61%|
-|1359|[Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options)                                                          |   hard   |   11,038|     19,616|       56%|
-|1362|[Closest Divisors](https://leetcode.com/problems/closest-divisors)                                                                                                                |  medium  |   11,933|     20,687|       58%|
-|1372|[Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree)                                                                        |  medium  |   18,064|     32,847|       55%|
-|1379|[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)            |  medium  |   70,881|     83,741|       85%|
-|1401|[Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping)                                                                                |  medium  |    7,304|     17,208|       42%|
-|1406|[Stone Game III](https://leetcode.com/problems/stone-game-iii)                                                                                                                    |   hard   |   16,637|     28,898|       58%|
-|1429|[First Unique Number](https://leetcode.com/problems/first-unique-number)                                                                                                          |  medium  |   52,931|    106,365|       50%|
-|1440|[Evaluate Boolean Expression](https://leetcode.com/problems/evaluate-boolean-expression)                                                                                          |  medium  |    6,236|      8,324|       75%|
-|1446|[Consecutive Characters](https://leetcode.com/problems/consecutive-characters)                                                                                                    |   easy   |   66,102|    108,112|       61%|
-|1448|[Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree)                                                                                  |  medium  |   35,194|     49,546|       71%|
-|1461|[Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k)                                      |  medium  |   39,891|     73,477|       54%|
-|1543|[Fix Product Name Format](https://leetcode.com/problems/fix-product-name-format)                                                                                                  |   easy   |    6,340|      9,410|       67%|
-|1553|[Minimum Number of Days to Eat N Oranges](https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges)                                                                  |   hard   |   14,060|     47,160|       30%|
-|1571|[Warehouse Manager](https://leetcode.com/problems/warehouse-manager)                                                                                                              |   easy   |    9,495|     10,581|       90%|
-|1577|[Number of Ways Where Square of Number Is Equal to Product of Two Numbers](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers)|  medium  |   11,242|     29,988|       37%|
-|1585|[Check If String Is Transformable With Substring Sort Operations](https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations)                  |   hard   |    4,651|      9,600|       48%|
-|1620|[Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality)                                                                  |  medium  |    4,878|     13,161|       37%|
-|1630|[Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays)                                                                                                        |  medium  |   14,895|     19,186|       78%|
-|1631|[Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort)                                                                                                |  medium  |   34,919|     69,860|       50%|
-|1635|[Hopper Company Queries I](https://leetcode.com/problems/hopper-company-queries-i)                                                                                                |   hard   |    1,910|      3,425|       56%|
-|1636|[Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency)                                                                            |   easy   |   19,284|     28,870|       67%|
-|1674|[Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary)                                                              |  medium  |    3,820|     10,977|       35%|
-|1694|[Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number)                                                                                                      |   easy   |   13,522|     20,626|       66%|
-|1699|[Number of Calls Between Two Persons](https://leetcode.com/problems/number-of-calls-between-two-persons)                                                                          |  medium  |    3,395|      3,923|       87%|
-|1728|[Cat and Mouse II](https://leetcode.com/problems/cat-and-mouse-ii)                                                                                                                |   hard   |    2,917|      7,136|       41%|
-|1761|[Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph)                                                      |   hard   |    5,568|     14,938|       37%|
-|1771|[Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences)                                                        |   hard   |    4,322|     12,695|       34%|
-|1787|[Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero)                                                            |   hard   |    1,901|      5,315|       36%|
+- [array, binary-search, hash-table](array-binary-search-hash-table)
+- [array, bit-manipulation](array-bit-manipulation)
+- [array, geometry](array-geometry)
+- [array, greedy](array-greedy)
+- [array, hash-table](array-hash-table)
+- [backtracking, dynamic-programming](backtracking-dynamic-programming)
+- [backtracking, graph](backtracking-graph)
+- [binary-search, dynamic-programming](binary-search-dynamic-programming)
+- [binary-search, greedy](binary-search-greedy)
+- [brainteaser, dynamic-programming](brainteaser-dynamic-programming)
+- [breadth-first-search, dynamic-programming](breadth-first-search-dynamic-programming)
+- [dynamic-programming, greedy](dynamic-programming-greedy)
+- [dynamic-programming, hash-table](dynamic-programming-hash-table)
+- [dynamic-programming, heap](dynamic-programming-heap)
+- [dynamic-programming, minimax](dynamic-programming-minimax)
+- [greedy, sort](greedy-sort)
+- [linked-list, recursion](linked-list-recursion)
+- [random, rejection-sampling](random-rejection-sampling)
+- [sort, two-pointers](sort-two-pointers)
+
+## array, binary-search, hash-table
+
+|Number|                                   Title                                    |Level|Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1694|[Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number)|Easy |  13,730|     20,943|       66%|
+
+
+## array, bit-manipulation
+
+|Number|                                                     Title                                                      |Level|Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|   268|[Missing Number](https://leetcode.com/problems/missing-number)                                                  |Easy | 641,076|  1,163,773|       55%|
+|  1553|[Minimum Number of Days to Eat N Oranges](https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges)|Hard |  14,152|     47,405|       30%|
+
+
+## array, geometry
+
+|Number|                                          Title                                           |Level|Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1349|[Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam)|Hard |   7,318|     16,554|       44%|
+
+
+## array, greedy
+
+|Number|                                                     Title                                                      |Level |Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|  1329|[Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally)                          |Medium|  54,329|     66,470|       82%|
+|  1620|[Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality)|Medium|   4,907|     13,230|       37%|
+
+
+## array, hash-table
+
+|Number|                                      Title                                       |Level|Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1635|[Hopper Company Queries I](https://leetcode.com/problems/hopper-company-queries-i)|Hard |   1,959|      3,501|       56%|
+
+
+## backtracking, dynamic-programming
+
+|Number|                                                           Title                                                            |Level |Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|   357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits)                          |Medium|  86,708|    177,273|       49%|
+|  1761|[Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph)| Hard |   5,645|     15,123|       37%|
+
+
+## backtracking, graph
+
+|Number|                                                    Title                                                     |Level |Accepted|Submissions|Acceptance|
+|-----:|--------------------------------------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|  1038|[Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree)|Medium|  75,618|     91,778|       82%|
+
+
+## binary-search, dynamic-programming
+
+|Number|                                    Title                                     |Level |Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|   923|[3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity)|Medium|  38,547|     94,207|       41%|
+
+
+## binary-search, greedy
+
+|Number|                                       Title                                        |Level |Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|   963|[Minimum Area Rectangle II](https://leetcode.com/problems/minimum-area-rectangle-ii)|Medium|  15,725|     30,180|       52%|
+
+
+## brainteaser, dynamic-programming
+
+|Number|                              Title                               |Level |Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|  1362|[Closest Divisors](https://leetcode.com/problems/closest-divisors)|Medium|  12,030|     20,816|       58%|
+
+
+## breadth-first-search, dynamic-programming
+
+|Number|                             Title                              |Level |Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|   279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|Medium| 384,927|    784,167|       49%|
+
+
+## dynamic-programming, greedy
+
+|Number|                                                Title                                                 |Level |Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|   651|[4 Keys Keyboard](https://leetcode.com/problems/4-keys-keyboard)                                      |Medium|  18,258|     34,321|       53%|
+|  1053|[Previous Permutation With One Swap](https://leetcode.com/problems/previous-permutation-with-one-swap)|Medium|  19,600|     38,301|       51%|
+
+
+## dynamic-programming, hash-table
+
+|Number|                                                      Title                                                       |Level|Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1330|[Reverse Subarray To Maximize Array Value](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value)|Hard |   2,887|      7,845|       37%|
+
+
+## dynamic-programming, heap
+
+|Number|                            Title                             |Level |Accepted|Submissions|Acceptance|
+|-----:|--------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|   264|[Ugly Number II](https://leetcode.com/problems/ugly-number-ii)|Medium| 202,364|    471,183|       43%|
+
+
+## dynamic-programming, minimax
+
+|Number|                                Title                                 |Level |Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|   909|[Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders)|Medium|  45,576|    115,867|       39%|
+
+
+## greedy, sort
+
+|Number|                                                          Title                                                           |Level|Accepted|Submissions|Acceptance|
+|-----:|--------------------------------------------------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1771|[Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences)|Hard |   4,383|     12,851|       34%|
+
+
+## linked-list, recursion
+
+|Number|                             Title                              |Level |Accepted |Submissions|Acceptance|
+|-----:|----------------------------------------------------------------|:----:|--------:|----------:|---------:|
+|     2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|Medium|1,847,581|  5,186,959|       36%|
+
+
+## random, rejection-sampling
+
+|Number|                                                     Title                                                      |Level |Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|   915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|Medium|  24,980|     54,021|       46%|
+
+
+## sort, two-pointers
+
+|Number|                                    Title                                     |Level |Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|   360|[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array)|Medium|  39,143|     78,609|       50%|
 
 

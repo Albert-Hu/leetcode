@@ -1,24 +1,63 @@
-# Segment Tree
+# List of All Questions in Segment Tree
 
-**Total 16 questions, latest updated at 2021/03/22.**
+**Total Questions: 16, Easy: 2, Medium: 4, Hard: 10, latest updated at 2021/03/25.**
 
-| ID |                                                    Title                                                     |Difficulty|Accepted|Submissions|Acceptance|
-|---:|--------------------------------------------------------------------------------------------------------------|:--------:|-------:|----------:|---------:|
-| 218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)                                      |   hard   | 165,420|    453,826|       36%|
-| 307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable)                            |  medium  | 131,839|    358,027|       37%|
-| 308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable)                      |   hard   |  54,839|    144,845|       38%|
-| 315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)      |   hard   | 164,020|    386,525|       42%|
-| 327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)                                        |   hard   |  48,963|    135,632|       36%|
-| 493|[Reverse Pairs](https://leetcode.com/problems/reverse-pairs)                                                  |   hard   |  52,053|    192,880|       27%|
-| 699|[Falling Squares](https://leetcode.com/problems/falling-squares)                                              |   hard   |  15,446|     36,238|       43%|
-| 715|[Range Module](https://leetcode.com/problems/range-module)                                                    |   hard   |  26,205|     64,921|       40%|
-| 732|[My Calendar III](https://leetcode.com/problems/my-calendar-iii)                                              |   hard   |  26,104|     42,054|       62%|
-| 880|[Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index)                              |  medium  |  28,560|    101,306|       28%|
-|1262|[Greatest Sum Divisible by Three](https://leetcode.com/problems/greatest-sum-divisible-by-three)              |  medium  |  25,931|     52,111|       50%|
-|1478|[Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes)                                        |   hard   |   8,024|     14,856|       54%|
-|1633|[Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest)|   easy   |   4,415|      6,197|       71%|
-|1645|[Hopper Company Queries II](https://leetcode.com/problems/hopper-company-queries-ii)                          |   hard   |   1,481|      3,886|       38%|
-|1772|[Sort Features by Popularity](https://leetcode.com/problems/sort-features-by-popularity)                      |  medium  |     934|      1,442|       65%|
-|1789|[Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee)    |   easy   |     683|        873|       78%|
+- [array, binary-search](array-binary-search)
+- [binary-indexed-tree, binary-search, divide-and-conquer, sort](binary-indexed-tree-binary-search-divide-and-conquer-sort)
+- [binary-indexed-tree, binary-search, ordered-map](binary-indexed-tree-binary-search-ordered-map)
+- [binary-indexed-tree, divide-and-conquer, heap, line-sweep](binary-indexed-tree-divide-and-conquer-heap-line-sweep)
+- [binary-search, bit-manipulation](binary-search-bit-manipulation)
+- [dequeue, dynamic-programming, two-pointers](dequeue-dynamic-programming-two-pointers)
+- [greedy, sort](greedy-sort)
+
+## array, binary-search
+
+|Number|                                             Title                                              |Level |Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|  1262|[Greatest Sum Divisible by Three](https://leetcode.com/problems/greatest-sum-divisible-by-three)|Medium|  26,146|     52,483|       50%|
+
+
+## binary-indexed-tree, binary-search, divide-and-conquer, sort
+
+|Number|                                                 Title                                                  |Level|Accepted|Submissions|Acceptance|
+|-----:|--------------------------------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|   315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)|Hard | 164,536|    387,811|       42%|
+|   327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)                                  |Hard |  49,072|    135,862|       36%|
+|   493|[Reverse Pairs](https://leetcode.com/problems/reverse-pairs)                                            |Hard |  52,338|    193,757|       27%|
+
+
+## binary-indexed-tree, binary-search, ordered-map
+
+|Number|                                         Title                                          |Level |Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
+|  1772|[Sort Features by Popularity](https://leetcode.com/problems/sort-features-by-popularity)|Medium|     980|      1,510|       65%|
+
+
+## binary-indexed-tree, divide-and-conquer, heap, line-sweep
+
+|Number|                                 Title                                  |Level|Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|   218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)|Hard | 165,985|    454,876|       36%|
+
+
+## binary-search, bit-manipulation
+
+|Number|                                       Title                                        |Level|Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1645|[Hopper Company Queries II](https://leetcode.com/problems/hopper-company-queries-ii)|Hard |   1,529|      3,987|       38%|
+
+
+## dequeue, dynamic-programming, two-pointers
+
+|Number|                                                  Title                                                   |Level|Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1789|[Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee)|Easy |     919|      1,152|       80%|
+
+
+## greedy, sort
+
+|Number|                                Title                                 |Level|Accepted|Submissions|Acceptance|
+|-----:|----------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1478|[Allocate Mailboxes](https://leetcode.com/problems/allocate-mailboxes)|Hard |   8,116|     15,032|       54%|
 
 

@@ -1,10 +1,13 @@
-# Suffix Array
+# List of All Questions in Suffix Array
 
-**Total 2 questions, latest updated at 2021/03/22.**
+**Total Questions: 2, Easy: 2, Medium: 0, Hard: 0, latest updated at 2021/03/25.**
 
-| ID |                                   Title                                    |Difficulty|Accepted|Submissions|Acceptance|
-|---:|----------------------------------------------------------------------------|:--------:|-------:|----------:|---------:|
-|1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array)    |   easy   |  87,841|    129,033|       68%|
-|1133|[Largest Unique Number](https://leetcode.com/problems/largest-unique-number)|   easy   |  15,165|     22,549|       67%|
+- [binary-search, hash-table](binary-search-hash-table)
+
+## binary-search, hash-table
+
+|Number|                                 Title                                  |Level|Accepted|Submissions|Acceptance|
+|-----:|------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
+|  1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array)|Easy |  88,420|    129,855|       68%|
 
 
