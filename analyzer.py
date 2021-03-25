@@ -191,7 +191,7 @@ def generate_markdown(to, topics, questions):
         timestamp))
       for k in sorted(t['similarities'].keys()):
         similarity_topics = sorted(t['similarities'][k]['topics'])
-        md.write('- [{}]({})\n'.format(', '.join(similarity_topics), '-'.join(similarity_topics)))
+        md.write('- [{}](#{})\n'.format(', '.join(similarity_topics), '-'.join(similarity_topics)))
       md.write('\n')
       for k in sorted(t['similarities'].keys()):
         question_json = {

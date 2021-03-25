@@ -2,7 +2,7 @@
 
 **Total Questions: 3, Easy: 1, Medium: 2, Hard: 0, latest updated at 2021/03/25.**
 
-- [hash-table, string, trie](hash-table-string-trie)
+- [hash-table, string, trie](#hash-table-string-trie)
 
 ## hash-table, string, trie
 

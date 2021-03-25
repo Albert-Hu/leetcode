@@ -2,19 +2,19 @@
 
 **Total Questions: 49, Easy: 10, Medium: 32, Hard: 7, latest updated at 2021/03/25.**
 
-- [backtracking, depth-first-search](backtracking-depth-first-search)
-- [backtracking, math](backtracking-math)
-- [binary-search, depth-first-search, union-find](binary-search-depth-first-search-union-find)
-- [breadth-first-search, depth-first-search](breadth-first-search-depth-first-search)
-- [breadth-first-search, depth-first-search, heap](breadth-first-search-depth-first-search-heap)
-- [breadth-first-search, depth-first-search, topological-sort](breadth-first-search-depth-first-search-topological-sort)
-- [breadth-first-search, depth-first-search, union-find](breadth-first-search-depth-first-search-union-find)
-- [depth-first-search, dynamic-programming](depth-first-search-dynamic-programming)
-- [depth-first-search, topological-sort](depth-first-search-topological-sort)
-- [depth-first-search, tree, union-find](depth-first-search-tree-union-find)
-- [depth-first-search, union-find](depth-first-search-union-find)
-- [greedy, union-find](greedy-union-find)
-- [tree, union-find](tree-union-find)
+- [backtracking, depth-first-search](#backtracking-depth-first-search)
+- [backtracking, math](#backtracking-math)
+- [binary-search, depth-first-search, union-find](#binary-search-depth-first-search-union-find)
+- [breadth-first-search, depth-first-search](#breadth-first-search-depth-first-search)
+- [breadth-first-search, depth-first-search, heap](#breadth-first-search-depth-first-search-heap)
+- [breadth-first-search, depth-first-search, topological-sort](#breadth-first-search-depth-first-search-topological-sort)
+- [breadth-first-search, depth-first-search, union-find](#breadth-first-search-depth-first-search-union-find)
+- [depth-first-search, dynamic-programming](#depth-first-search-dynamic-programming)
+- [depth-first-search, topological-sort](#depth-first-search-topological-sort)
+- [depth-first-search, tree, union-find](#depth-first-search-tree-union-find)
+- [depth-first-search, union-find](#depth-first-search-union-find)
+- [greedy, union-find](#greedy-union-find)
+- [tree, union-find](#tree-union-find)
 
 ## backtracking, depth-first-search
 

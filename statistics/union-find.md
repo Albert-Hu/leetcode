@@ -2,14 +2,14 @@
 
 **Total Questions: 35, Easy: 5, Medium: 22, Hard: 8, latest updated at 2021/03/25.**
 
-- [binary-search, depth-first-search, graph](binary-search-depth-first-search-graph)
-- [binary-search, depth-first-search, heap](binary-search-depth-first-search-heap)
-- [breadth-first-search, depth-first-search, graph](breadth-first-search-depth-first-search-graph)
-- [breadth-first-search, depth-first-search](breadth-first-search-depth-first-search)
-- [depth-first-search, graph, tree](depth-first-search-graph-tree)
-- [depth-first-search, graph](depth-first-search-graph)
-- [graph, greedy](graph-greedy)
-- [graph, tree](graph-tree)
+- [binary-search, depth-first-search, graph](#binary-search-depth-first-search-graph)
+- [binary-search, depth-first-search, heap](#binary-search-depth-first-search-heap)
+- [breadth-first-search, depth-first-search, graph](#breadth-first-search-depth-first-search-graph)
+- [breadth-first-search, depth-first-search](#breadth-first-search-depth-first-search)
+- [depth-first-search, graph, tree](#depth-first-search-graph-tree)
+- [depth-first-search, graph](#depth-first-search-graph)
+- [graph, greedy](#graph-greedy)
+- [graph, tree](#graph-tree)
 
 ## binary-search, depth-first-search, graph
 

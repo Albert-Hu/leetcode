@@ -2,9 +2,9 @@
 
 **Total Questions: 6, Easy: 1, Medium: 3, Hard: 2, latest updated at 2021/03/25.**
 
-- [breadth-first-search, depth-first-search, graph](breadth-first-search-depth-first-search-graph)
-- [depth-first-search, graph](depth-first-search-graph)
-- [depth-first-search, memoization](depth-first-search-memoization)
+- [breadth-first-search, depth-first-search, graph](#breadth-first-search-depth-first-search-graph)
+- [depth-first-search, graph](#depth-first-search-graph)
+- [depth-first-search, memoization](#depth-first-search-memoization)
 
 ## breadth-first-search, depth-first-search, graph
 

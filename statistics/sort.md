@@ -2,22 +2,22 @@
 
 **Total Questions: 73, Easy: 21, Medium: 38, Hard: 14, latest updated at 2021/03/25.**
 
-- [array, hash-table](array-hash-table)
-- [array, two-pointers](array-two-pointers)
-- [binary-indexed-tree, binary-search, divide-and-conquer, segment-tree](binary-indexed-tree-binary-search-divide-and-conquer-segment-tree)
-- [binary-search, dynamic-programming](binary-search-dynamic-programming)
-- [binary-search, hash-table, random](binary-search-hash-table-random)
-- [binary-search, hash-table, two-pointers](binary-search-hash-table-two-pointers)
-- [design, hash-table](design-hash-table)
-- [divide-and-conquer, heap](divide-and-conquer-heap)
-- [greedy, heap](greedy-heap)
-- [greedy, heap, string](greedy-heap-string)
-- [greedy, line-sweep](greedy-line-sweep)
-- [greedy, math](greedy-math)
-- [greedy, segment-tree](greedy-segment-tree)
-- [greedy, two-pointers](greedy-two-pointers)
-- [line-sweep, two-pointers](line-sweep-two-pointers)
-- [math, two-pointers](math-two-pointers)
+- [array, hash-table](#array-hash-table)
+- [array, two-pointers](#array-two-pointers)
+- [binary-indexed-tree, binary-search, divide-and-conquer, segment-tree](#binary-indexed-tree-binary-search-divide-and-conquer-segment-tree)
+- [binary-search, dynamic-programming](#binary-search-dynamic-programming)
+- [binary-search, hash-table, random](#binary-search-hash-table-random)
+- [binary-search, hash-table, two-pointers](#binary-search-hash-table-two-pointers)
+- [design, hash-table](#design-hash-table)
+- [divide-and-conquer, heap](#divide-and-conquer-heap)
+- [greedy, heap](#greedy-heap)
+- [greedy, heap, string](#greedy-heap-string)
+- [greedy, line-sweep](#greedy-line-sweep)
+- [greedy, math](#greedy-math)
+- [greedy, segment-tree](#greedy-segment-tree)
+- [greedy, two-pointers](#greedy-two-pointers)
+- [line-sweep, two-pointers](#line-sweep-two-pointers)
+- [math, two-pointers](#math-two-pointers)
 
 ## array, hash-table
 

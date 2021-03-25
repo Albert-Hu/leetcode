@@ -2,7 +2,7 @@
 
 **Total Questions: 1, Easy: 0, Medium: 0, Hard: 1, latest updated at 2021/03/25.**
 
-- [depth-first-search, topological-sort](depth-first-search-topological-sort)
+- [depth-first-search, topological-sort](#depth-first-search-topological-sort)
 
 ## depth-first-search, topological-sort
 

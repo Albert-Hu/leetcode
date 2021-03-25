@@ -2,11 +2,11 @@
 
 **Total Questions: 43, Easy: 12, Medium: 26, Hard: 5, latest updated at 2021/03/25.**
 
-- [dequeue, design](dequeue-design)
-- [divide-and-conquer, heap](divide-and-conquer-heap)
-- [divide-and-conquer, tree](divide-and-conquer-tree)
-- [dynamic-programming, tree](dynamic-programming-tree)
-- [math, recursion](math-recursion)
+- [dequeue, design](#dequeue-design)
+- [divide-and-conquer, heap](#divide-and-conquer-heap)
+- [divide-and-conquer, tree](#divide-and-conquer-tree)
+- [dynamic-programming, tree](#dynamic-programming-tree)
+- [math, recursion](#math-recursion)
 
 ## dequeue, design
 

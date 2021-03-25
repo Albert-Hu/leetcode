@@ -2,7 +2,7 @@
 
 **Total Questions: 9, Easy: 0, Medium: 5, Hard: 4, latest updated at 2021/03/25.**
 
-- [array, math](array-math)
+- [array, math](#array-math)
 
 ## array, math
 

@@ -2,7 +2,7 @@
 
 **Total Questions: 5, Easy: 3, Medium: 2, Hard: 0, latest updated at 2021/03/25.**
 
-- [depth-first-search, recursion, tree](depth-first-search-recursion-tree)
+- [depth-first-search, recursion, tree](#depth-first-search-recursion-tree)
 
 ## depth-first-search, recursion, tree
 

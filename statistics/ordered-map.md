@@ -2,8 +2,8 @@
 
 **Total Questions: 14, Easy: 2, Medium: 7, Hard: 5, latest updated at 2021/03/25.**
 
-- [binary-indexed-tree, binary-search, segment-tree](binary-indexed-tree-binary-search-segment-tree)
-- [dynamic-programming, stack](dynamic-programming-stack)
+- [binary-indexed-tree, binary-search, segment-tree](#binary-indexed-tree-binary-search-segment-tree)
+- [dynamic-programming, stack](#dynamic-programming-stack)
 
 ## binary-indexed-tree, binary-search, segment-tree
 

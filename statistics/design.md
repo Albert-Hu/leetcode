@@ -2,13 +2,13 @@
 
 **Total Questions: 59, Easy: 20, Medium: 28, Hard: 11, latest updated at 2021/03/25.**
 
-- [array, hash-table](array-hash-table)
-- [backtracking, depth-first-search, trie](backtracking-depth-first-search-trie)
-- [dequeue, linked-list](dequeue-linked-list)
-- [hash-table, heap](hash-table-heap)
-- [hash-table, sort](hash-table-sort)
-- [oop, tree](oop-tree)
-- [stack, tree](stack-tree)
+- [array, hash-table](#array-hash-table)
+- [backtracking, depth-first-search, trie](#backtracking-depth-first-search-trie)
+- [dequeue, linked-list](#dequeue-linked-list)
+- [hash-table, heap](#hash-table-heap)
+- [hash-table, sort](#hash-table-sort)
+- [oop, tree](#oop-tree)
+- [stack, tree](#stack-tree)
 
 ## array, hash-table
 

@@ -2,7 +2,7 @@
 
 **Total Questions: 2, Easy: 2, Medium: 0, Hard: 0, latest updated at 2021/03/25.**
 
-- [binary-search, hash-table](binary-search-hash-table)
+- [binary-search, hash-table](#binary-search-hash-table)
 
 ## binary-search, hash-table
 

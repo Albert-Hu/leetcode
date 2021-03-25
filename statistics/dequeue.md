@@ -2,9 +2,9 @@
 
 **Total Questions: 3, Easy: 1, Medium: 0, Hard: 2, latest updated at 2021/03/25.**
 
-- [design, linked-list](design-linked-list)
-- [dynamic-programming, segment-tree, two-pointers](dynamic-programming-segment-tree-two-pointers)
-- [heap, sliding-window](heap-sliding-window)
+- [design, linked-list](#design-linked-list)
+- [dynamic-programming, segment-tree, two-pointers](#dynamic-programming-segment-tree-two-pointers)
+- [heap, sliding-window](#heap-sliding-window)
 
 ## design, linked-list
 

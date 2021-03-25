@@ -2,16 +2,16 @@
 
 **Total Questions: 35, Easy: 7, Medium: 23, Hard: 5, latest updated at 2021/03/25.**
 
-- [backtracking, breadth-first-search, depth-first-search](backtracking-breadth-first-search-depth-first-search)
-- [backtracking, depth-first-search, string](backtracking-depth-first-search-string)
-- [binary-search-tree, depth-first-search, tree](binary-search-tree-depth-first-search-tree)
-- [breadth-first-search, depth-first-search, queue, tree](breadth-first-search-depth-first-search-queue-tree)
-- [breadth-first-search, depth-first-search](breadth-first-search-depth-first-search)
-- [breadth-first-search, depth-first-search, tree](breadth-first-search-depth-first-search-tree)
-- [depth-first-search, tree](depth-first-search-tree)
-- [divide-and-conquer, sliding-window](divide-and-conquer-sliding-window)
-- [hash-table, stack](hash-table-stack)
-- [linked-list, math](linked-list-math)
+- [backtracking, breadth-first-search, depth-first-search](#backtracking-breadth-first-search-depth-first-search)
+- [backtracking, depth-first-search, string](#backtracking-depth-first-search-string)
+- [binary-search-tree, depth-first-search, tree](#binary-search-tree-depth-first-search-tree)
+- [breadth-first-search, depth-first-search, queue, tree](#breadth-first-search-depth-first-search-queue-tree)
+- [breadth-first-search, depth-first-search](#breadth-first-search-depth-first-search)
+- [breadth-first-search, depth-first-search, tree](#breadth-first-search-depth-first-search-tree)
+- [depth-first-search, tree](#depth-first-search-tree)
+- [divide-and-conquer, sliding-window](#divide-and-conquer-sliding-window)
+- [hash-table, stack](#hash-table-stack)
+- [linked-list, math](#linked-list-math)
 
 ## backtracking, breadth-first-search, depth-first-search
 

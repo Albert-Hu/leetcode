@@ -2,7 +2,7 @@
 
 **Total Questions: 1, Easy: 1, Medium: 0, Hard: 0, latest updated at 2021/03/25.**
 
-- [design, tree](design-tree)
+- [design, tree](#design-tree)
 
 ## design, tree
 

@@ -2,7 +2,7 @@
 
 **Total Questions: 7, Easy: 3, Medium: 2, Hard: 2, latest updated at 2021/03/25.**
 
-- [dynamic-programming, math](dynamic-programming-math)
+- [dynamic-programming, math](#dynamic-programming-math)
 
 ## dynamic-programming, math
 

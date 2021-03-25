@@ -2,9 +2,9 @@
 
 **Total Questions: 6, Easy: 2, Medium: 2, Hard: 2, latest updated at 2021/03/25.**
 
-- [binary-indexed-tree, divide-and-conquer, heap, segment-tree](binary-indexed-tree-divide-and-conquer-heap-segment-tree)
-- [greedy, sort](greedy-sort)
-- [sort, two-pointers](sort-two-pointers)
+- [binary-indexed-tree, divide-and-conquer, heap, segment-tree](#binary-indexed-tree-divide-and-conquer-heap-segment-tree)
+- [greedy, sort](#greedy-sort)
+- [sort, two-pointers](#sort-two-pointers)
 
 ## binary-indexed-tree, divide-and-conquer, heap, segment-tree
 

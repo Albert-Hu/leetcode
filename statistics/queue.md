@@ -2,10 +2,10 @@
 
 **Total Questions: 11, Easy: 4, Medium: 6, Hard: 1, latest updated at 2021/03/25.**
 
-- [array, greedy](array-greedy)
-- [binary-search, dynamic-programming](binary-search-dynamic-programming)
-- [breadth-first-search, depth-first-search, recursion, tree](breadth-first-search-depth-first-search-recursion-tree)
-- [greedy, heap, stack](greedy-heap-stack)
+- [array, greedy](#array-greedy)
+- [binary-search, dynamic-programming](#binary-search-dynamic-programming)
+- [breadth-first-search, depth-first-search, recursion, tree](#breadth-first-search-depth-first-search-recursion-tree)
+- [greedy, heap, stack](#greedy-heap-stack)
 
 ## array, greedy
 

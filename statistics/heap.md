@@ -2,21 +2,21 @@
 
 **Total Questions: 38, Easy: 3, Medium: 20, Hard: 15, latest updated at 2021/03/25.**
 
-- [array, binary-search](array-binary-search)
-- [binary-indexed-tree, divide-and-conquer, line-sweep, segment-tree](binary-indexed-tree-divide-and-conquer-line-sweep-segment-tree)
-- [binary-search, depth-first-search, union-find](binary-search-depth-first-search-union-find)
-- [breadth-first-search, depth-first-search, graph](breadth-first-search-depth-first-search-graph)
-- [breadth-first-search, dynamic-programming](breadth-first-search-dynamic-programming)
-- [dequeue, sliding-window](dequeue-sliding-window)
-- [design, hash-table](design-hash-table)
-- [divide-and-conquer, linked-list](divide-and-conquer-linked-list)
-- [divide-and-conquer, sort](divide-and-conquer-sort)
-- [dynamic-programming, math](dynamic-programming-math)
-- [greedy, hash-table](greedy-hash-table)
-- [greedy, queue, stack](greedy-queue-stack)
-- [greedy, sort](greedy-sort)
-- [greedy, sort, string](greedy-sort-string)
-- [hash-table, trie](hash-table-trie)
+- [array, binary-search](#array-binary-search)
+- [binary-indexed-tree, divide-and-conquer, line-sweep, segment-tree](#binary-indexed-tree-divide-and-conquer-line-sweep-segment-tree)
+- [binary-search, depth-first-search, union-find](#binary-search-depth-first-search-union-find)
+- [breadth-first-search, depth-first-search, graph](#breadth-first-search-depth-first-search-graph)
+- [breadth-first-search, dynamic-programming](#breadth-first-search-dynamic-programming)
+- [dequeue, sliding-window](#dequeue-sliding-window)
+- [design, hash-table](#design-hash-table)
+- [divide-and-conquer, linked-list](#divide-and-conquer-linked-list)
+- [divide-and-conquer, sort](#divide-and-conquer-sort)
+- [dynamic-programming, math](#dynamic-programming-math)
+- [greedy, hash-table](#greedy-hash-table)
+- [greedy, queue, stack](#greedy-queue-stack)
+- [greedy, sort](#greedy-sort)
+- [greedy, sort, string](#greedy-sort-string)
+- [hash-table, trie](#hash-table-trie)
 
 ## array, binary-search
 

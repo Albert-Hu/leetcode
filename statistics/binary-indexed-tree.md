@@ -2,9 +2,9 @@
 
 **Total Questions: 7, Easy: 0, Medium: 2, Hard: 5, latest updated at 2021/03/25.**
 
-- [binary-search, divide-and-conquer, segment-tree, sort](binary-search-divide-and-conquer-segment-tree-sort)
-- [binary-search, ordered-map, segment-tree](binary-search-ordered-map-segment-tree)
-- [divide-and-conquer, heap, line-sweep, segment-tree](divide-and-conquer-heap-line-sweep-segment-tree)
+- [binary-search, divide-and-conquer, segment-tree, sort](#binary-search-divide-and-conquer-segment-tree-sort)
+- [binary-search, ordered-map, segment-tree](#binary-search-ordered-map-segment-tree)
+- [divide-and-conquer, heap, line-sweep, segment-tree](#divide-and-conquer-heap-line-sweep-segment-tree)
 
 ## binary-search, divide-and-conquer, segment-tree, sort
 
