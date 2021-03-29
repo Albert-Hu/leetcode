@@ -1,6 +1,6 @@
 # List of All Topics
 
-**Total Questions: 1504, Easy: 393, Medium: 801, Hard: 310, latest updated at 2021/03/25.**
+**Total Questions: 1504, Easy: 393, Medium: 801, Hard: 310, latest updated at 2021/03/29.**
 
 |                     Name                      |Total|Easy|Medium|Hard|
 |-----------------------------------------------|----:|---:|-----:|---:|

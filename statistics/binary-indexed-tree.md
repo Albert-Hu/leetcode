@@ -1,31 +1,38 @@
 # List of All Questions in Binary Indexed Tree
 
-**Total Questions: 7, Easy: 0, Medium: 2, Hard: 5, latest updated at 2021/03/25.**
+**Total Questions: 7, Easy: 0, Medium: 2, Hard: 5, latest updated at 2021/03/29.**
 
-- [binary-search, divide-and-conquer, segment-tree, sort](#binary-search-divide-and-conquer-segment-tree-sort)
-- [binary-search, ordered-map, segment-tree](#binary-search-ordered-map-segment-tree)
-- [divide-and-conquer, heap, line-sweep, segment-tree](#divide-and-conquer-heap-line-sweep-segment-tree)
+- [Binary Indexed Tree](#Binary-Indexed-Tree)
+- [Binary Search, Divide and Conquer, Segment Tree, Sort](#Binary-Search-Divide-and-Conquer-Segment-Tree-Sort)
+- [Binary Search, Ordered Map, Segment Tree](#Binary-Search-Ordered-Map-Segment-Tree)
+- [Divide and Conquer, Heap, Line Sweep, Segment Tree](#Divide-and-Conquer-Heap-Line-Sweep-Segment-Tree)
 
-## binary-search, divide-and-conquer, segment-tree, sort
+## Binary Indexed Tree
+
+|Number|Title|Level|Accepted|Submissions|Acceptance|
+|-----:|-----|:---:|-------:|----------:|---------:|
+
+
+## Binary Search, Divide and Conquer, Segment Tree, Sort
 
 |Number|                                                 Title                                                  |Level|Accepted|Submissions|Acceptance|
 |-----:|--------------------------------------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
-|   315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)|Hard | 164,536|    387,811|       42%|
-|   327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)                                  |Hard |  49,072|    135,862|       36%|
-|   493|[Reverse Pairs](https://leetcode.com/problems/reverse-pairs)                                            |Hard |  52,338|    193,757|       27%|
+|   315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)|Hard | 164,706|    388,213|       42%|
+|   327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)                                  |Hard |  49,123|    135,962|       36%|
+|   493|[Reverse Pairs](https://leetcode.com/problems/reverse-pairs)                                            |Hard |  52,429|    194,009|       27%|
 
 
-## binary-search, ordered-map, segment-tree
+## Binary Search, Ordered Map, Segment Tree
 
 |Number|                                         Title                                          |Level |Accepted|Submissions|Acceptance|
 |-----:|----------------------------------------------------------------------------------------|:----:|-------:|----------:|---------:|
-|  1772|[Sort Features by Popularity](https://leetcode.com/problems/sort-features-by-popularity)|Medium|     980|      1,510|       65%|
+|  1772|[Sort Features by Popularity](https://leetcode.com/problems/sort-features-by-popularity)|Medium|   1,000|      1,540|       65%|
 
 
-## divide-and-conquer, heap, line-sweep, segment-tree
+## Divide and Conquer, Heap, Line Sweep, Segment Tree
 
 |Number|                                 Title                                  |Level|Accepted|Submissions|Acceptance|
 |-----:|------------------------------------------------------------------------|:---:|-------:|----------:|---------:|
-|   218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)|Hard | 165,985|    454,876|       36%|
+|   218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)|Hard | 166,139|    455,138|       37%|
 
 

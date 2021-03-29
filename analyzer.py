@@ -134,6 +134,7 @@ def generate_markdown(to, topics, questions):
     md.write('\n\n')
     print('Created {}.'.format(questions_md))
   # generate to topics.md
+  topic_slug_to_name = {}
   name = '[{}]({}.md)'
   topic_json = {
     'Name': [],
@@ -143,6 +144,7 @@ def generate_markdown(to, topics, questions):
     'Hard': []
   }
   for t in topics:
+    topic_slug_to_name[t['slug']] = t['name']
     topic_json['Name'].append(name.format(t['name'], t['slug']))
     topic_json['Total'].append(number.format(len(t['questions'])))
     topic_json['Easy'].append(number.format(len(t['difficulty']['easy'])))
@@ -189,10 +191,43 @@ def generate_markdown(to, topics, questions):
         medium,
         hard,
         timestamp))
+      md.write('- [{}](#{})\n'.format(t['name'], t['name'].replace(' ', '-')))
       for k in sorted(t['similarities'].keys()):
-        similarity_topics = sorted(t['similarities'][k]['topics'])
-        md.write('- [{}](#{})\n'.format(', '.join(similarity_topics), '-'.join(similarity_topics)))
+        similarity_topics = map(lambda _t: topic_slug_to_name[_t], t['similarities'][k]['topics'])
+        similarity_topics = sorted(similarity_topics)
+        md.write('- [{}](#{})\n'.format(', '.join(similarity_topics), '-'.join(similarity_topics).replace(' ', '-')))
       md.write('\n')
+      question_json = {
+        'Number': [],
+        'Title': [],
+        'Level': [],
+        'Accepted': [],
+        'Submissions': [],
+        'Acceptance': []
+      }
+      for qid in sorted(t['questions']):
+        if len(questions[qid]['topics']) == 1:
+          q = questions[qid]
+          question_json['Number'].append(qid)
+          question_json['Title'].append(title.format(q['title'], q['title_slug']))
+          question_json['Level'].append(LEVELS[q['level']])
+          question_json['Accepted'].append(number.format(q['accepted']))
+          question_json['Submissions'].append(number.format(q['submissions']))
+          question_json['Acceptance'].append(acceptance.format(q['acceptance']))
+      md.write('## {}\n\n'.format(t['name']))
+      table = pandas.DataFrame.from_dict(question_json)
+      writer = MarkdownTableWriter()
+      writer.from_dataframe(table)
+      writer.column_styles = [
+          Style(align="right"),
+          Style(align="left"),
+          Style(align="center"),
+          Style(align="right"),
+          Style(align="right"),
+          Style(align="right")
+      ]
+      md.write(writer.dumps())
+      md.write('\n\n')
       for k in sorted(t['similarities'].keys()):
         question_json = {
           'Number': [],
@@ -202,7 +237,8 @@ def generate_markdown(to, topics, questions):
           'Submissions': [],
           'Acceptance': []
         }
-        similarity_topics = sorted(t['similarities'][k]['topics'])
+        similarity_topics = map(lambda _t: topic_slug_to_name[_t], t['similarities'][k]['topics'])
+        similarity_topics = sorted(similarity_topics)
         similarity_questions = sorted(t['similarities'][k]['questions'])
         for qid in similarity_questions:
           q = questions[qid]
